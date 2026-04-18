@@ -1,4 +1,4 @@
-contact_name,contact_title,company_name,industry,contact_email,contact_linkedin,score_total,score_tier,tech_stack_raw,is_hiring_ml_eng,email_subject,email_body
+contact_name,contact_title,company_name,industry,contact_email,contact_linkedin,score_total,score_tier,tech_stack_raw,is_hiring_ml_eng,email_subject,email_body,linkedin_dm
 Vaibhav Nivargi,CTO,Moveworks,SaaS,,,115,Hot,Kubernetes;AWS;GCP;Ray;Pinecone;Snowflake,3.0,Reducing LLM inference costs at Moveworks,"Dear Vaibhav,
 
 I noticed Moveworks is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
@@ -14,7 +14,7 @@ I would welcome the opportunity to show you what this could look like for Movewo
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Vaibhav - Noticed Moveworks runs Ray for distributed ML - GPU efficiency at scale is a real challenge. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. W..."
 Kevin Stumpf,CTO,Tecton,Other,,,112,Hot,Kubernetes;AWS;GCP;Snowflake;Databricks;Ray,3.0,Reducing LLM inference costs at Tecton,"Dear Kevin,
 
 I noticed Tecton is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
@@ -30,7 +30,7 @@ I would welcome the opportunity to show you what this could look like for Tecton
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Kevin - Noticed Tecton runs Ray for distributed ML - GPU efficiency at scale is a real challenge. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would ..."
 Braden Hancock,CTO,Snorkel AI,Other,,,112,Hot,Kubernetes;AWS;GCP;Ray;Snowflake;Databricks,1.0,Reducing LLM inference costs at Snorkel AI,"Dear Braden,
 
 I noticed Snorkel AI is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
@@ -46,7 +46,7 @@ I would welcome the opportunity to show you what this could look like for Snorke
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Braden - Noticed Snorkel AI runs Ray for distributed ML - GPU efficiency at scale is a real challenge. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. W..."
 Brian Rieger,CTO,Labelbox,Other,,https://linkedin.com/in/brianrieger,112,Hot,Kubernetes;AWS;GCP;Ray;Snowflake,2.0,Reducing LLM inference costs at Labelbox,"Dear Brian,
 
 I noticed Labelbox is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
@@ -62,7 +62,7 @@ I would welcome the opportunity to show you what this could look like for Labelb
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Brian - Noticed Labelbox runs Ray for distributed ML - GPU efficiency at scale is a real challenge. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Woul..."
 Gautham Viswanathan,CTO,Workato,SaaS,,,110,Hot,Kubernetes;AWS;GCP;Snowflake;OpenAI,2.0,Reducing LLM inference costs at Workato,"Dear Gautham,
 
 I noticed Workato is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
@@ -78,7 +78,7 @@ I would welcome the opportunity to show you what this could look like for Workat
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Gautham - Saw Workato is using OpenAI/Anthropic in prod - at scale, inference costs compound fast. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would..."
 Tim Shi,CTO,Cresta,SaaS,,,107,Hot,Kubernetes;GCP;AWS;Ray;Pinecone,7.0,Reducing LLM inference costs at Cresta,"Dear Tim,
 
 I noticed Cresta is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
@@ -94,7 +94,7 @@ I would welcome the opportunity to show you what this could look like for Cresta
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Tim - Noticed Cresta runs Ray for distributed ML - GPU efficiency at scale is a real challenge. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would yo..."
 Andy Beck,CTO,PathAI,HealthTech,,https://linkedin.com/in/andybeck,107,Hot,Kubernetes;AWS;GCP;Ray;Triton;Snowflake,1.0,Reducing LLM inference costs at PathAI,"Dear Andy,
 
 I noticed PathAI is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
@@ -110,7 +110,7 @@ I would welcome the opportunity to show you what this could look like for PathAI
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Andy - Saw PathAI is running vLLM/Triton in prod - inference performance is clearly on your radar. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would..."
 Julien Chaumond,CTO,Hugging Face,Other,,,105,Hot,Kubernetes;GCP;AWS;vLLM;Ray;Triton,,Reducing LLM inference costs at Hugging Face,"Dear Julien,
 
 I noticed Hugging Face is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
@@ -124,7 +124,7 @@ I would welcome the opportunity to show you what this could look like for Huggin
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Julien - Saw Hugging Face is running vLLM/Triton in prod - inference performance is clearly on your radar. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Anant Bhardwaj,CTO,Instabase,SaaS,,,105,Hot,Kubernetes;AWS;GCP;Snowflake;OpenAI;Ray,,Reducing LLM inference costs at Instabase,"Dear Anant,
 
 I noticed Instabase is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
@@ -138,7 +138,7 @@ I would welcome the opportunity to show you what this could look like for Instab
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Anant - Noticed Instabase runs Ray for distributed ML - GPU efficiency at scale is a real challenge. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Ion Stoica,CTO,Anyscale,Other,,https://linkedin.com/in/ion-stoica,102,Hot,Kubernetes;AWS;GCP;Ray;vLLM,4.0,Reducing LLM inference costs at Anyscale,"Dear Ion,
 
 I noticed Anyscale is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
@@ -154,7 +154,7 @@ I would welcome the opportunity to show you what this could look like for Anysca
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Ion - Saw Anyscale is running vLLM/Triton in prod - inference performance is clearly on your radar. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Woul..."
 Anastasis Germanidis,CTO,Runway,SaaS,,https://linkedin.com/in/agermanidis,102,Hot,Kubernetes;AWS;GCP;Triton;Ray,16.0,Reducing LLM inference costs at Runway,"Dear Anastasis,
 
 I noticed Runway is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
@@ -170,7 +170,7 @@ I would welcome the opportunity to show you what this could look like for Runway
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Anastasis - Saw Runway is running vLLM/Triton in prod - inference performance is clearly on your radar. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. ..."
 Luis Ceze,CTO,OctoAI,Other,,,102,Hot,Kubernetes;AWS;GCP;vLLM;Triton;Ray,1.0,Reducing LLM inference costs at OctoAI,"Dear Luis,
 
 I noticed OctoAI is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
@@ -186,7 +186,7 @@ I would welcome the opportunity to show you what this could look like for OctoAI
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Luis - Saw OctoAI is running vLLM/Triton in prod - inference performance is clearly on your radar. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would..."
 Denis Yarats,CTO,Perplexity AI,Other,,https://linkedin.com/in/denisyarats,102,Hot,Kubernetes;AWS;GCP;vLLM;Ray;Triton,3.0,Reducing LLM inference costs at Perplexity AI,"Dear Denis,
 
 I noticed Perplexity AI is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
@@ -202,7 +202,7 @@ I would welcome the opportunity to show you what this could look like for Perple
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Denis - Saw Perplexity AI is running vLLM/Triton in prod - inference performance is clearly on your radar. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model change..."
 Fraser Harris,CTO,Fivetran,SaaS,,,100,Hot,Kubernetes;GCP;AWS;Snowflake;dbt;Databricks,,Reducing LLM inference costs at Fivetran,"Dear Fraser,
 
 Given that Fivetran is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
@@ -216,7 +216,7 @@ I would welcome the opportunity to show you what this could look like for Fivetr
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Fraser - Running LLMs on Kubernetes at Fivetran's scale means inference overhead is a real cost. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Raj Koneru,CTO,Kore.ai,SaaS,,,100,Hot,Kubernetes;AWS;GCP;OpenAI;Snowflake,,Reducing LLM inference costs at Kore.ai,"Dear Raj,
 
 I noticed Kore.ai is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
@@ -230,7 +230,7 @@ I would welcome the opportunity to show you what this could look like for Kore.a
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Raj - Saw Kore.ai is using OpenAI/Anthropic in prod - at scale, inference costs compound fast. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Christina Cacioppo,CTO,Vanta,SaaS,,https://linkedin.com/in/ccacioppo,100,Hot,Kubernetes;AWS;Snowflake;Databricks,4.0,Reducing LLM inference costs at Vanta,"Dear Christina,
 
 Given that Vanta is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
@@ -246,7 +246,7 @@ I would welcome the opportunity to show you what this could look like for Vanta'
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Christina - Running LLMs on Kubernetes at Vanta's scale means inference overhead is a real cost. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would y..."
 Muddu Sudhakar,CTO,Aisera,SaaS,,,100,Hot,Kubernetes;GCP;AWS;OpenAI;Snowflake,,Reducing LLM inference costs at Aisera,"Dear Muddu,
 
 I noticed Aisera is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
@@ -260,7 +260,7 @@ I would welcome the opportunity to show you what this could look like for Aisera
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Muddu - Saw Aisera is using OpenAI/Anthropic in prod - at scale, inference costs compound fast. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Geoff Charles,VP Engineering,Ramp,FinTech,,https://linkedin.com/in/geoffcharles,100,Hot,Kubernetes;AWS;Snowflake;dbt;Kafka,8.0,Reducing LLM inference costs at Ramp,"Dear Geoff,
 
 Given that Ramp is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
@@ -276,7 +276,7 @@ I would welcome the opportunity to show you what this could look like for Ramp's
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Geoff - Running LLMs on Kubernetes at Ramp's scale means inference overhead is a real cost. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be..."
 T.R. Vishwanath,VP Engineering,Glean,SaaS,,https://linkedin.com/in/trvishwanath,100,Hot,Kubernetes;GCP;Snowflake;Pinecone;Redis,4.0,Reducing LLM inference costs at Glean,"Dear T.R.,
 
 Given that Glean is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
@@ -292,7 +292,7 @@ I would welcome the opportunity to show you what this could look like for Glean'
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi T.R. - Running LLMs on Kubernetes at Glean's scale means inference overhead is a real cost. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be..."
 Chris Van Pelt,CTO,Weights & Biases,SaaS,,https://linkedin.com/in/chrisvanpelt,100,Hot,Kubernetes;GCP;AWS;Ray;Snowflake,,Reducing LLM inference costs at Weights & Biases,"Dear Chris,
 
 I noticed Weights & Biases is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
@@ -306,7 +306,7 @@ I would welcome the opportunity to show you what this could look like for Weight
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Chris - Noticed Weights & Biases runs Ray for distributed ML - GPU efficiency at scale is a real challenge. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Sharath Keshava Narayana,CTO,Observe.AI,SaaS,,https://linkedin.com/in/sharath-keshava,100,Hot,Kubernetes;AWS;Snowflake;Kafka;Whisper,3.0,Reducing LLM inference costs at Observe.AI,"Dear Sharath,
 
 Given that Observe.AI is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
@@ -322,7 +322,7 @@ I would welcome the opportunity to show you what this could look like for Observ
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Sharath - Running LLMs on Kubernetes at Observe.AI's scale means inference overhead is a real cost. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Woul..."
 Robert Blenkinsopp,CTO,Miro,SaaS,,https://linkedin.com/in/robertblenkinsopp,100,Hot,Kubernetes;GCP;Snowflake;Kafka;Redis;OpenAI,1.0,Reducing LLM inference costs at Miro,"Dear Robert,
 
 I noticed Miro is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
@@ -338,7 +338,7 @@ I would welcome the opportunity to show you what this could look like for Miro's
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Robert - Saw Miro is using OpenAI/Anthropic in prod - at scale, inference costs compound fast. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you..."
 Waseem Alshikh,CTO,Writer,SaaS,,,100,Hot,Kubernetes;GCP;AWS;vLLM;Triton;OpenAI,,Reducing LLM inference costs at Writer,"Dear Waseem,
 
 I noticed Writer is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
@@ -352,7 +352,7 @@ I would welcome the opportunity to show you what this could look like for Writer
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Waseem - Saw Writer is running vLLM/Triton in prod - inference performance is clearly on your radar. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Eric Rigling,CTO,sennder,Logistics,,https://linkedin.com/in/ericrigling,100,Hot,Kubernetes;AWS;Kafka;dbt;Snowflake,31.0,Reducing LLM inference costs at sennder,"Dear Eric,
 
 Given that sennder is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
@@ -368,7 +368,7 @@ I would welcome the opportunity to show you what this could look like for sennde
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Eric - Running LLMs on Kubernetes at sennder's scale means inference overhead is a real cost. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you ..."
 Tristan Handy,CTO,dbt Labs,SaaS,,,100,Hot,Kubernetes;AWS;GCP;Snowflake;Databricks;dbt,,Reducing LLM inference costs at dbt Labs,"Dear Tristan,
 
 Given that dbt Labs is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
@@ -382,7 +382,7 @@ I would welcome the opportunity to show you what this could look like for dbt La
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Tristan - Running LLMs on Kubernetes at dbt Labs's scale means inference overhead is a real cost. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Julien Lemoine,CTO,Algolia,SaaS,,https://linkedin.com/in/julienlemoine,100,Hot,Kubernetes;AWS;GCP;Redis;Pinecone,16.0,Reducing LLM inference costs at Algolia,"Dear Julien,
 
 Given that Algolia is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
@@ -398,7 +398,7 @@ I would welcome the opportunity to show you what this could look like for Algoli
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Julien - Running LLMs on Kubernetes at Algolia's scale means inference overhead is a real cost. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would yo..."
 Matt Wood,CTO,Luminar AI,HealthTech,,,97,Hot,Kubernetes;AWS;GCP;Ray;Triton,,Reducing LLM inference costs at Luminar AI,"Dear Matt,
 
 I noticed Luminar AI is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
@@ -412,7 +412,7 @@ I would welcome the opportunity to show you what this could look like for Lumina
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Matt - Saw Luminar AI is running vLLM/Triton in prod - inference performance is clearly on your radar. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 David Luan,CTO,Adept AI,Other,,https://linkedin.com/in/davidluan,97,Hot,Kubernetes;GCP;AWS;Ray;vLLM,1.0,Reducing LLM inference costs at Adept AI,"Dear David,
 
 I noticed Adept AI is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
@@ -428,7 +428,7 @@ I would welcome the opportunity to show you what this could look like for Adept 
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi David - Saw Adept AI is running vLLM/Triton in prod - inference performance is clearly on your radar. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Wo..."
 Ali Golshan,CTO,Gretel.ai,Other,,,97,Hot,Kubernetes;GCP;AWS;Ray;Snowflake,,Reducing LLM inference costs at Gretel.ai,"Dear Ali,
 
 I noticed Gretel.ai is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
@@ -442,7 +442,7 @@ I would welcome the opportunity to show you what this could look like for Gretel
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Ali - Noticed Gretel.ai runs Ray for distributed ML - GPU efficiency at scale is a real challenge. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Amjad Masad,CTO,Replit,Other,,https://linkedin.com/in/amjadmasad,97,Hot,Kubernetes;GCP;AWS;OpenAI;Anthropic;Ray,1.0,Reducing LLM inference costs at Replit,"Dear Amjad,
 
 I noticed Replit is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
@@ -458,7 +458,7 @@ I would welcome the opportunity to show you what this could look like for Replit
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Amjad - Noticed Replit runs Ray for distributed ML - GPU efficiency at scale is a real challenge. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would ..."
 Uri Kartoun,CTO,Matrix,HealthTech,,,97,Hot,Kubernetes;AWS;Snowflake;Databricks;Ray,,Reducing LLM inference costs at Matrix,"Dear Uri,
 
 I noticed Matrix is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
@@ -472,7 +472,7 @@ I would welcome the opportunity to show you what this could look like for Matrix
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Uri - Noticed Matrix runs Ray for distributed ML - GPU efficiency at scale is a real challenge. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Beyang Liu,CTO,Sourcegraph,Other,,https://linkedin.com/in/byangliu,97,Hot,Kubernetes;GCP;AWS;Anthropic;OpenAI;Pinecone,6.0,Reducing LLM inference costs at Sourcegraph,"Dear Beyang,
 
 I noticed Sourcegraph is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
@@ -488,7 +488,7 @@ I would welcome the opportunity to show you what this could look like for Source
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Beyang - Saw Sourcegraph is using OpenAI/Anthropic in prod - at scale, inference costs compound fast. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Wo..."
 Edo Liberty,CTO,Pinecone,Other,,,97,Hot,Kubernetes;GCP;AWS;Ray;Snowflake,,Reducing LLM inference costs at Pinecone,"Dear Edo,
 
 I noticed Pinecone is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
@@ -502,7 +502,7 @@ I would welcome the opportunity to show you what this could look like for Pineco
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Edo - Noticed Pinecone runs Ray for distributed ML - GPU efficiency at scale is a real challenge. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Asaf Yigal,CTO,Logz.io,SaaS,,,97,Hot,Kubernetes;AWS;GCP;Kafka;Snowflake,,Reducing LLM inference costs at Logz.io,"Dear Asaf,
 
 Given that Logz.io is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
@@ -516,7 +516,7 @@ I would welcome the opportunity to show you what this could look like for Logz.i
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Asaf - Running LLMs on Kubernetes at Logz.io's scale means inference overhead is a real cost. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Brandon Davito,VP Engineering,Verkada,Cybersec,,,95,Hot,Kubernetes;AWS;GCP;Snowflake;Kafka;Redis,,Reducing LLM inference costs at Verkada,"Dear Brandon,
 
 Given that Verkada is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
@@ -530,7 +530,7 @@ I would welcome the opportunity to show you what this could look like for Verkad
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Brandon - Running LLMs on Kubernetes at Verkada's scale means inference overhead is a real cost. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Viraj Parekh,CTO,Astronomer,Other,,,95,Hot,Kubernetes;GCP;AWS;Snowflake;dbt;Databricks,,Reducing LLM inference costs at Astronomer,"Dear Viraj,
 
 Given that Astronomer is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
@@ -544,7 +544,7 @@ I would welcome the opportunity to show you what this could look like for Astron
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Viraj - Running LLMs on Kubernetes at Astronomer's scale means inference overhead is a real cost. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Bertie Sherrington,CTO,Privia Health,HealthTech,,https://linkedin.com/in/bertiesherrington,95,Hot,Kubernetes;AWS;Snowflake;dbt,,Reducing LLM inference costs at Privia Health,"Dear Bertie,
 
 Given that Privia Health is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
@@ -558,7 +558,7 @@ I would welcome the opportunity to show you what this could look like for Privia
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Bertie - Running LLMs on Kubernetes at Privia Health's scale means inference overhead is a real cost. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Romain Niccoli,CTO,Pigment,SaaS,,https://linkedin.com/in/romainniccoli,95,Hot,Kubernetes;GCP;Snowflake;dbt,1.0,Reducing LLM inference costs at Pigment,"Dear Romain,
 
 Given that Pigment is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
@@ -574,7 +574,7 @@ I would welcome the opportunity to show you what this could look like for Pigmen
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Romain - Running LLMs on Kubernetes at Pigment's scale means inference overhead is a real cost. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would yo..."
 Brian Venturo,CTO,CoreWeave,Other,,https://linkedin.com/in/brianventuro,95,Hot,Kubernetes;GCP;AWS;Ray;vLLM;Triton,,Reducing LLM inference costs at CoreWeave,"Dear Brian,
 
 I noticed CoreWeave is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
@@ -588,7 +588,7 @@ I would welcome the opportunity to show you what this could look like for CoreWe
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Brian - Saw CoreWeave is running vLLM/Triton in prod - inference performance is clearly on your radar. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Matt Marcus,CTO,Modern Treasury,FinTech,,,95,Hot,Kubernetes;AWS;GCP;Snowflake;dbt;Kafka,,Reducing LLM inference costs at Modern Treasury,"Dear Matt,
 
 Given that Modern Treasury is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
@@ -602,7 +602,7 @@ I would welcome the opportunity to show you what this could look like for Modern
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Matt - Running LLMs on Kubernetes at Modern Treasury's scale means inference overhead is a real cost. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Guillaume Lample,CTO,Mistral AI,Other,,https://linkedin.com/in/guillaume-lample,95,Hot,Kubernetes;GCP;AWS;vLLM;Ray;Triton;Pinecone,16.0,Reducing LLM inference costs at Mistral AI,"Dear Guillaume,
 
 I noticed Mistral AI is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
@@ -618,7 +618,7 @@ I would welcome the opportunity to show you what this could look like for Mistra
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Guillaume - Saw Mistral AI is running vLLM/Triton in prod - inference performance is clearly on your radar. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model chang..."
 Sanne Manders,CTO,Flexport,Logistics,,https://linkedin.com/in/sannemanders,95,Hot,Kubernetes;GCP;Snowflake;Kafka;dbt;Databricks,7.0,Reducing LLM inference costs at Flexport,"Dear Sanne,
 
 Given that Flexport is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
@@ -634,7 +634,7 @@ I would welcome the opportunity to show you what this could look like for Flexpo
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Sanne - Running LLMs on Kubernetes at Flexport's scale means inference overhead is a real cost. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would yo..."
 Nick Frosst,CTO,Cohere,SaaS,,https://linkedin.com/in/nickfrosst,95,Hot,Kubernetes;AWS;GCP;Ray;vLLM;Triton,,Reducing LLM inference costs at Cohere,"Dear Nick,
 
 I noticed Cohere is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
@@ -648,7 +648,7 @@ I would welcome the opportunity to show you what this could look like for Cohere
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Nick - Saw Cohere is running vLLM/Triton in prod - inference performance is clearly on your radar. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Gideon Mendels,CTO,Comet,Other,,https://linkedin.com/in/gideonmendels,92,Hot,Kubernetes;AWS;GCP;Ray;Snowflake;Databricks,,Reducing LLM inference costs at Comet,"Dear Gideon,
 
 I noticed Comet is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
@@ -662,7 +662,7 @@ I would welcome the opportunity to show you what this could look like for Comet'
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Gideon - Noticed Comet runs Ray for distributed ML - GPU efficiency at scale is a real challenge. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Varun Mohan,CTO,Codeium,Other,,https://linkedin.com/in/varunmohan,92,Hot,Kubernetes;GCP;AWS;vLLM;Ray;Triton,,Reducing LLM inference costs at Codeium,"Dear Varun,
 
 I noticed Codeium is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
@@ -676,7 +676,7 @@ I would welcome the opportunity to show you what this could look like for Codeiu
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Varun - Saw Codeium is running vLLM/Triton in prod - inference performance is clearly on your radar. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Charles Xie,CTO,Zilliz,Other,,,92,Hot,Kubernetes;GCP;AWS;Ray;Triton,,Reducing LLM inference costs at Zilliz,"Dear Charles,
 
 I noticed Zilliz is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
@@ -690,7 +690,7 @@ I would welcome the opportunity to show you what this could look like for Zilliz
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Charles - Saw Zilliz is running vLLM/Triton in prod - inference performance is clearly on your radar. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Prukalpa Sankar,CTO,Atlan,SaaS,,,92,Hot,Kubernetes;GCP;AWS;Snowflake;dbt;OpenAI,,Reducing LLM inference costs at Atlan,"Dear Prukalpa,
 
 I noticed Atlan is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
@@ -704,7 +704,7 @@ I would welcome the opportunity to show you what this could look like for Atlan'
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Prukalpa - Saw Atlan is using OpenAI/Anthropic in prod - at scale, inference costs compound fast. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
 Andrew Mason,CTO,Descript,SaaS,,https://linkedin.com/in/andrewmason,92,Hot,Kubernetes;AWS;Whisper;Redis,1.0,Reducing LLM inference costs at Descript,"Dear Andrew,
 
 Given that Descript is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
@@ -720,7 +720,7 @@ I would welcome the opportunity to show you what this could look like for Descri
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Andrew - Running LLMs on Kubernetes at Descript's scale means inference overhead is a real cost. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would y..."
 Winston Weinberg,CTO,Harvey,SaaS,,https://linkedin.com/in/winston-weinberg,92,Hot,Kubernetes;AWS;Anthropic;OpenAI;Pinecone,1.0,Reducing LLM inference costs at Harvey,"Dear Winston,
 
 I noticed Harvey is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
@@ -736,7 +736,7 @@ I would welcome the opportunity to show you what this could look like for Harvey
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Winston - Saw Harvey is using OpenAI/Anthropic in prod - at scale, inference costs compound fast. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would ..."
 Paul Yacoubian,CTO,Copy.ai,SaaS,,,92,Hot,Kubernetes;AWS;OpenAI;Pinecone,1.0,Reducing LLM inference costs at Copy.ai,"Dear Paul,
 
 I noticed Copy.ai is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
@@ -752,4 +752,4 @@ I would welcome the opportunity to show you what this could look like for Copy.a
 Best regards,
 [Your Name]
 P95.AI
-[Your Email] | [Your LinkedIn]"
+[Your Email] | [Your LinkedIn]","Hi Paul - Saw Copy.ai is using OpenAI/Anthropic in prod - at scale, inference costs compound fast. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would yo..."
