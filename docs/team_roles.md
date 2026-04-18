@@ -2,9 +2,9 @@
 
 | Role | Person | Slack/Contact |
 |---|---|---|
-| Data Lead | [name] | [handle] |
-| Research Lead | [name] | [handle] |
-| Engineer | [name] | [handle] |
+| Data Lead | Harshita | simbaaa.1205@gmail.com
+| Research Lead | Janaki | akumarjanaki@gmail.com
+| Engineer | Aayush | aayush2615@gmail.com
 
 ## Task Ownership
 
