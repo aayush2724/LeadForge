@@ -1,0 +1,755 @@
+contact_name,contact_title,company_name,industry,contact_email,contact_linkedin,score_total,score_tier,tech_stack_raw,is_hiring_ml_eng,email_subject,email_body
+Vaibhav Nivargi,CTO,Moveworks,SaaS,,,115,Hot,Kubernetes;AWS;GCP;Ray;Pinecone;Snowflake,3.0,Reducing LLM inference costs at Moveworks,"Dear Vaibhav,
+
+I noticed Moveworks is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Moveworks's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Moveworks's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Kevin Stumpf,CTO,Tecton,Other,,,112,Hot,Kubernetes;AWS;GCP;Snowflake;Databricks;Ray,3.0,Reducing LLM inference costs at Tecton,"Dear Kevin,
+
+I noticed Tecton is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Tecton's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Tecton's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Braden Hancock,CTO,Snorkel AI,Other,,,112,Hot,Kubernetes;AWS;GCP;Ray;Snowflake;Databricks,1.0,Reducing LLM inference costs at Snorkel AI,"Dear Braden,
+
+I noticed Snorkel AI is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Snorkel AI's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Snorkel AI's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Brian Rieger,CTO,Labelbox,Other,,https://linkedin.com/in/brianrieger,112,Hot,Kubernetes;AWS;GCP;Ray;Snowflake,2.0,Reducing LLM inference costs at Labelbox,"Dear Brian,
+
+I noticed Labelbox is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Labelbox's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Labelbox's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Gautham Viswanathan,CTO,Workato,SaaS,,,110,Hot,Kubernetes;AWS;GCP;Snowflake;OpenAI,2.0,Reducing LLM inference costs at Workato,"Dear Gautham,
+
+I noticed Workato is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Workato's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Workato's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Tim Shi,CTO,Cresta,SaaS,,,107,Hot,Kubernetes;GCP;AWS;Ray;Pinecone,7.0,Reducing LLM inference costs at Cresta,"Dear Tim,
+
+I noticed Cresta is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Cresta's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Cresta's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Andy Beck,CTO,PathAI,HealthTech,,https://linkedin.com/in/andybeck,107,Hot,Kubernetes;AWS;GCP;Ray;Triton;Snowflake,1.0,Reducing LLM inference costs at PathAI,"Dear Andy,
+
+I noticed PathAI is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to PathAI's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for PathAI's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Julien Chaumond,CTO,Hugging Face,Other,,,105,Hot,Kubernetes;GCP;AWS;vLLM;Ray;Triton,,Reducing LLM inference costs at Hugging Face,"Dear Julien,
+
+I noticed Hugging Face is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Hugging Face's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Hugging Face's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Anant Bhardwaj,CTO,Instabase,SaaS,,,105,Hot,Kubernetes;AWS;GCP;Snowflake;OpenAI;Ray,,Reducing LLM inference costs at Instabase,"Dear Anant,
+
+I noticed Instabase is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Instabase's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Instabase's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Ion Stoica,CTO,Anyscale,Other,,https://linkedin.com/in/ion-stoica,102,Hot,Kubernetes;AWS;GCP;Ray;vLLM,4.0,Reducing LLM inference costs at Anyscale,"Dear Ion,
+
+I noticed Anyscale is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Anyscale's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Anyscale's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Anastasis Germanidis,CTO,Runway,SaaS,,https://linkedin.com/in/agermanidis,102,Hot,Kubernetes;AWS;GCP;Triton;Ray,16.0,Reducing LLM inference costs at Runway,"Dear Anastasis,
+
+I noticed Runway is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Runway's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Runway's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Luis Ceze,CTO,OctoAI,Other,,,102,Hot,Kubernetes;AWS;GCP;vLLM;Triton;Ray,1.0,Reducing LLM inference costs at OctoAI,"Dear Luis,
+
+I noticed OctoAI is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to OctoAI's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for OctoAI's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Denis Yarats,CTO,Perplexity AI,Other,,https://linkedin.com/in/denisyarats,102,Hot,Kubernetes;AWS;GCP;vLLM;Ray;Triton,3.0,Reducing LLM inference costs at Perplexity AI,"Dear Denis,
+
+I noticed Perplexity AI is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Perplexity AI's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Perplexity AI's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Fraser Harris,CTO,Fivetran,SaaS,,,100,Hot,Kubernetes;GCP;AWS;Snowflake;dbt;Databricks,,Reducing LLM inference costs at Fivetran,"Dear Fraser,
+
+Given that Fivetran is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Fivetran's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Fivetran's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Raj Koneru,CTO,Kore.ai,SaaS,,,100,Hot,Kubernetes;AWS;GCP;OpenAI;Snowflake,,Reducing LLM inference costs at Kore.ai,"Dear Raj,
+
+I noticed Kore.ai is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Kore.ai's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Kore.ai's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Christina Cacioppo,CTO,Vanta,SaaS,,https://linkedin.com/in/ccacioppo,100,Hot,Kubernetes;AWS;Snowflake;Databricks,4.0,Reducing LLM inference costs at Vanta,"Dear Christina,
+
+Given that Vanta is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Vanta's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Vanta's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Muddu Sudhakar,CTO,Aisera,SaaS,,,100,Hot,Kubernetes;GCP;AWS;OpenAI;Snowflake,,Reducing LLM inference costs at Aisera,"Dear Muddu,
+
+I noticed Aisera is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Aisera's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Aisera's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Geoff Charles,VP Engineering,Ramp,FinTech,,https://linkedin.com/in/geoffcharles,100,Hot,Kubernetes;AWS;Snowflake;dbt;Kafka,8.0,Reducing LLM inference costs at Ramp,"Dear Geoff,
+
+Given that Ramp is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Ramp's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Ramp's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+T.R. Vishwanath,VP Engineering,Glean,SaaS,,https://linkedin.com/in/trvishwanath,100,Hot,Kubernetes;GCP;Snowflake;Pinecone;Redis,4.0,Reducing LLM inference costs at Glean,"Dear T.R.,
+
+Given that Glean is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Glean's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Glean's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Chris Van Pelt,CTO,Weights & Biases,SaaS,,https://linkedin.com/in/chrisvanpelt,100,Hot,Kubernetes;GCP;AWS;Ray;Snowflake,,Reducing LLM inference costs at Weights & Biases,"Dear Chris,
+
+I noticed Weights & Biases is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Weights & Biases's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Weights & Biases's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Sharath Keshava Narayana,CTO,Observe.AI,SaaS,,https://linkedin.com/in/sharath-keshava,100,Hot,Kubernetes;AWS;Snowflake;Kafka;Whisper,3.0,Reducing LLM inference costs at Observe.AI,"Dear Sharath,
+
+Given that Observe.AI is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Observe.AI's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Observe.AI's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Robert Blenkinsopp,CTO,Miro,SaaS,,https://linkedin.com/in/robertblenkinsopp,100,Hot,Kubernetes;GCP;Snowflake;Kafka;Redis;OpenAI,1.0,Reducing LLM inference costs at Miro,"Dear Robert,
+
+I noticed Miro is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Miro's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Miro's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Waseem Alshikh,CTO,Writer,SaaS,,,100,Hot,Kubernetes;GCP;AWS;vLLM;Triton;OpenAI,,Reducing LLM inference costs at Writer,"Dear Waseem,
+
+I noticed Writer is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Writer's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Writer's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Eric Rigling,CTO,sennder,Logistics,,https://linkedin.com/in/ericrigling,100,Hot,Kubernetes;AWS;Kafka;dbt;Snowflake,31.0,Reducing LLM inference costs at sennder,"Dear Eric,
+
+Given that sennder is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to sennder's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for sennder's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Tristan Handy,CTO,dbt Labs,SaaS,,,100,Hot,Kubernetes;AWS;GCP;Snowflake;Databricks;dbt,,Reducing LLM inference costs at dbt Labs,"Dear Tristan,
+
+Given that dbt Labs is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to dbt Labs's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for dbt Labs's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Julien Lemoine,CTO,Algolia,SaaS,,https://linkedin.com/in/julienlemoine,100,Hot,Kubernetes;AWS;GCP;Redis;Pinecone,16.0,Reducing LLM inference costs at Algolia,"Dear Julien,
+
+Given that Algolia is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Algolia's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Algolia's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Matt Wood,CTO,Luminar AI,HealthTech,,,97,Hot,Kubernetes;AWS;GCP;Ray;Triton,,Reducing LLM inference costs at Luminar AI,"Dear Matt,
+
+I noticed Luminar AI is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Luminar AI's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Luminar AI's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+David Luan,CTO,Adept AI,Other,,https://linkedin.com/in/davidluan,97,Hot,Kubernetes;GCP;AWS;Ray;vLLM,1.0,Reducing LLM inference costs at Adept AI,"Dear David,
+
+I noticed Adept AI is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Adept AI's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Adept AI's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Ali Golshan,CTO,Gretel.ai,Other,,,97,Hot,Kubernetes;GCP;AWS;Ray;Snowflake,,Reducing LLM inference costs at Gretel.ai,"Dear Ali,
+
+I noticed Gretel.ai is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Gretel.ai's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Gretel.ai's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Amjad Masad,CTO,Replit,Other,,https://linkedin.com/in/amjadmasad,97,Hot,Kubernetes;GCP;AWS;OpenAI;Anthropic;Ray,1.0,Reducing LLM inference costs at Replit,"Dear Amjad,
+
+I noticed Replit is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Replit's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Replit's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Uri Kartoun,CTO,Matrix,HealthTech,,,97,Hot,Kubernetes;AWS;Snowflake;Databricks;Ray,,Reducing LLM inference costs at Matrix,"Dear Uri,
+
+I noticed Matrix is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Matrix's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Matrix's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Beyang Liu,CTO,Sourcegraph,Other,,https://linkedin.com/in/byangliu,97,Hot,Kubernetes;GCP;AWS;Anthropic;OpenAI;Pinecone,6.0,Reducing LLM inference costs at Sourcegraph,"Dear Beyang,
+
+I noticed Sourcegraph is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Sourcegraph's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Sourcegraph's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Edo Liberty,CTO,Pinecone,Other,,,97,Hot,Kubernetes;GCP;AWS;Ray;Snowflake,,Reducing LLM inference costs at Pinecone,"Dear Edo,
+
+I noticed Pinecone is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Pinecone's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Pinecone's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Asaf Yigal,CTO,Logz.io,SaaS,,,97,Hot,Kubernetes;AWS;GCP;Kafka;Snowflake,,Reducing LLM inference costs at Logz.io,"Dear Asaf,
+
+Given that Logz.io is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Logz.io's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Logz.io's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Brandon Davito,VP Engineering,Verkada,Cybersec,,,95,Hot,Kubernetes;AWS;GCP;Snowflake;Kafka;Redis,,Reducing LLM inference costs at Verkada,"Dear Brandon,
+
+Given that Verkada is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Verkada's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Verkada's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Viraj Parekh,CTO,Astronomer,Other,,,95,Hot,Kubernetes;GCP;AWS;Snowflake;dbt;Databricks,,Reducing LLM inference costs at Astronomer,"Dear Viraj,
+
+Given that Astronomer is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Astronomer's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Astronomer's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Bertie Sherrington,CTO,Privia Health,HealthTech,,https://linkedin.com/in/bertiesherrington,95,Hot,Kubernetes;AWS;Snowflake;dbt,,Reducing LLM inference costs at Privia Health,"Dear Bertie,
+
+Given that Privia Health is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Privia Health's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Privia Health's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Romain Niccoli,CTO,Pigment,SaaS,,https://linkedin.com/in/romainniccoli,95,Hot,Kubernetes;GCP;Snowflake;dbt,1.0,Reducing LLM inference costs at Pigment,"Dear Romain,
+
+Given that Pigment is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Pigment's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Pigment's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Brian Venturo,CTO,CoreWeave,Other,,https://linkedin.com/in/brianventuro,95,Hot,Kubernetes;GCP;AWS;Ray;vLLM;Triton,,Reducing LLM inference costs at CoreWeave,"Dear Brian,
+
+I noticed CoreWeave is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to CoreWeave's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for CoreWeave's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Matt Marcus,CTO,Modern Treasury,FinTech,,,95,Hot,Kubernetes;AWS;GCP;Snowflake;dbt;Kafka,,Reducing LLM inference costs at Modern Treasury,"Dear Matt,
+
+Given that Modern Treasury is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Modern Treasury's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Modern Treasury's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Guillaume Lample,CTO,Mistral AI,Other,,https://linkedin.com/in/guillaume-lample,95,Hot,Kubernetes;GCP;AWS;vLLM;Ray;Triton;Pinecone,16.0,Reducing LLM inference costs at Mistral AI,"Dear Guillaume,
+
+I noticed Mistral AI is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Mistral AI's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Mistral AI's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Sanne Manders,CTO,Flexport,Logistics,,https://linkedin.com/in/sannemanders,95,Hot,Kubernetes;GCP;Snowflake;Kafka;dbt;Databricks,7.0,Reducing LLM inference costs at Flexport,"Dear Sanne,
+
+Given that Flexport is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Flexport's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Flexport's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Nick Frosst,CTO,Cohere,SaaS,,https://linkedin.com/in/nickfrosst,95,Hot,Kubernetes;AWS;GCP;Ray;vLLM;Triton,,Reducing LLM inference costs at Cohere,"Dear Nick,
+
+I noticed Cohere is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Cohere's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Cohere's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Gideon Mendels,CTO,Comet,Other,,https://linkedin.com/in/gideonmendels,92,Hot,Kubernetes;AWS;GCP;Ray;Snowflake;Databricks,,Reducing LLM inference costs at Comet,"Dear Gideon,
+
+I noticed Comet is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Comet's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Comet's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Varun Mohan,CTO,Codeium,Other,,https://linkedin.com/in/varunmohan,92,Hot,Kubernetes;GCP;AWS;vLLM;Ray;Triton,,Reducing LLM inference costs at Codeium,"Dear Varun,
+
+I noticed Codeium is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Codeium's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Codeium's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Charles Xie,CTO,Zilliz,Other,,,92,Hot,Kubernetes;GCP;AWS;Ray;Triton,,Reducing LLM inference costs at Zilliz,"Dear Charles,
+
+I noticed Zilliz is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Zilliz's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Zilliz's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Prukalpa Sankar,CTO,Atlan,SaaS,,,92,Hot,Kubernetes;GCP;AWS;Snowflake;dbt;OpenAI,,Reducing LLM inference costs at Atlan,"Dear Prukalpa,
+
+I noticed Atlan is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Atlan's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Atlan's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Andrew Mason,CTO,Descript,SaaS,,https://linkedin.com/in/andrewmason,92,Hot,Kubernetes;AWS;Whisper;Redis,1.0,Reducing LLM inference costs at Descript,"Dear Andrew,
+
+Given that Descript is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Descript's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Descript's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Winston Weinberg,CTO,Harvey,SaaS,,https://linkedin.com/in/winston-weinberg,92,Hot,Kubernetes;AWS;Anthropic;OpenAI;Pinecone,1.0,Reducing LLM inference costs at Harvey,"Dear Winston,
+
+I noticed Harvey is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Harvey's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Harvey's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"
+Paul Yacoubian,CTO,Copy.ai,SaaS,,,92,Hot,Kubernetes;AWS;OpenAI;Pinecone,1.0,Reducing LLM inference costs at Copy.ai,"Dear Paul,
+
+I noticed Copy.ai is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
+
+I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+
+I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+
+We have worked with teams running similar stacks to Copy.ai's and have consistently delivered measurable improvements within the first two weeks of deployment.
+
+I would welcome the opportunity to show you what this could look like for Copy.ai's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+
+Best regards,
+[Your Name]
+P95.AI
+[Your Email] | [Your LinkedIn]"

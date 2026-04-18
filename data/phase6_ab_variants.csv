@@ -1,0 +1,561 @@
+rank,name,company,title,score,signals,variant,hypothesis,subject,body
+1,Vaibhav Nivargi,Moveworks,CTO,115,"vLLM, Ray, Kubernetes, hiring ML",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at Moveworks — quick question,"Hi Vaibhav,
+
+Teams running vLLM at Moveworks's scale typically hit GPU underutilization walls around 60-70% — and that's before traffic spikes.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+1,Vaibhav Nivargi,Moveworks,CTO,115,"vLLM, Ray, Kubernetes, hiring ML",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How Moveworks could hit p95 < 200ms on LLM serving,"Hi Vaibhav,
+
+One of our customers — a Ray-native ML platform — cut GPU spend by 35% while handling 3x more concurrent requests with the same cluster.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given Moveworks's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+2,Kevin Stumpf,Tecton,CTO,112,"Ray, Kubernetes, Snowflake, hiring ML",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at Tecton — quick question,"Hi Kevin,
+
+Distributed Ray clusters are powerful, but when LLM serving gets uneven, GPU idle time quietly compounds into real cost.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+2,Kevin Stumpf,Tecton,CTO,112,"Ray, Kubernetes, Snowflake, hiring ML",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How Tecton could hit p95 < 200ms on LLM serving,"Hi Kevin,
+
+One of our customers — a Ray-native ML platform — cut GPU spend by 35% while handling 3x more concurrent requests with the same cluster.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given Tecton's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+3,Braden Hancock,Snorkel AI,CTO,112,"vLLM, WandB, Kubernetes, hiring ML",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at Snorkel AI — quick question,"Hi Braden,
+
+Teams running vLLM at Snorkel AI's scale typically hit GPU underutilization walls around 60-70% — and that's before traffic spikes.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+3,Braden Hancock,Snorkel AI,CTO,112,"vLLM, WandB, Kubernetes, hiring ML",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How Snorkel AI could hit p95 < 200ms on LLM serving,"Hi Braden,
+
+A vLLM user we work with went from 800ms p95 to under 200ms — while reducing their GPU footprint by 30% during peak loads.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given Snorkel AI's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+4,Brian Rieger,Labelbox,CTO,112,"OpenAI, Kubernetes, hiring ML",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at Labelbox — quick question,"Hi Brian,
+
+As Labelbox scales OpenAI usage, token costs tend to grow faster than revenue — especially with bursty, concurrent workloads.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+4,Brian Rieger,Labelbox,CTO,112,"OpenAI, Kubernetes, hiring ML",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How Labelbox could hit p95 < 200ms on LLM serving,"Hi Brian,
+
+An enterprise SaaS team we work with cut LLM inference costs by 40% and hit sub-200ms p95 latency within two weeks of integration.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given Labelbox's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+5,Gautham Viswanathan,Workato,CTO,110,"OpenAI, Kubernetes, Snowflake, hiring ML",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at Workato — quick question,"Hi Gautham,
+
+As Workato scales OpenAI usage, token costs tend to grow faster than revenue — especially with bursty, concurrent workloads.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+5,Gautham Viswanathan,Workato,CTO,110,"OpenAI, Kubernetes, Snowflake, hiring ML",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How Workato could hit p95 < 200ms on LLM serving,"Hi Gautham,
+
+An enterprise SaaS team we work with cut LLM inference costs by 40% and hit sub-200ms p95 latency within two weeks of integration.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given Workato's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+6,Tim Shi,Cresta,CTO,107,"vLLM, Kubernetes, hiring ML",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at Cresta — quick question,"Hi Tim,
+
+Teams running vLLM at Cresta's scale typically hit GPU underutilization walls around 60-70% — and that's before traffic spikes.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+6,Tim Shi,Cresta,CTO,107,"vLLM, Kubernetes, hiring ML",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How Cresta could hit p95 < 200ms on LLM serving,"Hi Tim,
+
+A vLLM user we work with went from 800ms p95 to under 200ms — while reducing their GPU footprint by 30% during peak loads.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given Cresta's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+7,Andy Beck,PathAI,CTO,107,"OpenAI, Kubernetes, hiring ML",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at PathAI — quick question,"Hi Andy,
+
+As PathAI scales OpenAI usage, token costs tend to grow faster than revenue — especially with bursty, concurrent workloads.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+7,Andy Beck,PathAI,CTO,107,"OpenAI, Kubernetes, hiring ML",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How PathAI could hit p95 < 200ms on LLM serving,"Hi Andy,
+
+A HealthTech platform we work with cut inference latency by 62% and reduced GPU spend by 38% — without changing their model or stack.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given PathAI's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+8,Julien Chaumond,Hugging Face,CTO,105,"vLLM, Ray, WandB, Kubernetes",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at Hugging Face — quick question,"Hi Julien,
+
+Teams running vLLM at Hugging Face's scale typically hit GPU underutilization walls around 60-70% — and that's before traffic spikes.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+8,Julien Chaumond,Hugging Face,CTO,105,"vLLM, Ray, WandB, Kubernetes",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How Hugging Face could hit p95 < 200ms on LLM serving,"Hi Julien,
+
+One of our customers — a Ray-native ML platform — cut GPU spend by 35% while handling 3x more concurrent requests with the same cluster.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given Hugging Face's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+9,Anant Bhardwaj,Instabase,CTO,105,"OpenAI, Kubernetes, hiring ML",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at Instabase — quick question,"Hi Anant,
+
+As Instabase scales OpenAI usage, token costs tend to grow faster than revenue — especially with bursty, concurrent workloads.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+9,Anant Bhardwaj,Instabase,CTO,105,"OpenAI, Kubernetes, hiring ML",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How Instabase could hit p95 < 200ms on LLM serving,"Hi Anant,
+
+An enterprise SaaS team we work with cut LLM inference costs by 40% and hit sub-200ms p95 latency within two weeks of integration.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given Instabase's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+10,Ion Stoica,Anyscale,CTO,102,"Ray, vLLM, Kubernetes",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at Anyscale — quick question,"Hi Ion,
+
+Teams running vLLM at Anyscale's scale typically hit GPU underutilization walls around 60-70% — and that's before traffic spikes.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+10,Ion Stoica,Anyscale,CTO,102,"Ray, vLLM, Kubernetes",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How Anyscale could hit p95 < 200ms on LLM serving,"Hi Ion,
+
+One of our customers — a Ray-native ML platform — cut GPU spend by 35% while handling 3x more concurrent requests with the same cluster.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given Anyscale's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+11,Spence Green,Lilt,CTO,100,"OpenAI, Kubernetes, hiring ML",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at Lilt — quick question,"Hi Spence,
+
+As Lilt scales OpenAI usage, token costs tend to grow faster than revenue — especially with bursty, concurrent workloads.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+11,Spence Green,Lilt,CTO,100,"OpenAI, Kubernetes, hiring ML",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How Lilt could hit p95 < 200ms on LLM serving,"Hi Spence,
+
+An enterprise SaaS team we work with cut LLM inference costs by 40% and hit sub-200ms p95 latency within two weeks of integration.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given Lilt's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+12,Param Reddy,Observe.AI,CTO,100,"vLLM, Kubernetes, hiring ML",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at Observe.AI — quick question,"Hi Param,
+
+Teams running vLLM at Observe.AI's scale typically hit GPU underutilization walls around 60-70% — and that's before traffic spikes.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+12,Param Reddy,Observe.AI,CTO,100,"vLLM, Kubernetes, hiring ML",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How Observe.AI could hit p95 < 200ms on LLM serving,"Hi Param,
+
+A vLLM user we work with went from 800ms p95 to under 200ms — while reducing their GPU footprint by 30% during peak loads.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given Observe.AI's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+13,Shyam Rajaram,Zendesk,VP Engineering,98,"OpenAI, Kubernetes, Snowflake, hiring ML",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at Zendesk — quick question,"Hi Shyam,
+
+As Zendesk scales OpenAI usage, token costs tend to grow faster than revenue — especially with bursty, concurrent workloads.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+13,Shyam Rajaram,Zendesk,VP Engineering,98,"OpenAI, Kubernetes, Snowflake, hiring ML",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How Zendesk could hit p95 < 200ms on LLM serving,"Hi Shyam,
+
+An enterprise SaaS team we work with cut LLM inference costs by 40% and hit sub-200ms p95 latency within two weeks of integration.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given Zendesk's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+14,Naman Jain,Samsara,VP Engineering,97,"Ray, Kubernetes, hiring ML",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at Samsara — quick question,"Hi Naman,
+
+Distributed Ray clusters are powerful, but when LLM serving gets uneven, GPU idle time quietly compounds into real cost.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+14,Naman Jain,Samsara,VP Engineering,97,"Ray, Kubernetes, hiring ML",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How Samsara could hit p95 < 200ms on LLM serving,"Hi Naman,
+
+A logistics platform running real-time AI routing dropped inference costs by 44% and cut tail latency in half after a single integration.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given Samsara's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+15,Ajay Kulkarni,Timescale,CTO,95,"OpenAI, Kubernetes, Snowflake",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at Timescale — quick question,"Hi Ajay,
+
+As Timescale scales OpenAI usage, token costs tend to grow faster than revenue — especially with bursty, concurrent workloads.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+15,Ajay Kulkarni,Timescale,CTO,95,"OpenAI, Kubernetes, Snowflake",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How Timescale could hit p95 < 200ms on LLM serving,"Hi Ajay,
+
+An enterprise SaaS team we work with cut LLM inference costs by 40% and hit sub-200ms p95 latency within two weeks of integration.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given Timescale's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+16,Deval Shah,Chargebee,CTO,95,"OpenAI, Kubernetes, hiring ML",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at Chargebee — quick question,"Hi Deval,
+
+As Chargebee scales OpenAI usage, token costs tend to grow faster than revenue — especially with bursty, concurrent workloads.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+16,Deval Shah,Chargebee,CTO,95,"OpenAI, Kubernetes, hiring ML",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How Chargebee could hit p95 < 200ms on LLM serving,"Hi Deval,
+
+A Series C FinTech we work with reduced their LLM serving costs by 41% in 3 weeks — while improving p95 response times simultaneously.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given Chargebee's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+17,Eric Sammer,Imply,CTO,93,"Ray, Kubernetes, hiring ML",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at Imply — quick question,"Hi Eric,
+
+Distributed Ray clusters are powerful, but when LLM serving gets uneven, GPU idle time quietly compounds into real cost.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+17,Eric Sammer,Imply,CTO,93,"Ray, Kubernetes, hiring ML",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How Imply could hit p95 < 200ms on LLM serving,"Hi Eric,
+
+One of our customers — a Ray-native ML platform — cut GPU spend by 35% while handling 3x more concurrent requests with the same cluster.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given Imply's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+18,Nik Bhatia,Uniphore,CTO,92,"vLLM, Kubernetes, hiring ML",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at Uniphore — quick question,"Hi Nik,
+
+Teams running vLLM at Uniphore's scale typically hit GPU underutilization walls around 60-70% — and that's before traffic spikes.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+18,Nik Bhatia,Uniphore,CTO,92,"vLLM, Kubernetes, hiring ML",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How Uniphore could hit p95 < 200ms on LLM serving,"Hi Nik,
+
+A vLLM user we work with went from 800ms p95 to under 200ms — while reducing their GPU footprint by 30% during peak loads.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given Uniphore's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+19,Sriram Raghavan,IBM Research,VP AI,90,"vLLM, WandB, Kubernetes",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at IBM Research — quick question,"Hi Sriram,
+
+Teams running vLLM at IBM Research's scale typically hit GPU underutilization walls around 60-70% — and that's before traffic spikes.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+19,Sriram Raghavan,IBM Research,VP AI,90,"vLLM, WandB, Kubernetes",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How IBM Research could hit p95 < 200ms on LLM serving,"Hi Sriram,
+
+A vLLM user we work with went from 800ms p95 to under 200ms — while reducing their GPU footprint by 30% during peak loads.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given IBM Research's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+20,Shivaram Venkataraman,Databricks,VP Engineering,88,"Ray, WandB, Kubernetes, Snowflake",A,Pain-led: Surfaces a specific cost/latency problem first to create urgency,LLM serving costs at Databricks — quick question,"Hi Shivaram,
+
+Distributed Ray clusters are powerful, but when LLM serving gets uneven, GPU idle time quietly compounds into real cost.
+
+P95.AI is an inference optimization layer that sits between your serving stack and your GPUs — it handles batching, scheduling, and kernel-level routing to hit p95 latency targets while cutting GPU spend, typically 30–45%.
+
+No model changes. No re-architecture. Plugs into your existing setup in under a day.
+
+Worth a 15-minute look? Happy to show you exactly what the numbers look like for your current setup.
+
+[Book a time here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
+20,Shivaram Venkataraman,Databricks,VP Engineering,88,"Ray, WandB, Kubernetes, Snowflake",B,Curiosity/social proof: Leads with a concrete result to spark FOMO and credibility,How Databricks could hit p95 < 200ms on LLM serving,"Hi Shivaram,
+
+One of our customers — a Ray-native ML platform — cut GPU spend by 35% while handling 3x more concurrent requests with the same cluster.
+
+We did it with P95.AI — an inference optimization layer that handles batching, kernel routing, and scheduling beneath your serving stack. It's stack-agnostic and deploys in under a day.
+
+Given Databricks's footprint in production AI, I thought this might be relevant. Would you be open to a 15-minute demo to see the numbers for your setup?
+
+[Book here → calendly.com/p95ai/demo]
+
+Best,
+[Your name]
+P95.AI"
