@@ -192,6 +192,7 @@ def run_script(script_path: Path, stage: dict, log_file) -> bool:
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
         text=True,
+        encoding='utf-8',
         cwd=str(ROOT),
     )
 
