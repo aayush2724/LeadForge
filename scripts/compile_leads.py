@@ -13,7 +13,11 @@ NORMALIZED_FILES = [
     "seeds_normalized.csv",
     "engineer_normalized.csv",
     "aayush_normalized.csv",
-    "linkedin_normalized.csv"
+    "linkedin_normalized.csv",
+    "healthtech_normalized_gap.csv",
+    "ecommerce_normalized_gap.csv",
+    "logistics_normalized_gap.csv",
+    "cyber_normalized_gap.csv"
 ]
 
 def main():
