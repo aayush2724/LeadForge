@@ -1,0 +1,33 @@
+P95.AI Pipeline Run — 2026-04-18T21:46:07.223908+00:00
+
+
+=== normalize_apollo.py ===
+
+  Loaded  25 rows from apollo_pass1_us_saas_fintech.csv
+  Loaded  15 rows from apollo_pass2_eu_uk.csv
+  Loaded  15 rows from apollo_pass3_healthtech_cybersec.csv
+  Loaded  25 rows from apollo_pass4_flex.csv
+
+  Total rows loaded: 80
+
+  Output: data\raw\apollo_normalized.csv
+  Total rows  : 80
+  Clean leads : 77
+  Disqualified: 3
+
+Done. Run validate_row.py next.
+
+
+=== normalize_linkedin.py ===
+
+  Loading  25 rows from linkedin_pass1_us (1).csv
+  Loading  20 rows from linkedin_pass2_eu.csv
+  Loading  15 rows from linkedin_pass3_india.csv
+
+  Rows loaded       : 60
+  Competitors flagged: 0
+  Rows written      : 60
+  Output            : data\raw\linkedin_normalized.csv
+
+Done. Run validate_row.py next.
+

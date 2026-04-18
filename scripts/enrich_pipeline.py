@@ -27,6 +27,8 @@ Progress is printed live to console.
 
 import os
 import sys
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
 import time
 import pandas as pd
 from pathlib import Path

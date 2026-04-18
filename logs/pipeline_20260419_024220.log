@@ -1,0 +1,125 @@
+P95.AI Pipeline Run — 2026-04-18T21:12:20.397479+00:00
+
+
+=== normalize_apollo.py ===
+
+  Loaded  25 rows from apollo_pass1_us_saas_fintech.csv
+  Loaded  15 rows from apollo_pass2_eu_uk.csv
+  Loaded  15 rows from apollo_pass3_healthtech_cybersec.csv
+  Loaded  25 rows from apollo_pass4_flex.csv
+
+  Total rows loaded: 80
+
+  Output: data\raw\apollo_normalized.csv
+  Total rows  : 80
+  Clean leads : 77
+  Disqualified: 3
+
+Done. Run validate_row.py next.
+
+
+=== normalize_linkedin.py ===
+
+  Loading  25 rows from linkedin_pass1_us (1).csv
+  Loading  20 rows from linkedin_pass2_eu.csv
+  Loading  15 rows from linkedin_pass3_india.csv
+
+  Rows loaded       : 60
+  Competitors flagged: 0
+  Rows written      : 60
+  Output            : data\raw\linkedin_normalized.csv
+
+Done. Run validate_row.py next.
+
+
+=== normalize_seeds.py ===
+
+  Apollo domains loaded for dedup check: 80
+  [DEDUP] brex.com already in apollo_normalized — skipping
+  [DEDUP] notion.so already in apollo_normalized — skipping
+  [DEDUP] rippling.com already in apollo_normalized — skipping
+
+  Rows in           : 15
+  Dupes skipped     : 3
+  Rows written      : 12
+  Output            : data\raw\seeds_normalized.csv
+
+Done. Run validate_row.py next.
+
+
+=== normalize_aayush.py ===
+
+  Existing domains (apollo + seeds): 92
+  Loading  41 rows from builtwith_raw.csv
+  Loading  41 rows from crunchbase_raw.csv
+  Loading  30 rows from github_raw.csv
+
+  Rows loaded       : 112
+  Dupes (existing)  : 1
+  Dupes (batch)     : 0
+  Competitors flagged: 3
+  Rows written      : 111
+  Output            : data\raw\aayush_normalized.csv
+
+Done. Run validate_row.py next.
+
+Loading   80 rows from apollo_normalized.csv
+Loading   12 rows from seeds_normalized.csv
+Loading  111 rows from engineer_normalized.csv
+Loading  111 rows from aayush_normalized.csv
+Loading   60 rows from linkedin_normalized.csv
+Loading   13 rows from healthtech_normalized_gap.csv
+Loading    9 rows from ecommerce_normalized_gap.csv
+Loading    8 rows from logistics_normalized_gap.csv
+Loading    4 rows from cyber_normalized_gap.csv
+Dropped 111 cross-file duplicate domains.
+
+Success! Compiled 297 unique leads into data\raw_leads.csv
+Loaded 297 rows from data\raw_leads.csv
+
+--- Prefilter Summary -----------------------------------
+  Total rows:        297
+  Kept (active):     291
+  Disqualified:        6
+
+  Breakdown by reason:
+    competitor                     6
+
+  Output -> data\raw_leads.csv
+  Audit  -> data\raw_leads_rejected.csv
+C:\Users\aayus\OneDrive\Desktop\Projects\LeadForge\scripts\quota_check.py:99: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+QA report written to data\sourcing_qa_report.md
+
+--- Quota Check Summary ------------------------------------
+  Active leads: 291 / 200 target
+  Vertical gaps: None
+  Geo gaps:      None
+  Duplicate domains: 7
+
+=================================================================
+  P95.AI Lead Engine — Phase 3A Enrichment Pipeline
+=================================================================
+
+  Loaded 297 rows from raw_leads.csv
+  Active: 291 | Disqualified (skipped): 6
+  Unique domains to enrich: 280
+
+  Starting enrichment — estimated time: 18–28 min
+
+Traceback (most recent call last):
+  File "C:\Users\aayus\OneDrive\Desktop\Projects\LeadForge\scripts\enrich_pipeline.py", line 261, in <module>
+    run()
+    ~~~^^
+  File "C:\Users\aayus\OneDrive\Desktop\Projects\LeadForge\scripts\enrich_pipeline.py", line 160, in run
+    _progress(idx, len(unique_domains), domain,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              f"GH:{gh_status}  APO:{apo_status}  +{len(merged)} fields")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aayus\OneDrive\Desktop\Projects\LeadForge\scripts\enrich_pipeline.py", line 79, in _progress
+    print(f"  [{bar}] {pct:3d}%  ({current}/{total})  {domain[:35]:<35}  {status}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aayus\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 80: character maps to <undefined>

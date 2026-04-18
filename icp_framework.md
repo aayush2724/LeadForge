@@ -123,7 +123,7 @@ Companies locked into these stacks are **not** target leads — they are either 
 
 ### 3.2 Vertical Prioritization & Sourcing Quotas
 
-Ordered by fit quality — **engineering team size × cloud spend × AI adoption velocity**.
+Ordered by fit quality — **engineering team size �- cloud spend �- AI adoption velocity**.
 
 | Priority | Vertical | Quota | % of Total |
 |---|---|---|---|

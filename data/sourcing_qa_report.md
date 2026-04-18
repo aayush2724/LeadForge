@@ -1,6 +1,6 @@
 # P95.AI Lead Engine — Sourcing QA Report
 
-**Generated:** 2026-04-18 17:19 UTC  
+**Generated:** 2026-04-18 22:03 UTC  
 **Input file:** `data\raw_leads.csv`  
 **Total rows:** 297 | **Active (non-disqualified):** 291
 

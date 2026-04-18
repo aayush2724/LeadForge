@@ -1,0 +1,741 @@
+P95.AI Pipeline Run — 2026-04-18T22:03:49.566711+00:00
+
+
+=== normalize_seeds.py ===
+
+  Apollo domains loaded for dedup check: 80
+  [DEDUP] brex.com already in apollo_normalized � skipping
+  [DEDUP] notion.so already in apollo_normalized � skipping
+  [DEDUP] rippling.com already in apollo_normalized � skipping
+
+  Rows in           : 15
+  Dupes skipped     : 3
+  Rows written      : 12
+  Output            : data\raw\seeds_normalized.csv
+
+Done. Run validate_row.py next.
+
+
+=== normalize_aayush.py ===
+
+  Existing domains (apollo + seeds): 92
+  Loading  41 rows from builtwith_raw.csv
+  Loading  41 rows from crunchbase_raw.csv
+  Loading  30 rows from github_raw.csv
+
+  Rows loaded       : 112
+  Dupes (existing)  : 1
+  Dupes (batch)     : 0
+  Competitors flagged: 3
+  Rows written      : 111
+  Output            : data\raw\aayush_normalized.csv
+
+Done. Run validate_row.py next.
+
+Loading   80 rows from apollo_normalized.csv
+Loading   12 rows from seeds_normalized.csv
+Loading  111 rows from engineer_normalized.csv
+Loading  111 rows from aayush_normalized.csv
+Loading   60 rows from linkedin_normalized.csv
+Loading   13 rows from healthtech_normalized_gap.csv
+Loading    9 rows from ecommerce_normalized_gap.csv
+Loading    8 rows from logistics_normalized_gap.csv
+Loading    4 rows from cyber_normalized_gap.csv
+Dropped 111 cross-file duplicate domains.
+
+Success! Compiled 297 unique leads into data\raw_leads.csv
+Loaded 297 rows from data\raw_leads.csv
+
+--- Prefilter Summary -----------------------------------
+  Total rows:        297
+  Kept (active):     291
+  Disqualified:        6
+
+  Breakdown by reason:
+    competitor                     6
+
+  Output -> data\raw_leads.csv
+  Audit  -> data\raw_leads_rejected.csv
+C:\Users\aayus\OneDrive\Desktop\Projects\LeadForge\scripts\quota_check.py:99: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+QA report written to data\sourcing_qa_report.md
+
+--- Quota Check Summary ------------------------------------
+  Active leads: 291 / 200 target
+  Vertical gaps: None
+  Geo gaps:      None
+  Duplicate domains: 7
+
+=================================================================
+  P95.AI Lead Engine — Phase 3A Enrichment Pipeline
+=================================================================
+
+  Loaded 297 rows from raw_leads.csv
+  Active: 291 | Disqualified (skipped): 6
+  Unique domains to enrich: 280
+
+  Starting enrichment — estimated time: 18–28 min
+
+  [--------------------]   0%  (1/280)  ramp.com                             GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   0%  (2/280)  brex.com                             GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   1%  (3/280)  rippling.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   1%  (4/280)  notion.so                            GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   1%  (5/280)  linear.app                           GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   2%  (6/280)  retool.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   2%  (7/280)  loom.com                             GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   2%  (8/280)  scale.ai                             GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   3%  (9/280)  weights-biases.com                   GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   3%  (10/280)  glean.com                            GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   3%  (11/280)  harvey.ai                            GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   4%  (12/280)  cohere.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   4%  (13/280)  speechify.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   5%  (14/280)  descript.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   5%  (15/280)  playground.ai                        GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   5%  (16/280)  runway.ml                            GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   6%  (17/280)  mid.com                              GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   6%  (18/280)  gong.io                              GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   6%  (19/280)  observe.ai                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   7%  (20/280)  anomalo.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   7%  (21/280)  vanta.com                            GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   7%  (22/280)  hex.tech                             GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   8%  (23/280)  stytch.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   8%  (24/280)  merge.dev                            GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   8%  (25/280)  secureframe.com                      GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   9%  (26/280)  monzo.com                            GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   9%  (27/280)  revolut.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  10%  (28/280)  deliveroo.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  10%  (29/280)  factorial.co                         GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  10%  (30/280)  personio.de                          GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  11%  (31/280)  sumup.com                            GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  11%  (32/280)  klarna.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  11%  (33/280)  contentful.com                       GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  12%  (34/280)  pleo.io                              GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  12%  (35/280)  tessian.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  12%  (36/280)  laka.co.uk                           GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  13%  (37/280)  pigment.app                          GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  13%  (38/280)  conductor.one                        GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  13%  (39/280)  leapsome.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  14%  (40/280)  sennder.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  14%  (41/280)  tempus.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  15%  (42/280)  privia.health                        GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  15%  (43/280)  pathai.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  15%  (44/280)  veracyte.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  16%  (45/280)  phreesia.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  16%  (46/280)  darktrace.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  16%  (47/280)  abnormal.ai                          GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  17%  (48/280)  exabeam.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  17%  (49/280)  orca.security                        GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  17%  (50/280)  netskope.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  18%  (51/280)  project44.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  18%  (52/280)  flexport.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  18%  (53/280)  loop.com                             GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  19%  (54/280)  algolia.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  19%  (55/280)  pagerduty.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  20%  (56/280)  mistral.ai                           GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  20%  (57/280)  perplexity.ai                        GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  20%  (58/280)  coreweave.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  21%  (59/280)  comet.ml                             GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  21%  (60/280)  adept.ai                             GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  21%  (61/280)  neon.tech                            GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  22%  (62/280)  qdrant.tech                          GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  22%  (63/280)  dust.tt                              GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  22%  (64/280)  vectara.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  23%  (65/280)  replit.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  23%  (66/280)  sourcegraph.com                      GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  23%  (67/280)  labelbox.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  24%  (68/280)  cohere.for.ai                        GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  24%  (69/280)  dspy.ai                              GH:✅ ok  APO:❌ not found  +4 fields
+  [#####---------------]  25%  (70/280)  cursor.sh                            GH:✅ ok  APO:❌ not found  +4 fields
+  [#####---------------]  25%  (71/280)  codeium.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [#####---------------]  25%  (72/280)  airtable.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [#####---------------]  26%  (73/280)  miro.com                             GH:✅ ok  APO:❌ not found  +4 fields
+  [#####---------------]  26%  (74/280)  intercom.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [#####---------------]  26%  (75/280)  samsara.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [#####---------------]  27%  (76/280)  nansen.ai                            GH:✅ ok  APO:❌ not found  +4 fields
+  [#####---------------]  27%  (77/280)  cartesia.ai                          GH:✅ ok  APO:❌ not found  +4 fields
+  [#####---------------]  27%  (78/280)  stripe.com                           GH:✅ ok  APO:❌ not found  +5 fields
+  [#####---------------]  28%  (79/280)  razorpay.com                         GH:✅ ok  APO:❌ not found  +5 fields
+  [#####---------------]  28%  (80/280)  phonepe.com                          GH:✅ ok  APO:❌ not found  +5 fields
+  [#####---------------]  28%  (81/280)  canva.com                            GH:✅ ok  APO:❌ not found  +5 fields
+  [#####---------------]  29%  (82/280)  figma.com                            GH:✅ ok  APO:❌ not found  +5 fields
+  [#####---------------]  29%  (83/280)  hubspot.com                          GH:✅ ok  APO:❌ not found  +5 fields
+  [######--------------]  30%  (84/280)  datadoghq.com                        GH:✅ ok  APO:❌ not found  +5 fields
+  [######--------------]  30%  (85/280)  cloudflare.com                       GH:✅ ok  APO:❌ not found  +5 fields
+  [######--------------]  30%  (86/280)  swiggy.com                           GH:✅ ok  APO:❌ not found  +5 fields
+  [######--------------]  31%  (87/280)  zomato.com                           GH:✅ ok  APO:❌ not found  +5 fields
+  [######--------------]  31%  (88/280)  meesho.com                           GH:✅ ok  APO:❌ not found  +5 fields
+  [######--------------]  31%  (89/280)  zeptonow.com                         GH:✅ ok  APO:❌ not found  +5 fields
+  [######--------------]  32%  (90/280)  verkada.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [######--------------]  32%  (91/280)  brainware.io                         GH:✅ ok  APO:❌ not found  +4 fields
+  [######--------------]  32%  (92/280)  typeface.ai                          GH:✅ ok  APO:❌ not found  +4 fields
+  [######--------------]  33%  (93/280)  jasper.ai                            GH:✅ ok  APO:❌ not found  +4 fields
+  [######--------------]  33%  (94/280)  copy.ai                              GH:✅ ok  APO:❌ not found  +4 fields
+  [######--------------]  33%  (95/280)  moveworks.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [######--------------]  34%  (96/280)  forethought.ai                       GH:✅ ok  APO:❌ not found  +4 fields
+  [######--------------]  34%  (97/280)  cresta.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  35%  (98/280)  kore.ai                              GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  35%  (99/280)  unstructured.io                      GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  35%  (100/280)  gretel.ai                            GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  36%  (101/280)  snorkel.ai                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  36%  (102/280)  arize.ai                             GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  36%  (103/280)  whylabs.ai                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  37%  (104/280)  evidently.ai                         GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  37%  (105/280)  superwise.ai                         GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  37%  (106/280)  fiddler.ai                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  38%  (107/280)  aporia.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  38%  (108/280)  lightly.ai                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  38%  (109/280)  deciio.ai                            GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  39%  (110/280)  octoml.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  39%  (111/280)  modular.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  40%  (112/280)  voltaml.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  40%  (113/280)  chalk.ai                             GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  40%  (114/280)  tecton.ai                            GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  41%  (115/280)  featureform.com                      GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  41%  (116/280)  metaphor.io                          GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  41%  (117/280)  humanloop.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  42%  (118/280)  guardrailsai.com                     GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  42%  (119/280)  trulens.org                          GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  42%  (120/280)  helicone.ai                          GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  43%  (121/280)  langfuse.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  43%  (122/280)  getdbt.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  43%  (123/280)  hightouch.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  44%  (124/280)  census.dev                           GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  44%  (125/280)  tray.io                              GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  45%  (126/280)  workato.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  45%  (127/280)  zapier.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  45%  (128/280)  make.com                             GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  46%  (129/280)  n8n.io                               GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  46%  (130/280)  prefect.io                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  46%  (131/280)  aisera.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  47%  (132/280)  assembled.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  47%  (133/280)  atlan.com                            GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  47%  (134/280)  bigeye.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  48%  (135/280)  castai.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  48%  (136/280)  caylent.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  48%  (137/280)  dataiku.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  49%  (138/280)  datarobot.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  49%  (139/280)  datavant.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [##########----------]  50%  (140/280)  dialpad.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [##########----------]  50%  (141/280)  domo.com                             GH:✅ ok  APO:❌ not found  +4 fields
+  [##########----------]  50%  (142/280)  elastic.co                           GH:✅ ok  APO:❌ not found  +4 fields
+  [##########----------]  51%  (143/280)  envision-ai.com                      GH:✅ ok  APO:❌ not found  +4 fields
+  [##########----------]  51%  (144/280)  fivetran.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [##########----------]  51%  (145/280)  getmantis.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [##########----------]  52%  (146/280)  glassbox.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [##########----------]  52%  (147/280)  gradient.ai                          GH:✅ ok  APO:❌ not found  +4 fields
+  [##########----------]  52%  (148/280)  haystack.deepset.ai                  GH:✅ ok  APO:❌ not found  +4 fields
+  [##########----------]  53%  (149/280)  hyperscience.com                     GH:✅ ok  APO:❌ not found  +4 fields
+  [##########----------]  53%  (150/280)  ilert.com                            GH:✅ ok  APO:❌ not found  +4 fields
+  [##########----------]  53%  (151/280)  instabase.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [##########----------]  54%  (152/280)  kyber.ai                             GH:✅ ok  APO:❌ not found  +4 fields
+  [##########----------]  54%  (153/280)  lightspeedhq.com                     GH:✅ ok  APO:❌ not found  +4 fields
+  [###########---------]  55%  (154/280)  logz.io                              GH:✅ ok  APO:❌ not found  +4 fields
+  [###########---------]  55%  (155/280)  luminar.ai                           GH:✅ ok  APO:❌ not found  +4 fields
+  [###########---------]  55%  (156/280)  matrix.one                           GH:✅ ok  APO:❌ not found  +4 fields
+  [###########---------]  56%  (157/280)  mendix.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [###########---------]  56%  (158/280)  mixpanel.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [###########---------]  56%  (159/280)  modern.treasury                      GH:✅ ok  APO:❌ not found  +4 fields
+  [###########---------]  57%  (160/280)  nautobot.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [###########---------]  57%  (161/280)  nubela.co                            GH:✅ ok  APO:❌ not found  +4 fields
+  [###########---------]  57%  (162/280)  opendoor.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [###########---------]  58%  (163/280)  outreach.io                          GH:✅ ok  APO:❌ not found  +4 fields
+  [###########---------]  58%  (164/280)  pinecone.io                          GH:✅ ok  APO:❌ not found  +4 fields
+  [###########---------]  58%  (165/280)  qualys.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [###########---------]  59%  (166/280)  render.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [###########---------]  59%  (167/280)  salesroom.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [############--------]  60%  (168/280)  seismic.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [############--------]  60%  (169/280)  thoughtspot.com                      GH:✅ ok  APO:❌ not found  +4 fields
+  [############--------]  60%  (170/280)  trimble.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [############--------]  61%  (171/280)  turnitin.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [############--------]  61%  (172/280)  lancedb.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [############--------]  61%  (173/280)  chroma.run                           GH:✅ ok  APO:❌ not found  +4 fields
+  [############--------]  62%  (174/280)  weaviate.io                          GH:✅ ok  APO:❌ not found  +4 fields
+  [############--------]  62%  (175/280)  milvus.io                            GH:✅ ok  APO:❌ not found  +4 fields
+  [############--------]  62%  (176/280)  motherduck.com                       GH:✅ ok  APO:❌ not found  +4 fields
+  [############--------]  63%  (177/280)  astronomer.io                        GH:✅ ok  APO:❌ not found  +4 fields
+  [############--------]  63%  (178/280)  dagster.io                           GH:✅ ok  APO:❌ not found  +4 fields
+  [############--------]  63%  (179/280)  marqo.ai                             GH:✅ ok  APO:❌ not found  +4 fields
+  [############--------]  64%  (180/280)  airbyte.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [############--------]  64%  (181/280)  bytebase.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [#############-------]  65%  (182/280)  cube.dev                             GH:✅ ok  APO:❌ not found  +4 fields
+  [#############-------]  65%  (183/280)  dify.ai                              GH:✅ ok  APO:❌ not found  +4 fields
+  [#############-------]  65%  (184/280)  flowiseai.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [#############-------]  66%  (185/280)  langchain.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [#############-------]  66%  (186/280)  llamaindex.ai                        GH:✅ ok  APO:❌ not found  +4 fields
+  [#############-------]  66%  (187/280)  portkey.ai                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#############-------]  67%  (188/280)  promptlayer.com                      GH:✅ ok  APO:❌ not found  +4 fields
+  [#############-------]  67%  (189/280)  fixie.ai                             GH:✅ ok  APO:❌ not found  +4 fields
+  [#############-------]  67%  (190/280)  e2b.dev                              GH:✅ ok  APO:❌ not found  +4 fields
+  [#############-------]  68%  (191/280)  superagi.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [#############-------]  68%  (192/280)  agentops.ai                          GH:✅ ok  APO:❌ not found  +4 fields
+  [#############-------]  68%  (193/280)  phidata.app                          GH:✅ ok  APO:❌ not found  +4 fields
+  [#############-------]  69%  (194/280)  lmstudio.ai                          GH:✅ ok  APO:❌ not found  +4 fields
+  [#############-------]  69%  (195/280)  ollama.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [##############------]  70%  (196/280)  openllm.bentoml.org                  GH:✅ ok  APO:❌ not found  +4 fields
+  [##############------]  70%  (197/280)  skypilot.readthedocs.io              GH:✅ ok  APO:❌ not found  +4 fields
+  [##############------]  70%  (198/280)  cobank.com                           GH:✅ ok  APO:❌ not found  +5 fields
+  [##############------]  71%  (199/280)  cmegroup.com                         GH:✅ ok  APO:❌ not found  +5 fields
+  [##############------]  71%  (200/280)  msigusa.com                          GH:✅ ok  APO:❌ not found  +5 fields
+  [##############------]  71%  (201/280)  russellinvestments.com               GH:✅ ok  APO:❌ not found  +5 fields
+  [##############------]  72%  (202/280)  drw.com                              GH:✅ ok  APO:❌ not found  +5 fields
+  [##############------]  72%  (203/280)  peak6.com                            GH:✅ ok  APO:❌ not found  +5 fields
+  [##############------]  72%  (204/280)  bottomline.com                       GH:✅ ok  APO:❌ not found  +5 fields
+  [##############------]  73%  (205/280)  paysafe.com                          GH:✅ ok  APO:❌ not found  +5 fields
+  [##############------]  73%  (206/280)  gusto.com                            GH:✅ ok  APO:❌ not found  +5 fields
+  [##############------]  73%  (207/280)  americancentury.com                  GH:✅ ok  APO:❌ not found  +5 fields
+  [##############------]  74%  (208/280)  cantorfitzgerald.com                 GH:✅ ok  APO:❌ not found  +5 fields
+  [##############------]  74%  (209/280)  payjoy.com                           GH:✅ ok  APO:❌ not found  +5 fields
+  [###############-----]  75%  (210/280)  mural.co                             GH:✅ ok  APO:❌ not found  +5 fields
+  [###############-----]  75%  (211/280)  octus.com                            GH:✅ ok  APO:❌ not found  +5 fields
+  [###############-----]  75%  (212/280)  nylim.com                            GH:✅ ok  APO:❌ not found  +5 fields
+  [###############-----]  76%  (213/280)  airwallex.com                        GH:✅ ok  APO:❌ not found  +5 fields
+  [###############-----]  76%  (214/280)  marketaxess.com                      GH:✅ ok  APO:❌ not found  +5 fields
+  [###############-----]  76%  (215/280)  optiver.com                          GH:✅ ok  APO:❌ not found  +5 fields
+  [###############-----]  77%  (216/280)  mercuryinsurance.com                 GH:✅ ok  APO:❌ not found  +5 fields
+  [###############-----]  77%  (217/280)  lazard.com                           GH:✅ ok  APO:❌ not found  +5 fields
+  [###############-----]  77%  (218/280)  trevipay.com                         GH:✅ ok  APO:❌ not found  +5 fields
+  [###############-----]  78%  (219/280)  palomar.com                          GH:✅ ok  APO:❌ not found  +5 fields
+  [###############-----]  78%  (220/280)  icemortgagetechnology.com            GH:✅ ok  APO:❌ not found  +5 fields
+  [###############-----]  78%  (221/280)  priority.com                         GH:✅ ok  APO:❌ not found  +5 fields
+  [###############-----]  79%  (222/280)  thezebra.com                         GH:✅ ok  APO:❌ not found  +5 fields
+  [###############-----]  79%  (223/280)  netsol.com                           GH:✅ ok  APO:❌ not found  +5 fields
+  [################----]  80%  (224/280)  investcloud.com                      GH:❌ not found  APO:❌ not found  +0 fields
+  [################----]  80%  (225/280)  starlingbank.com                     GH:✅ ok  APO:❌ not found  +5 fields
+  [################----]  80%  (226/280)  lloyds.com                           GH:✅ ok  APO:❌ not found  +5 fields
+  [################----]  81%  (227/280)  openbank.es                          GH:✅ ok  APO:❌ not found  +5 fields
+  [################----]  81%  (228/280)  ebury.com                            GH:✅ ok  APO:❌ not found  +5 fields
+  [################----]  81%  (229/280)  nda.com                              GH:✅ ok  APO:❌ not found  +5 fields
+  [################----]  82%  (230/280)  atombank.co.uk                       GH:✅ ok  APO:❌ not found  +5 fields
+  [################----]  82%  (231/280)  bnpparibas.com                       GH:✅ ok  APO:❌ not found  +5 fields
+  [################----]  82%  (232/280)  icas.com                             GH:✅ ok  APO:❌ not found  +5 fields
+  [################----]  83%  (233/280)  howdengroup.com                      GH:✅ ok  APO:❌ not found  +5 fields
+  [################----]  83%  (234/280)  moneyboxapp.com                      GH:✅ ok  APO:❌ not found  +5 fields
+  [################----]  83%  (235/280)  caixabank.com                        GH:✅ ok  APO:❌ not found  +5 fields
+  [################----]  84%  (236/280)  traderepublic.com                    GH:✅ ok  APO:❌ not found  +5 fields
+  [################----]  84%  (237/280)  tamara.co                            GH:✅ ok  APO:❌ not found  +5 fields
+  [#################---]  85%  (238/280)  zopa.com                             GH:✅ ok  APO:❌ not found  +5 fields
+  [#################---]  85%  (239/280)  ifu.dk                               GH:✅ ok  APO:❌ not found  +5 fields
+  [#################---]  85%  (240/280)  unternehmertum.de                    GH:✅ ok  APO:❌ not found  +5 fields
+  [#################---]  86%  (241/280)  fintua.com                           GH:✅ ok  APO:❌ not found  +5 fields
+  [#################---]  86%  (242/280)  edenred.com                          GH:✅ ok  APO:❌ not found  +5 fields
+  [#################---]  86%  (243/280)  zepto.com                            GH:✅ ok  APO:❌ not found  +5 fields
+  [#################---]  87%  (244/280)  groww.in                             GH:✅ ok  APO:❌ not found  +5 fields
+  [#################---]  87%  (245/280)  freshworks.com                       GH:✅ ok  APO:❌ not found  +5 fields
+  [#################---]  87%  (246/280)  krutrim.com                          GH:✅ ok  APO:❌ not found  +5 fields
+  [#################---]  88%  (247/280)  hashicorp.com                        GH:✅ ok  APO:❌ not found  +5 fields
+  [#################---]  88%  (248/280)  liveramp.com                         GH:✅ ok  APO:❌ not found  +5 fields
+  [#################---]  88%  (249/280)  nanonets.com                         GH:✅ ok  APO:❌ not found  +5 fields
+  [#################---]  89%  (250/280)  telekom.com                          GH:✅ ok  APO:❌ not found  +5 fields
+  [#################---]  89%  (251/280)  grafana.com                          GH:✅ ok  APO:❌ not found  +5 fields
+  [##################--]  90%  (252/280)  evisit.com                           GH:✅ ok  APO:❌ not found  +5 fields
+  [##################--]  90%  (253/280)  wheel.com                            GH:✅ ok  APO:❌ not found  +5 fields
+  [##################--]  90%  (254/280)  brook.ai                             GH:✅ ok  APO:❌ not found  +5 fields
+  [##################--]  91%  (255/280)  heyjane.com                          GH:✅ ok  APO:❌ not found  +5 fields
+  [##################--]  91%  (256/280)  sprinterhealth.com                   GH:✅ ok  APO:❌ not found  +5 fields
+  [##################--]  91%  (257/280)  pomelocare.com                       GH:✅ ok  APO:❌ not found  +5 fields
+  [##################--]  92%  (258/280)  healthsnap.io                        GH:✅ ok  APO:❌ not found  +5 fields
+  [##################--]  92%  (259/280)  doccla.com                           GH:✅ ok  APO:❌ not found  +5 fields
+  [##################--]  92%  (260/280)  workithealth.com                     GH:✅ ok  APO:❌ not found  +5 fields
+  [##################--]  93%  (261/280)  fireflyhealth.com                    GH:✅ ok  APO:❌ not found  +5 fields
+  [##################--]  93%  (262/280)  revive.health                        GH:✅ ok  APO:❌ not found  +5 fields
+  [##################--]  93%  (263/280)  mavenclinic.com                      GH:✅ ok  APO:❌ not found  +5 fields
+  [##################--]  94%  (264/280)  conductor.com                        GH:✅ ok  APO:❌ not found  +5 fields
+  [##################--]  94%  (265/280)  xyretail.com                         GH:❌ not found  APO:❌ not found  +0 fields
+  [###################-]  95%  (266/280)  lucidworks.com                       GH:✅ ok  APO:❌ not found  +5 fields
+  [###################-]  95%  (267/280)  semrush.com                          GH:✅ ok  APO:❌ not found  +5 fields
+  [###################-]  95%  (268/280)  5starnutrition.com                   GH:❌ not found  APO:❌ not found  +0 fields
+  [###################-]  96%  (269/280)  carparts.com                         GH:✅ ok  APO:❌ not found  +5 fields
+  [###################-]  96%  (270/280)  dat.com                              GH:✅ ok  APO:❌ not found  +5 fields
+  [###################-]  96%  (271/280)  traxtech.com                         GH:✅ ok  APO:❌ not found  +5 fields
+  [###################-]  97%  (272/280)  everstream.ai                        GH:✅ ok  APO:❌ not found  +5 fields
+  [###################-]  97%  (273/280)  shipwell.com                         GH:✅ ok  APO:❌ not found  +5 fields
+  [###################-]  97%  (274/280)  flockfreight.com                     GH:✅ ok  APO:❌ not found  +5 fields
+  [###################-]  98%  (275/280)  loadsmart.com                        GH:✅ ok  APO:❌ not found  +5 fields
+  [###################-]  98%  (276/280)  truckstop.com                        GH:✅ ok  APO:❌ not found  +5 fields
+  [###################-]  98%  (277/280)  vorto.ai                             GH:✅ ok  APO:❌ not found  +5 fields
+  [###################-]  99%  (278/280)  bluevoyant.com                       GH:✅ ok  APO:❌ not found  +5 fields
+  [###################-]  99%  (279/280)  horizon3.ai                          GH:✅ ok  APO:❌ not found  +5 fields
+  [####################] 100%  (280/280)  snyk.io                              GH:✅ ok  APO:❌ not found  +5 fields
+
+  Merging signals into dataframe …
+  [OK] Saved enriched dataset -> C:\Users\aayus\OneDrive\Desktop\Projects\LeadForge\data\enriched_leads.csv
+     Rows: 297 | Columns: 43
+  [OK] Run log -> enrichment_run_log.md
+
+=================================================================
+  Phase 3A Complete  (29m 46s)
+  GitHub enriched: 277/280 domains
+  Apollo enriched: 0/280 domains
+=================================================================
+
+  Next: run scoring_engine.py  OR  complete Clay 3B first
+
+
+=================================================================
+  P95.AI Lead Engine � Phase 3B Enrichment
+=================================================================
+
+  Backup saved -> enriched_leads_3a_backup.csv
+  Loaded 297 rows  |  Active: 291  |  Disqualified: 6
+
+  Domains needing funding data : 153
+  Domains needing hiring signal: 280
+  Total unique domains to hit  : 280
+
+  Starting enrichment �
+
+  [--------------------]   0%  (1/280)  Arize AI                      F:[ ] skip  H:? TRUE
+  [--------------------]   0%  (2/280)  CAST AI                       F:[ ] skip  H:? TRUE
+  [--------------------]   1%  (3/280)  Privia Health                 F:[ ] skip  H:? TRUE
+  [--------------------]   1%  (4/280)  LlamaIndex                    F:[X] no data  H:? TRUE
+  [--------------------]   1%  (5/280)  Elastic                       F:[X] no data  H:? TRUE
+  [--------------------]   2%  (6/280)  Gusto                         F:[X] no data  H:? inconclusive
+  [--------------------]   2%  (7/280)  Project44                     F:[X] no data  H:? TRUE
+  [--------------------]   2%  (8/280)  Russell Investments           F:[X] no data  H:? TRUE
+  [--------------------]   3%  (9/280)  Zilliz                        F:[ ] skip  H:? TRUE
+  [--------------------]   3%  (10/280)  Conductor                     F:[ ] skip  H:? inconclusive
+  [--------------------]   3%  (11/280)  Dataiku                       F:[X] no data  H:? TRUE
+  [--------------------]   4%  (12/280)  Flock Freight                 F:[ ] skip  H:? inconclusive
+  [--------------------]   4%  (13/280)  DataRobot                     F:[X] no data  H:? TRUE
+  [#-------------------]   5%  (14/280)  Luminar AI                    F:[ ] skip  H:? TRUE
+  [#-------------------]   5%  (15/280)  Phreesia                      F:[X] no data  H:? TRUE
+  [#-------------------]   5%  (16/280)  Fintua                        F:[X] no data  H:? inconclusive
+  [#-------------------]   6%  (17/280)  NETSOL Technologies Inc.      F:[X] no data  H:? inconclusive
+  [#-------------------]   6%  (18/280)  Bigeye                        F:[ ] skip  H:? TRUE
+  [#-------------------]   6%  (19/280)  Horizon3.ai                   F:[ ] skip  H:? inconclusive
+  [#-------------------]   7%  (20/280)  Anomalo                       F:[ ] skip  H:? inconclusive
+  [#-------------------]   7%  (21/280)  Deutsche Telekom Digital Lab  F:[X] no data  H:? inconclusive
+  [#-------------------]   7%  (22/280)  Veracyte                      F:[X] no data  H:? TRUE
+  [#-------------------]   8%  (23/280)  ThoughtSpot                   F:[X] no data  H:? TRUE
+  [#-------------------]   8%  (24/280)  PEAK6                         F:[X] no data  H:? inconclusive
+  [#-------------------]   8%  (25/280)  Seismic                       F:[X] no data  H:? TRUE
+  [#-------------------]   9%  (26/280)  Aporia                        F:[X] no data  H:? TRUE
+  [#-------------------]   9%  (27/280)  Workato                       F:[ ] skip  H:? TRUE
+  [##------------------]  10%  (28/280)  Matrix                        F:[ ] skip  H:? TRUE
+  [##------------------]  10%  (29/280)  Writer                        F:[ ] skip  H:? TRUE
+  [##------------------]  10%  (30/280)  Trade Republic                F:[X] no data  H:? inconclusive
+  [##------------------]  11%  (31/280)  Pigment                       F:[ ] skip  H:? TRUE
+  [##------------------]  11%  (32/280)  Snyk                          F:[ ] skip  H:? inconclusive
+  [##------------------]  11%  (33/280)  Meesho                        F:[X] no data  H:? inconclusive
+  [##------------------]  12%  (34/280)  InvestCloud Inc.              F:[X] no data  H:? inconclusive
+  [##------------------]  12%  (35/280)  Zepto                         F:[X] no data  H:? inconclusive
+  [##------------------]  12%  (36/280)  Typeface                      F:[ ] skip  H:? TRUE
+  [##------------------]  13%  (37/280)  Turnitin                      F:[X] no data  H:? TRUE
+  [##------------------]  13%  (38/280)  Loadsmart                     F:[ ] skip  H:? inconclusive
+  [##------------------]  13%  (39/280)  Superwise                     F:[ ] skip  H:? TRUE
+  [##------------------]  14%  (40/280)  Notion                        F:[ ] skip  H:? TRUE
+  [##------------------]  14%  (41/280)  E2B                           F:[X] no data  H:? TRUE
+  [###-----------------]  15%  (42/280)  Lightly                       F:[X] no data  H:? TRUE
+  [###-----------------]  15%  (43/280)  Astronomer                    F:[ ] skip  H:? TRUE
+  [###-----------------]  15%  (44/280)  Pomelo Care                   F:[ ] skip  H:? inconclusive
+  [###-----------------]  16%  (45/280)  Palomar                       F:[X] no data  H:? inconclusive
+  [###-----------------]  16%  (46/280)  Caylent                       F:[ ] skip  H:? TRUE
+  [###-----------------]  16%  (47/280)  Shipwell                      F:[ ] skip  H:? inconclusive
+  [###-----------------]  17%  (48/280)  Vanta                         F:[ ] skip  H:? TRUE
+  [###-----------------]  17%  (49/280)  Codeium                       F:[ ] skip  H:? TRUE
+  [###-----------------]  17%  (50/280)  Airbyte                       F:[ ] skip  H:? TRUE
+  [###-----------------]  18%  (51/280)  Airtable                      F:[X] no data  H:? TRUE
+  [###-----------------]  18%  (52/280)  MarketAxess                   F:[X] no data  H:? inconclusive
+  [###-----------------]  18%  (53/280)  PhonePe                       F:[X] no data  H:? inconclusive
+  [###-----------------]  19%  (54/280)  Fivetran                      F:[ ] skip  H:? TRUE
+  [###-----------------]  19%  (55/280)  Glassbox                      F:[X] no data  H:? TRUE
+  [####----------------]  20%  (56/280)  Lazard Asset Management       F:[X] no data  H:? inconclusive
+  [####----------------]  20%  (57/280)  Weights & Biases              F:[ ] skip  H:? TRUE
+  [####----------------]  20%  (58/280)  Prefect                       F:[ ] skip  H:? TRUE
+  [####----------------]  21%  (59/280)  Edenred                       F:[X] no data  H:? inconclusive
+  [####----------------]  21%  (60/280)  American Century Investments  F:[X] no data  H:? inconclusive
+  [####----------------]  21%  (61/280)  Logz.io                       F:[ ] skip  H:? TRUE
+  [####----------------]  22%  (62/280)  Lloyd's                       F:[X] no data  H:? inconclusive
+  [####----------------]  22%  (63/280)  sennder                       F:[ ] skip  H:? TRUE
+  [####----------------]  22%  (64/280)  Glean                         F:[ ] skip  H:? TRUE
+  [####----------------]  23%  (65/280)  New York Life Investment Man  F:[X] no data  H:? inconclusive
+  [####----------------]  23%  (66/280)  Cube                          F:[ ] skip  H:? TRUE
+  [####----------------]  23%  (67/280)  HubSpot                       F:[X] no data  H:? inconclusive
+  [####----------------]  24%  (68/280)  Darktrace                     F:[X] no data  H:? TRUE
+  [####----------------]  24%  (69/280)  Airwallex                     F:[X] no data  H:? inconclusive
+  [#####---------------]  25%  (70/280)  Exabeam                       F:[X] no data  H:? TRUE
+  [#####---------------]  25%  (71/280)  Cohere for AI                 F:[X] no data  H:? TRUE
+  [#####---------------]  25%  (72/280)  TreviPay                      F:[X] no data  H:? inconclusive
+  [#####---------------]  26%  (73/280)  Hightouch                     F:[ ] skip  H:? TRUE
+  [#####---------------]  26%  (74/280)  Qdrant                        F:[X] no data  H:? TRUE
+  [#####---------------]  26%  (75/280)  WhyLabs                       F:[X] no data  H:? TRUE
+  [#####---------------]  27%  (76/280)  Figma                         F:[X] no data  H:? inconclusive
+  [#####---------------]  27%  (77/280)  Instabase                     F:[ ] skip  H:? TRUE
+  [#####---------------]  27%  (78/280)  ConductorOne                  F:[ ] skip  H:? TRUE
+  [#####---------------]  28%  (79/280)  Zomato                        F:[X] no data  H:? inconclusive
+  [#####---------------]  28%  (80/280)  Mixpanel                      F:[X] no data  H:? TRUE
+  [#####---------------]  28%  (81/280)  Brex                          F:[ ] skip  H:? TRUE
+  [#####---------------]  29%  (82/280)  Moveworks                     F:[ ] skip  H:? TRUE
+  [#####---------------]  29%  (83/280)  HashiCorp                     F:[X] no data  H:? inconclusive
+  [######--------------]  30%  (84/280)  Miro                          F:[ ] skip  H:? TRUE
+  [######--------------]  30%  (85/280)  Brook Health                  F:[ ] skip  H:? inconclusive
+  [######--------------]  30%  (86/280)  Humanloop                     F:[X] no data  H:? TRUE
+  [######--------------]  31%  (87/280)  Hex                           F:[ ] skip  H:? TRUE
+  [######--------------]  31%  (88/280)  Flexport                      F:[ ] skip  H:? TRUE
+  [######--------------]  31%  (89/280)  Mistral AI                    F:[ ] skip  H:? TRUE
+  [######--------------]  32%  (90/280)  Verkada                       F:[ ] skip  H:? TRUE
+  [######--------------]  32%  (91/280)  Sourcegraph                   F:[ ] skip  H:? TRUE
+  [######--------------]  32%  (92/280)  Census                        F:[ ] skip  H:? TRUE
+  [######--------------]  33%  (93/280)  Chalk                         F:[ ] skip  H:? TRUE
+  [######--------------]  33%  (94/280)  Featureform                   F:[X] no data  H:? TRUE
+  [######--------------]  33%  (95/280)  Marqo                         F:[X] no data  H:? TRUE
+  [######--------------]  34%  (96/280)  Tray.ai                       F:[ ] skip  H:? TRUE
+  [######--------------]  34%  (97/280)  Jasper                        F:[X] no data  H:? TRUE
+  [#######-------------]  35%  (98/280)  Optiver                       F:[X] no data  H:? inconclusive
+  [#######-------------]  35%  (99/280)  Neon                          F:[ ] skip  H:? TRUE
+  [#######-------------]  35%  (100/280)  Paysafe                       F:[X] no data  H:? inconclusive
+  [#######-------------]  36%  (101/280)  Harvey                        F:[ ] skip  H:? TRUE
+  [#######-------------]  36%  (102/280)  Domo                          F:[X] no data  H:? TRUE
+  [#######-------------]  36%  (103/280)  Hyperscience                  F:[X] no data  H:? TRUE
+  [#######-------------]  37%  (104/280)  Octus                         F:[X] no data  H:? inconclusive
+  [#######-------------]  37%  (105/280)  Rippling                      F:[ ] skip  H:? TRUE
+  [#######-------------]  37%  (106/280)  DSPy Framework (Stanford)     F:[X] no data  H:? TRUE
+  [#######-------------]  38%  (107/280)  Outreach                      F:[X] no data  H:? TRUE
+  [#######-------------]  38%  (108/280)  Pinecone                      F:[ ] skip  H:? TRUE
+  [#######-------------]  38%  (109/280)  Trimble                       F:[X] no data  H:? TRUE
+  [#######-------------]  39%  (110/280)  Bottomline                    F:[X] no data  H:? inconclusive
+  [#######-------------]  39%  (111/280)  Qualys                        F:[X] no data  H:? TRUE
+  [########------------]  40%  (112/280)  Samsara                       F:[X] no data  H:? TRUE
+  [########------------]  40%  (113/280)  MotherDuck                    F:[ ] skip  H:? TRUE
+  [########------------]  40%  (114/280)  CoBank                        F:[X] no data  H:? inconclusive
+  [########------------]  41%  (115/280)  Gong                          F:[X] no data  H:? TRUE
+  [########------------]  41%  (116/280)  Loom                          F:[ ] skip  H:? TRUE
+  [########------------]  41%  (117/280)  Evidently AI                  F:[X] no data  H:? TRUE
+  [########------------]  42%  (118/280)  Cloudflare                    F:[X] no data  H:? TRUE
+  [########------------]  42%  (119/280)  Leapsome                      F:[X] no data  H:? inconclusive
+  [########------------]  42%  (120/280)  Descript                      F:[ ] skip  H:? TRUE
+  [########------------]  43%  (121/280)  Laka                          F:[ ] skip  H:? inconclusive
+  [########------------]  43%  (122/280)  Mantis                        F:[ ] skip  H:? TRUE
+  [########------------]  43%  (123/280)  Zopa Bank                     F:[X] no data  H:? inconclusive
+  [########------------]  44%  (124/280)  Observe.AI                    F:[ ] skip  H:? TRUE
+  [########------------]  44%  (125/280)  Dust                          F:[X] no data  H:? TRUE
+  [#########-----------]  45%  (126/280)  Impact Fund Denmark           F:[X] no data  H:? inconclusive
+  [#########-----------]  45%  (127/280)  AgentOps                      F:[X] no data  H:? TRUE
+  [#########-----------]  45%  (128/280)  Maven Clinic                  F:[ ] skip  H:? inconclusive
+  [#########-----------]  46%  (129/280)  Trax Technologies             F:[ ] skip  H:? inconclusive
+  [#########-----------]  46%  (130/280)  HealthSnap                    F:[ ] skip  H:? inconclusive
+  [#########-----------]  46%  (131/280)  n8n                           F:[ ] skip  H:? TRUE
+  [#########-----------]  47%  (132/280)  PayJoy                        F:[X] no data  H:? inconclusive
+  [#########-----------]  47%  (133/280)  Howden Re                     F:[X] no data  H:? inconclusive
+  [#########-----------]  47%  (134/280)  CaixaBank Tech                F:[X] no data  H:? inconclusive
+  [#########-----------]  48%  (135/280)  Revolut                       F:[X] no data  H:? TRUE
+  [#########-----------]  48%  (136/280)  Weaviate                      F:[ ] skip  H:? TRUE
+  [#########-----------]  48%  (137/280)  Linear                        F:[ ] skip  H:? TRUE
+  [#########-----------]  49%  (138/280)  TruLens                       F:[X] no data  H:? TRUE
+  [#########-----------]  49%  (139/280)  Cursor                        F:[ ] skip  H:? TRUE
+  [##########----------]  50%  (140/280)  Razorpay                      F:[X] no data  H:? inconclusive
+  [##########----------]  50%  (141/280)  Ramp                          F:[ ] skip  H:? TRUE
+  [##########----------]  50%  (142/280)  eVisit                        F:[ ] skip  H:? inconclusive
+  [##########----------]  51%  (143/280)  Perplexity AI                 F:[ ] skip  H:? TRUE
+  [##########----------]  51%  (144/280)  Algolia                       F:[ ] skip  H:? TRUE
+  [##########----------]  51%  (145/280)  Sprinter Health               F:[ ] skip  H:? inconclusive
+  [##########----------]  52%  (146/280)  Forethought                   F:[ ] skip  H:? TRUE
+  [##########----------]  52%  (147/280)  Portkey                       F:[X] no data  H:? TRUE
+  [##########----------]  52%  (148/280)  Opendoor                      F:[X] no data  H:? TRUE
+  [##########----------]  53%  (149/280)  Fiddler AI                    F:[ ] skip  H:? TRUE
+  [##########----------]  53%  (150/280)  Chroma                        F:[X] no data  H:? TRUE
+  [##########----------]  53%  (151/280)  Playground AI                 F:[ ] skip  H:? TRUE
+  [##########----------]  54%  (152/280)  Comet                         F:[ ] skip  H:? TRUE
+  [##########----------]  54%  (153/280)  OctoAI                        F:[ ] skip  H:? TRUE
+  [###########---------]  55%  (154/280)  Metaphor Systems              F:[X] no data  H:? TRUE
+  [###########---------]  55%  (155/280)  LangChain                     F:[X] no data  H:? TRUE
+  [###########---------]  55%  (156/280)  Zepto                         F:[X] no data  H:? inconclusive
+  [###########---------]  56%  (157/280)  Phidata                       F:[X] no data  H:? TRUE
+  [###########---------]  56%  (158/280)  Factorial                     F:[ ] skip  H:? inconclusive
+  [###########---------]  56%  (159/280)  Doccla                        F:[ ] skip  H:? inconclusive
+  [###########---------]  57%  (160/280)  dbt Labs                      F:[ ] skip  H:? TRUE
+  [###########---------]  57%  (161/280)  Mural                         F:[X] no data  H:? inconclusive
+  [###########---------]  57%  (162/280)  Cantor Fitzgerald             F:[X] no data  H:? inconclusive
+  [###########---------]  58%  (163/280)  Labelbox                      F:[ ] skip  H:? TRUE
+  [###########---------]  58%  (164/280)  VoltaML                       F:[X] no data  H:? TRUE
+  [###########---------]  58%  (165/280)  Tamara                        F:[X] no data  H:? inconclusive
+  [###########---------]  59%  (166/280)  Wheel                         F:[ ] skip  H:? inconclusive
+  [###########---------]  59%  (167/280)  Deci                          F:[ ] skip  H:? TRUE
+  [############--------]  60%  (168/280)  Semrush                       F:[X] no data  H:? inconclusive
+  [############--------]  60%  (169/280)  iLert                         F:[X] no data  H:? inconclusive
+  [############--------]  60%  (170/280)  Atom bank                     F:[X] no data  H:? inconclusive
+  [############--------]  61%  (171/280)  CME Group                     F:[X] no data  H:? inconclusive
+  [############--------]  61%  (172/280)  DRW                           F:[X] no data  H:? inconclusive
+  [############--------]  61%  (173/280)  Freshworks                    F:[X] no data  H:? TRUE
+  [############--------]  62%  (174/280)  The Zebra                     F:[X] no data  H:? inconclusive
+  [############--------]  62%  (175/280)  UnternehmerTUM                F:[X] no data  H:? inconclusive
+  [############--------]  62%  (176/280)  deepset                       F:[ ] skip  H:? TRUE
+  [############--------]  63%  (177/280)  Envision                      F:[ ] skip  H:? TRUE
+  [############--------]  63%  (178/280)  Cohere                        F:[ ] skip  H:? TRUE
+  [############--------]  63%  (179/280)  Lucidworks                    F:[ ] skip  H:? inconclusive
+  [############--------]  64%  (180/280)  Kyber                         F:[X] no data  H:? TRUE
+  [############--------]  64%  (181/280)  Scale AI                      F:[X] no data  H:? TRUE
+  [#############-------]  65%  (182/280)  Truckstop.com                 F:[ ] skip  H:? inconclusive
+  [#############-------]  65%  (183/280)  Guardrails AI                 F:[X] no data  H:? TRUE
+  [#############-------]  65%  (184/280)  Cresta                        F:[ ] skip  H:? TRUE
+  [#############-------]  66%  (185/280)  Nansen                        F:[ ] skip  H:? TRUE
+  [#############-------]  66%  (186/280)  Dagster Labs                  F:[ ] skip  H:? TRUE
+  [#############-------]  66%  (187/280)  Netskope                      F:[X] no data  H:? TRUE
+  [#############-------]  67%  (188/280)  5 Star Nutrition              F:[X] no data  H:? inconclusive
+  [#############-------]  67%  (189/280)  Hey Jane                      F:[ ] skip  H:? inconclusive
+  [#############-------]  67%  (190/280)  Orca Security                 F:[ ] skip  H:? TRUE
+  [#############-------]  68%  (191/280)  Merge                         F:[ ] skip  H:? inconclusive
+  [#############-------]  68%  (192/280)  Modular                       F:[ ] skip  H:? TRUE
+  [#############-------]  68%  (193/280)  Dialpad                       F:[X] no data  H:? TRUE
+  [#############-------]  69%  (194/280)  SuperAGI                      F:[X] no data  H:? TRUE
+  [#############-------]  69%  (195/280)  Monzo                         F:[X] no data  H:? TRUE
+  [##############------]  70%  (196/280)  Make                          F:[ ] skip  H:? TRUE
+  [##############------]  70%  (197/280)  Gradient                      F:[X] no data  H:? TRUE
+  [##############------]  70%  (198/280)  ICE Mortgage Technology       F:[X] no data  H:? inconclusive
+  [##############------]  71%  (199/280)  Pleo                          F:[ ] skip  H:? TRUE
+  [##############------]  71%  (200/280)  BentoML                       F:[X] no data  H:? TRUE
+  [##############------]  71%  (201/280)  MSIG USA                      F:[X] no data  H:? inconclusive
+  [##############------]  72%  (202/280)  Deliveroo                     F:[X] no data  H:? TRUE
+  [##############------]  72%  (203/280)  Swiggy                        F:[X] no data  H:? inconclusive
+  [##############------]  72%  (204/280)  Langfuse                      F:[X] no data  H:? TRUE
+  [##############------]  73%  (205/280)  Proxycurl                     F:[X] no data  H:? TRUE
+  [##############------]  73%  (206/280)  Revive                        F:[ ] skip  H:? inconclusive
+  [##############------]  73%  (207/280)  Ollama                        F:[X] no data  H:? TRUE
+  [##############------]  74%  (208/280)  Mendix                        F:[X] no data  H:? TRUE
+  [##############------]  74%  (209/280)  Unstructured                  F:[ ] skip  H:? TRUE
+  [###############-----]  75%  (210/280)  Intercom                      F:[X] no data  H:? TRUE
+  [###############-----]  75%  (211/280)  Groww                         F:[X] no data  H:? inconclusive
+  [###############-----]  75%  (212/280)  Stytch                        F:[ ] skip  H:? inconclusive
+  [###############-----]  76%  (213/280)  BlueVoyant                    F:[ ] skip  H:? inconclusive
+  [###############-----]  76%  (214/280)  Contentful                    F:[X] no data  H:? TRUE
+  [###############-----]  76%  (215/280)  Firefly Health                F:[ ] skip  H:? inconclusive
+  [###############-----]  77%  (216/280)  Runway                        F:[ ] skip  H:? TRUE
+  [###############-----]  77%  (217/280)  Copy.ai                       F:[ ] skip  H:? TRUE
+  [###############-----]  77%  (218/280)  Klarna                        F:[ ] skip  H:? TRUE
+  [###############-----]  78%  (219/280)  Cartesia AI                   F:[X] no data  H:? TRUE
+  [###############-----]  78%  (220/280)  Dify                          F:[X] no data  H:? TRUE
+  [###############-----]  78%  (221/280)  Adept AI                      F:[ ] skip  H:? TRUE
+  [###############-----]  79%  (222/280)  Lightspeed                    F:[X] no data  H:? TRUE
+  [###############-----]  79%  (223/280)  Mercury Insurance             F:[X] no data  H:? inconclusive
+  [################----]  80%  (224/280)  FlowiseAI                     F:[X] no data  H:? TRUE
+  [################----]  80%  (225/280)  Speechify                     F:[ ] skip  H:? TRUE
+  [################----]  80%  (226/280)  Workit Health                 F:[ ] skip  H:? inconclusive
+  [################----]  81%  (227/280)  Krutrim                       F:[X] no data  H:? inconclusive
+  [################----]  81%  (228/280)  Stripe                        F:[X] no data  H:? inconclusive
+  [################----]  81%  (229/280)  Atlan                         F:[ ] skip  H:? TRUE
+  [################----]  82%  (230/280)  Bytebase                      F:[X] no data  H:? inconclusive
+  [################----]  82%  (231/280)  DAT Freight & Analytics       F:[X] no data  H:? TRUE
+  [################----]  82%  (232/280)  PagerDuty                     F:[X] no data  H:? TRUE
+  [################----]  83%  (233/280)  PromptLayer                   F:[X] no data  H:? TRUE
+  [################----]  83%  (234/280)  ICAS                          F:[X] no data  H:? inconclusive
+  [################----]  83%  (235/280)  LiveRamp                      F:[X] no data  H:? inconclusive
+  [################----]  84%  (236/280)  CarParts.com                  F:[X] no data  H:? inconclusive
+  [################----]  84%  (237/280)  Canva                         F:[X] no data  H:? inconclusive
+  [#################---]  85%  (238/280)  Secureframe                   F:[ ] skip  H:? inconclusive
+  [#################---]  85%  (239/280)  Personio                      F:[X] no data  H:? TRUE
+  [#################---]  85%  (240/280)  Tessian                       F:[ ] skip  H:? TRUE
+  [#################---]  86%  (241/280)  Salesroom                     F:[X] no data  H:? TRUE
+  [#################---]  86%  (242/280)  Datadog                       F:[X] no data  H:? inconclusive
+  [#################---]  86%  (243/280)  Zapier                        F:[X] no data  H:? TRUE
+  [#################---]  87%  (244/280)  Assembled                     F:[ ] skip  H:? TRUE
+  [#################---]  87%  (245/280)  Ebury                         F:[X] no data  H:? inconclusive
+  [#################---]  87%  (246/280)  Network to Code               F:[ ] skip  H:? TRUE
+  [#################---]  88%  (247/280)  NDA                           F:[X] no data  H:? inconclusive
+  [#################---]  88%  (248/280)  Render                        F:[ ] skip  H:? TRUE
+  [#################---]  88%  (249/280)  Midjourney                    F:[X] no data  H:? TRUE
+  [#################---]  89%  (250/280)  Loop Returns                  F:[ ] skip  H:? inconclusive
+  [#################---]  89%  (251/280)  SumUp                         F:[X] no data  H:? TRUE
+  [##################--]  90%  (252/280)  Abnormal Security             F:[ ] skip  H:? TRUE
+  [##################--]  90%  (253/280)  XY Retail                     F:[ ] skip  H:? inconclusive
+  [##################--]  90%  (254/280)  Vectara                       F:[X] no data  H:? TRUE
+  [##################--]  91%  (255/280)  Retool                        F:[ ] skip  H:? TRUE
+  [##################--]  91%  (256/280)  Modern Treasury               F:[ ] skip  H:? TRUE
+  [##################--]  91%  (257/280)  Everstream Analytics          F:[ ] skip  H:? inconclusive
+  [##################--]  92%  (258/280)  Aisera                        F:[ ] skip  H:? TRUE
+  [##################--]  92%  (259/280)  SkyPilot                      F:[X] no data  H:? TRUE
+  [##################--]  92%  (260/280)  LanceDB                       F:[X] no data  H:? TRUE
+  [##################--]  93%  (261/280)  Kore.ai                       F:[ ] skip  H:? TRUE
+  [##################--]  93%  (262/280)  Tecton                        F:[ ] skip  H:? TRUE
+  [##################--]  93%  (263/280)  CoreWeave                     F:[ ] skip  H:? TRUE
+  [##################--]  94%  (264/280)  Datavant                      F:[ ] skip  H:? TRUE
+  [##################--]  94%  (265/280)  Helicone                      F:[X] no data  H:? TRUE
+  [###################-]  95%  (266/280)  Openbank                      F:[X] no data  H:? inconclusive
+  [###################-]  95%  (267/280)  Vorto                         F:[X] no data  H:? inconclusive
+  [###################-]  95%  (268/280)  Replit                        F:[ ] skip  H:? TRUE
+  [###################-]  96%  (269/280)  Grafana Labs                  F:[X] no data  H:? inconclusive
+  [###################-]  96%  (270/280)  Moneybox                      F:[X] no data  H:? inconclusive
+  [###################-]  96%  (271/280)  Snorkel AI                    F:[ ] skip  H:? TRUE
+  [###################-]  97%  (272/280)  BNP Paribas Leasing Solution  F:[X] no data  H:? inconclusive
+  [###################-]  97%  (273/280)  Starling Bank                 F:[X] no data  H:? inconclusive
+  [###################-]  97%  (274/280)  Fixie                         F:[X] no data  H:? TRUE
+  [###################-]  98%  (275/280)  Tempus AI                     F:[X] no data  H:? TRUE
+  [###################-]  98%  (276/280)  Gretel.ai                     F:[ ] skip  H:? TRUE
+  [###################-]  98%  (277/280)  Nanonets                      F:[X] no data  H:? inconclusive
+  [###################-]  99%  (278/280)  Priority                      F:[X] no data  H:? inconclusive
+  [###################-]  99%  (279/280)  LM Studio                     F:[X] no data  H:? TRUE
+  [####################] 100%  (280/280)  PathAI                        F:[ ] skip  H:? TRUE
+
+  Applying patches �
+  [OK] Saved patched enriched_leads.csv  (297 rows)
+  [OK] Log -> enrichment_3b_log.md
+
+=================================================================
+  Phase 3B Complete  (1m 32s)
+  Funding resolved : 0 / 153 domains
+  Hiring TRUE      : 181
+  Hiring FALSE     : 0
+  Hiring unclear   : 110
+=================================================================
+
+  Auto-running scoring_engine.py �
+
+
+=================================================================
+  P95.AI Lead Engine � Phase 3C Scoring Engine
+=================================================================
+
+  Input: enriched_leads.csv
+  Rows: 297
+  Scoring 291 active leads �
+
+  [OK] Saved -> scored_leads.csv
+  [OK] Report -> scoring_report.md
+
+=================================================================
+  [HOT]  (80-100):  143  (49.1%)
+  [WARM] (50-79) :   80  (27.5%)
+  [COLD] (0-49)  :   68  (23.4%)
+=================================================================
+  Mean score: 70.6
+
+  Next: review data/scoring_report.md -> Phase 4
+
+C:\Users\aayus\OneDrive\Desktop\Projects\LeadForge\scripts\scoring_engine.py:294: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  f"**Generated:** {datetime.utcnow().strftime('%Y-%m-%d %H:%M')} UTC  ",
+
+=================================================================
+  P95.AI Lead Engine � Phase 3C Scoring Engine
+=================================================================
+
+  Input: enriched_leads.csv
+  Rows: 297
+  Scoring 291 active leads �
+
+  [OK] Saved -> scored_leads.csv
+  [OK] Report -> scoring_report.md
+
+=================================================================
+  [HOT]  (80-100):  143  (49.1%)
+  [WARM] (50-79) :   80  (27.5%)
+  [COLD] (0-49)  :   68  (23.4%)
+=================================================================
+  Mean score: 70.6
+
+  Next: review data/scoring_report.md -> Phase 4
+
+[OK] Phase 5 complete.
+   Total leads:  50
+   DMs generated: 0
+   Columns now: ['contact_name', 'contact_title', 'company_name', 'industry', 'contact_email', 'contact_linkedin', 'score_total', 'score_tier', 'tech_stack_raw', 'is_hiring_ml_eng', 'email_subject', 'email_body', 'linkedin_dm']
+   Output: data\phase5_outreach.csv
+
+--- Sample DMs ---
+
+[Vaibhav Nivargi @ Moveworks]
+  DM (300 chars): Hi Vaibhav - Noticed Moveworks runs Ray for distributed ML - GPU efficiency at scale is a real challenge. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. W...
+
+[Kevin Stumpf @ Tecton]
+  DM (300 chars): Hi Kevin - Noticed Tecton runs Ray for distributed ML - GPU efficiency at scale is a real challenge. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would ...
+
+[Braden Hancock @ Snorkel AI]
+  DM (300 chars): Hi Braden - Noticed Snorkel AI runs Ray for distributed ML - GPU efficiency at scale is a real challenge. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. W...

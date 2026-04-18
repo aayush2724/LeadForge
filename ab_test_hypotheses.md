@@ -2,7 +2,7 @@
 
 **Generated:** 2026-04-18  
 **Scope:** Top 20 Hot leads (score >= 92) from `data/scored_leads.csv`  
-**Output:** `data/phase6_ab_variants.csv` — 40 rows (20 leads × 2 variants each)
+**Output:** `data/phase6_ab_variants.csv` — 40 rows (20 leads �- 2 variants each)
 
 ---
 
@@ -139,7 +139,7 @@ To declare a winning variant, measure the following after a 2-week send window:
 
 | File | Description |
 |---|---|
-| `data/phase6_ab_variants.csv` | 40 rows: 20 leads × 2 variants, with full message bodies |
+| `data/phase6_ab_variants.csv` | 40 rows: 20 leads �- 2 variants, with full message bodies |
 | `data/phase5_outreach.csv` | 50 leads with `email_body` + `linkedin_dm` for sequence step 2 |
 | `data/scored_leads.csv` | Full scored lead list for expanding the test to Warm tier |
 

@@ -31,15 +31,15 @@ from pathlib import Path
 from datetime import datetime, timezone
 from dotenv import load_dotenv
 
-if sys.platform == 'win32':
-    sys.stdout.reconfigure(encoding='utf-8')
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding="utf-8")
 
 load_dotenv()
 
-ROOT        = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent
 SCRIPTS_DIR = ROOT / "scripts"
-DATA_DIR    = ROOT / "data"
-LOG_DIR     = ROOT / "logs"
+DATA_DIR = ROOT / "data"
+LOG_DIR = ROOT / "logs"
 LOG_DIR.mkdir(exist_ok=True)
 
 # --------------------------------------------------------------------------- #
@@ -48,80 +48,80 @@ LOG_DIR.mkdir(exist_ok=True)
 
 STAGES = [
     {
-        "id":       "normalize_apollo",
-        "label":    "Normalize Apollo Source",
-        "script":   "normalize_apollo.py",
-        "output":   "data/raw/apollo_normalized.csv",
+        "id": "normalize_apollo",
+        "label": "Normalize Apollo Source",
+        "script": "normalize_apollo.py",
+        "output": "data/raw/apollo_normalized.csv",
         "required": False,
     },
     {
-        "id":       "normalize_linkedin",
-        "label":    "Normalize LinkedIn Source",
-        "script":   "normalize_linkedin.py",
-        "output":   "data/raw/linkedin_normalized.csv",
+        "id": "normalize_linkedin",
+        "label": "Normalize LinkedIn Source",
+        "script": "normalize_linkedin.py",
+        "output": "data/raw/linkedin_normalized.csv",
         "required": False,
     },
     {
-        "id":       "normalize_seeds",
-        "label":    "Normalize Seed Lists",
-        "script":   "normalize_seeds.py",
-        "output":   "data/raw/seeds_normalized.csv",
+        "id": "normalize_seeds",
+        "label": "Normalize Seed Lists",
+        "script": "normalize_seeds.py",
+        "output": "data/raw/seeds_normalized.csv",
         "required": False,
     },
     {
-        "id":       "normalize_engineers",
-        "label":    "Normalize DevTools/Engineer Sources",
-        "script":   "normalize_engineer_sources.py",
-        "output":   "data/raw/engineer_normalized.csv",
+        "id": "normalize_engineers",
+        "label": "Normalize DevTools/Engineer Sources",
+        "script": "normalize_engineer_sources.py",
+        "output": "data/raw/engineer_normalized.csv",
         "required": False,
     },
     {
-        "id":       "merge",
-        "label":    "Merge & Dedupe Raw Sources",
-        "script":   "compile_leads.py",
-        "output":   "data/raw_leads.csv",
+        "id": "merge",
+        "label": "Merge & Dedupe Raw Sources",
+        "script": "compile_leads.py",
+        "output": "data/raw_leads.csv",
         "required": True,
     },
     {
-        "id":       "prefilter",
-        "label":    "Apply Hard Disqualifier Filter",
-        "script":   "prefilter.py",
-        "output":   "data/raw_leads_rejected.csv",
+        "id": "prefilter",
+        "label": "Apply Hard Disqualifier Filter",
+        "script": "prefilter.py",
+        "output": "data/raw_leads_rejected.csv",
         "required": True,
     },
     {
-        "id":       "quota",
-        "label":    "Quota Check & Gap Fill",
-        "script":   "quota_check.py",
-        "output":   "data/sourcing_qa_report.md",
+        "id": "quota",
+        "label": "Quota Check & Gap Fill",
+        "script": "quota_check.py",
+        "output": "data/sourcing_qa_report.md",
         "required": False,
     },
     {
-        "id":       "enrich_apis",
-        "label":    "Phase 3A Enrichment (Apollo/GitHub APIs)",
-        "script":   "enrich_pipeline.py",
-        "output":   "data/enriched_leads.csv",
+        "id": "enrich_apis",
+        "label": "Phase 3A Enrichment (Apollo/GitHub APIs)",
+        "script": "enrich_pipeline.py",
+        "output": "data/enriched_leads.csv",
         "required": True,
     },
     {
-        "id":       "enrich_intent",
-        "label":    "Phase 3B Enrichment (Funding + Hiring)",
-        "script":   "enrich_3b.py",
-        "output":   "data/enriched_leads.csv",
+        "id": "enrich_intent",
+        "label": "Phase 3B Enrichment (Funding + Hiring)",
+        "script": "enrich_3b.py",
+        "output": "data/enriched_leads.csv",
         "required": True,
     },
     {
-        "id":       "score",
-        "label":    "Lead Scoring (9-Signal Rubric)",
-        "script":   "scoring_engine.py",
-        "output":   "data/scored_leads.csv",
+        "id": "score",
+        "label": "Lead Scoring (9-Signal Rubric)",
+        "script": "scoring_engine.py",
+        "output": "data/scored_leads.csv",
         "required": True,
     },
     {
-        "id":       "outreach",
-        "label":    "Personalized Outreach Generation (LinkedIn/Email)",
-        "script":   "generate_linkedin_dms.py",
-        "output":   "data/phase5_outreach.csv",
+        "id": "outreach",
+        "label": "Personalized Outreach Generation (LinkedIn/Email)",
+        "script": "generate_linkedin_dms.py",
+        "output": "data/phase5_outreach.csv",
         "required": False,
     },
 ]
@@ -132,20 +132,36 @@ STAGE_IDS = [s["id"] for s in STAGES]
 #  Colours                                                                     #
 # --------------------------------------------------------------------------- #
 
-class C:
-    RESET  = "\033[0m"
-    BOLD   = "\033[1m"
-    GREEN  = "\033[92m"
-    YELLOW = "\033[93m"
-    RED    = "\033[91m"
-    CYAN   = "\033[96m"
-    DIM    = "\033[2m"
 
-def ok(msg):    print(f"  {C.GREEN}✔{C.RESET}  {msg}")
-def warn(msg):  print(f"  {C.YELLOW}⚠{C.RESET}  {msg}")
-def err(msg):   print(f"  {C.RED}✘{C.RESET}  {msg}")
-def info(msg):  print(f"  {C.CYAN}→{C.RESET}  {msg}")
-def dim(msg):   print(f"{C.DIM}  {msg}{C.RESET}")
+class C:
+    RESET = "\033[0m"
+    BOLD = "\033[1m"
+    GREEN = "\033[92m"
+    YELLOW = "\033[93m"
+    RED = "\033[91m"
+    CYAN = "\033[96m"
+    DIM = "\033[2m"
+
+
+def ok(msg):
+    print(f"  {C.GREEN}✔{C.RESET}  {msg}")
+
+
+def warn(msg):
+    print(f"  {C.YELLOW}⚠{C.RESET}  {msg}")
+
+
+def err(msg):
+    print(f"  {C.RED}✘{C.RESET}  {msg}")
+
+
+def info(msg):
+    print(f"  {C.CYAN}→{C.RESET}  {msg}")
+
+
+def dim(msg):
+    print(f"{C.DIM}  {msg}{C.RESET}")
+
 
 # --------------------------------------------------------------------------- #
 #  Environment validation                                                      #
@@ -153,6 +169,7 @@ def dim(msg):   print(f"{C.DIM}  {msg}{C.RESET}")
 
 REQUIRED_ENV = ["APOLLO_API_KEY"]
 OPTIONAL_ENV = ["SERPAPI_KEY", "OPENAI_API_KEY", "GITHUB_TOKEN", "CLAY_API_KEY"]
+
 
 def validate_env(dry_run=False):
     print(f"\n{C.BOLD}── Environment Check ─────────────────────────────{C.RESET}")
@@ -171,13 +188,17 @@ def validate_env(dry_run=False):
         else:
             warn(f"{key} not set (optional — some features disabled)")
     if not all_ok and not dry_run:
-        print(f"\n{C.RED}  Missing required env vars. Add them to .env and retry.{C.RESET}\n")
+        print(
+            f"\n{C.RED}  Missing required env vars. Add them to .env and retry.{C.RESET}\n"
+        )
         sys.exit(1)
     return all_ok
+
 
 # --------------------------------------------------------------------------- #
 #  Script runner                                                               #
 # --------------------------------------------------------------------------- #
+
 
 def run_script(script_path: Path, stage: dict, log_file) -> bool:
     """Run a script as a subprocess, stream output, return success bool."""
@@ -192,7 +213,8 @@ def run_script(script_path: Path, stage: dict, log_file) -> bool:
         stdout=subprocess.PIPE,
         stderr=subprocess.STDOUT,
         text=True,
-        encoding='utf-8',
+        encoding="utf-8",
+        errors="replace",
         cwd=str(ROOT),
     )
 
@@ -212,9 +234,11 @@ def run_script(script_path: Path, stage: dict, log_file) -> bool:
         err(f"Failed with exit code {proc.returncode}")
         return False
 
+
 # --------------------------------------------------------------------------- #
 #  Main                                                                        #
 # --------------------------------------------------------------------------- #
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -248,7 +272,7 @@ def main():
 
     # Banner
     print(f"\n{C.BOLD}{C.CYAN}{'=' * 55}")
-    print(f"  P95.AI Lead Engine — Pipeline Runner")
+    print("  P95.AI Lead Engine - Pipeline Runner")
     print(f"  {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M')} UTC")
     print(f"{'=' * 55}{C.RESET}")
 
@@ -279,10 +303,14 @@ def main():
     log_path = LOG_DIR / f"pipeline_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
     results = []
 
-    print(f"\n{C.BOLD}── Running {len(stages_to_run)} stage(s) ─────────────────────────{C.RESET}")
+    print(
+        f"\n{C.BOLD}── Running {len(stages_to_run)} stage(s) ─────────────────────────{C.RESET}"
+    )
 
-    with open(log_path, "w") as log_file:
-        log_file.write(f"P95.AI Pipeline Run — {datetime.now(timezone.utc).isoformat()}\n\n")
+    with open(log_path, "w", encoding="utf-8") as log_file:
+        log_file.write(
+            f"P95.AI Pipeline Run — {datetime.now(timezone.utc).isoformat()}\n\n"
+        )
 
         for i, stage in enumerate(stages_to_run, 1):
             print(f"\n{C.BOLD}[{i}/{len(stages_to_run)}] {stage['label']}{C.RESET}")

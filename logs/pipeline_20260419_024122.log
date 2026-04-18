@@ -1,0 +1,112 @@
+P95.AI Pipeline Run — 2026-04-18T21:11:22.646793+00:00
+
+
+=== normalize_apollo.py ===
+
+  Loaded  25 rows from apollo_pass1_us_saas_fintech.csv
+  Loaded  15 rows from apollo_pass2_eu_uk.csv
+  Loaded  15 rows from apollo_pass3_healthtech_cybersec.csv
+  Loaded  25 rows from apollo_pass4_flex.csv
+
+  Total rows loaded: 80
+
+  Output: data\raw\apollo_normalized.csv
+  Total rows  : 80
+  Clean leads : 77
+  Disqualified: 3
+
+Done. Run validate_row.py next.
+
+
+=== normalize_linkedin.py ===
+
+  Loading  25 rows from linkedin_pass1_us (1).csv
+  Loading  20 rows from linkedin_pass2_eu.csv
+  Loading  15 rows from linkedin_pass3_india.csv
+
+  Rows loaded       : 60
+  Competitors flagged: 0
+  Rows written      : 60
+  Output            : data\raw\linkedin_normalized.csv
+
+Done. Run validate_row.py next.
+
+
+=== normalize_seeds.py ===
+
+  Apollo domains loaded for dedup check: 80
+  [DEDUP] brex.com already in apollo_normalized — skipping
+  [DEDUP] notion.so already in apollo_normalized — skipping
+  [DEDUP] rippling.com already in apollo_normalized — skipping
+
+  Rows in           : 15
+  Dupes skipped     : 3
+  Rows written      : 12
+  Output            : data\raw\seeds_normalized.csv
+
+Done. Run validate_row.py next.
+
+
+=== normalize_aayush.py ===
+
+  Existing domains (apollo + seeds): 92
+  Loading  41 rows from builtwith_raw.csv
+  Loading  41 rows from crunchbase_raw.csv
+  Loading  30 rows from github_raw.csv
+
+  Rows loaded       : 112
+  Dupes (existing)  : 1
+  Dupes (batch)     : 0
+  Competitors flagged: 3
+  Rows written      : 111
+  Output            : data\raw\aayush_normalized.csv
+
+Done. Run validate_row.py next.
+
+Loading   80 rows from apollo_normalized.csv
+Loading   12 rows from seeds_normalized.csv
+Loading  111 rows from engineer_normalized.csv
+Loading  111 rows from aayush_normalized.csv
+Loading   60 rows from linkedin_normalized.csv
+Loading   13 rows from healthtech_normalized_gap.csv
+Loading    9 rows from ecommerce_normalized_gap.csv
+Loading    8 rows from logistics_normalized_gap.csv
+Loading    4 rows from cyber_normalized_gap.csv
+Dropped 111 cross-file duplicate domains.
+Traceback (most recent call last):
+  File "C:\Users\aayus\OneDrive\Desktop\Projects\LeadForge\scripts\compile_leads.py", line 50, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\aayus\OneDrive\Desktop\Projects\LeadForge\scripts\compile_leads.py", line 46, in main
+    compiled.to_csv(OUTPUT, index=False)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aayus\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\generic.py", line 3988, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\aayus\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\formats\format.py", line 1025, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\aayus\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\aayus\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'data\\raw_leads.csv'

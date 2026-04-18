@@ -36,7 +36,7 @@ An end-to-end, reproducible pipeline that sources, normalises, enriches, scores,
 | Cold tier (score < 60) | **99** |
 | Personalised emails generated | **50** |
 | LinkedIn DMs generated | **50** |
-| A/B variants designed | **40** (20 leads × 2 variants) |
+| A/B variants designed | **40** (20 leads �- 2 variants) |
 | Sources | Apollo · LinkedIn Sales Nav · Crunchbase · GitHub · Seed lists |
 
 ---
@@ -337,7 +337,7 @@ hackathon/
 │   ├── scoring_report.md         # Score distribution report
 │   ├── sourcing_qa_report.md     # Quota validation report
 │   ├── phase5_outreach.csv       # Email + LinkedIn DMs (top 50)
-│   └── phase6_ab_variants.csv   # A/B messages (top 20 × 2)
+│   └── phase6_ab_variants.csv   # A/B messages (top 20 �- 2)
 │
 ├── scripts/
 │   ├── normalize_apollo.py        # Stage 1: Apollo normalisation

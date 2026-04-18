@@ -1,0 +1,13 @@
+P95.AI Pipeline Run — 2026-04-18T21:27:19.339216+00:00
+
+
+=================================================================
+  P95.AI Lead Engine — Phase 3A Enrichment Pipeline
+=================================================================
+
+  Loaded 297 rows from raw_leads.csv
+  Active: 291 | Disqualified (skipped): 6
+  Unique domains to enrich: 280
+
+  Starting enrichment — estimated time: 18–28 min
+
