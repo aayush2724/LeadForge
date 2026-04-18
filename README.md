@@ -1,5 +1,7 @@
 # P95.AI Lead Engine
 
+**🌍 Live Landing Page / Architectural Overview:** [p95-ai-lead-engine-m8ofg.thinkroot.app](https://p95-ai-lead-engine-m8ofg.thinkroot.app/)
+
 An end-to-end, reproducible pipeline that sources, normalises, enriches, scores, and generates personalised outreach for 291 qualified enterprise AI/ML leads — from raw data export to ready-to-send email + LinkedIn DM sequences.
 
 ---
