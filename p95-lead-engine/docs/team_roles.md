@@ -2,9 +2,9 @@
 
 | Role | Person | Slack/Contact |
 |---|---|---|
-| Data Lead | [name] | [handle] |
-| Research Lead | [name] | [handle] |
-| Engineer | [name] | [handle] |
+| Data Lead | Harshita | 
+| Research Lead | Janaki |
+| Engineer | Aayush |
 
 ## Task Ownership
 
