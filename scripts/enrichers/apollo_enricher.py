@@ -115,6 +115,8 @@ def _call_apollo(domain: str) -> dict | None:
     POST to Apollo org enrich endpoint.
     Returns the parsed JSON dict (full response), or None on failure.
     """
+    if APOLLO_API_KEY == "dummy":
+        return None
     try:
         resp = requests.post(
             _BASE_URL,
@@ -207,6 +209,7 @@ def enrich_lead(domain: str, existing_row: dict) -> dict:
     Returns a dict of fields to merge back into the dataframe.
     Only non-empty values are returned (caller decides merge strategy).
     """
+    if APOLLO_API_KEY == "dummy": return {}
     time.sleep(_DELAY)
 
     raw = _call_apollo(domain)

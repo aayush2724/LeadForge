@@ -56,6 +56,8 @@ _SEARCH_DELAY = 2.2
 
 def _get(url: str, params: dict | None = None) -> requests.Response | None:
     """GET with automatic rate-limit retry."""
+    if GITHUB_TOKEN == "dummy":
+        return None
     try:
         resp = requests.get(url, headers=_HEADERS, params=params, timeout=12)
         if resp.status_code == 403:
@@ -212,6 +214,8 @@ def enrich_lead(domain: str, company_name: str, existing_org_url: str = "") -> d
       github_org_url, github_ai_repo_count, github_stars_top_repo,
       has_kubernetes, has_ray_or_wandb
     """
+    if GITHUB_TOKEN == "dummy":
+        return {}
     updates: dict = {}
 
     org_url = existing_org_url.strip() if existing_org_url else ""
