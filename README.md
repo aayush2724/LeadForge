@@ -4,8 +4,8 @@ An end-to-end, reproducible pipeline that sources, normalises, enriches, scores,
 
 **Built for:** P95.AI — an AI inference optimization platform  
 **Target buyer:** CTOs, VPs Engineering, Heads of AI at companies running LLMs in production  
-**GitHub:** https://github.com/aayush2724/LeadForge
-**Website:** https://leadforge-876cf6-11q5x.thinkroot.app/
+**GitHub:** [github.com/aayush2724/LeadForge](https://github.com/aayush2724/LeadForge)  
+**Website:** [leadforge-876cf6-11q5x.thinkroot.app](https://leadforge-876cf6-11q5x.thinkroot.app/)
 
 ---
 
