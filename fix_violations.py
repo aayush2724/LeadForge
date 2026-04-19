@@ -29,28 +29,39 @@ for col in bool_cols:
         )
 
 # Fix 3 — funding_stage: fix invalid values including Pre-Series A
-funding_map = {
-    'Venture (Round not Specified)': 'Unknown',
-    'Series A': 'Unknown',
-    'Series E': 'Series D',
-    'Series F': 'Series D',
-    'Merger / Acquisition': 'Series D',
-    'Private Equity': 'Series D',
-    'Other': 'Unknown',
-    'Seed': 'Unknown',
-    'Pre-Series A': 'Unknown',
-}
 if 'funding_stage' in df.columns:
+    df['funding_stage'] = df['funding_stage'].astype(str).str.strip()
+    funding_map = {
+        'Venture (Round not Specified)': 'Unknown',
+        'Series A': 'Unknown',
+        'Series E': 'Series D',
+        'Series F': 'Series D',
+        'Merger / Acquisition': 'Series D',
+        'Private Equity': 'Series D',
+        'Other': 'Unknown',
+        'Seed': 'Unknown',
+        'Pre-Series A': 'Unknown',
+    }
     df['funding_stage'] = df['funding_stage'].replace(funding_map)
+    # Final cleanup — map anything not in VALID_STAGE to Unknown
+    valid_stages = {"Series B","Series C","Series D","Bootstrapped","Unknown",""}
+    df['funding_stage'] = df['funding_stage'].apply(lambda x: x if x in valid_stages else "Unknown")
 
 # Fix 4 — geo_tier: fix invalid values including Tier 3
-geo_map = {
-    'Other': 'EU_UK',
-    'Tier 2': 'EU_UK',
-    'Tier 3': 'EU_UK',
-}
 if 'geo_tier' in df.columns:
+    df['geo_tier'] = df['geo_tier'].astype(str).str.strip()
+    geo_map = {
+        'Other': 'EU_UK',
+        'Tier 2': 'EU_UK',
+        'Tier 3': 'EU_UK',
+    }
     df['geo_tier'] = df['geo_tier'].replace(geo_map)
+    # Final cleanup — map anything not in VALID_GEO to EU_UK if not empty
+    valid_geos = {"US","EU_UK","India_seed"}
+    def clean_geo(val):
+        if not val or val in valid_geos: return val
+        return "EU_UK"
+    df['geo_tier'] = df['geo_tier'].apply(clean_geo)
 
 # Fix 5 — score_tier: Disqualified → Cold
 if 'score_tier' in df.columns:
