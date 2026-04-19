@@ -9,7 +9,7 @@ Produces:
 
 import pandas as pd
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 
 INPUT  = Path("data/raw_leads.csv")
 REPORT = Path("data/sourcing_qa_report.md")
@@ -96,7 +96,7 @@ def main():
 
     # ── Write report ──────────────────────────────────────────────────────────
     lines = []
-    now = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
     lines.append(f"# P95.AI Lead Engine — Sourcing QA Report")
     lines.append(f"")
