@@ -37,29 +37,41 @@ _DELAY = 1.3  # seconds between requests
 # --------------------------------------------------------------------------- #
 
 _KUBE_KW = {"kubernetes", "k8s", "helm", "kube"}
-_RAY_KW  = {"ray", "wandb", "weights & biases", "weights and biases"}
+_RAY_KW = {"ray", "wandb", "weights & biases", "weights and biases"}
 _SNOW_KW = {"snowflake"}
-_LLM_KW  = {
-    "openai", "anthropic", "langchain", "hugging face", "huggingface",
-    "llm", "vllm", "triton inference", "tgi", "text generation inference",
-    "bedrock", "azure openai", "vertex ai", "cohere", "mistral",
+_LLM_KW = {
+    "openai",
+    "anthropic",
+    "langchain",
+    "hugging face",
+    "huggingface",
+    "llm",
+    "vllm",
+    "triton inference",
+    "tgi",
+    "text generation inference",
+    "bedrock",
+    "azure openai",
+    "vertex ai",
+    "cohere",
+    "mistral",
 }
 
 # Funding-stage normalisation map
 _STAGE_MAP = {
-    "seed":          "Seed",
-    "series_a":      "Series A",
-    "series_b":      "Series B",
-    "series_c":      "Series C",
-    "series_d":      "Series D",
-    "series_e":      "Series D",   # lump E+ into D for our schema
-    "series_f":      "Series D",
-    "ipo":           "Public",
-    "private_equity":"Series D",
-    "bootstrapped":  "Bootstrapped",
-    "angel":         "Seed",
-    "pre_seed":      "Seed",
-    "":              "Unknown",
+    "seed": "Seed",
+    "series_a": "Series A",
+    "series_b": "Series B",
+    "series_c": "Series C",
+    "series_d": "Series D",
+    "series_e": "Series D",
+    "series_f": "Series D",
+    "ipo": "Public",
+    "private_equity": "Series D",
+    "bootstrapped": "Bootstrapped",
+    "angel": "Seed",
+    "pre_seed": "Seed",
+    "": "Unknown",
 }
 
 
@@ -67,18 +79,17 @@ _STAGE_MAP = {
 #  Helpers                                                                      #
 # --------------------------------------------------------------------------- #
 
+
 def _normalise_stage(raw: str) -> str:
     key = (raw or "").lower().replace(" ", "_").replace("-", "_")
     return _STAGE_MAP.get(key, "Unknown")
 
 
 def _parse_funding_amount(raw) -> int:
-    """Convert Apollo's funding string/int to a plain integer USD."""
     if raw is None:
         return 0
     if isinstance(raw, (int, float)):
         return int(raw)
-    # remove $, commas, M/B suffixes
     s = str(raw).replace(",", "").replace("$", "").strip().upper()
     try:
         if s.endswith("B"):
@@ -91,17 +102,20 @@ def _parse_funding_amount(raw) -> int:
 
 
 def _flag(tech_list: list[str], keywords: set) -> str:
-    """Return 'TRUE' if any keyword appears in the tech list, else 'FALSE'."""
     lowered = {t.lower() for t in tech_list}
     return "TRUE" if any(kw in lowered for kw in keywords) else "FALSE"
 
 
 def _llm_in_prod(tech_list: list[str], description: str) -> str:
-    """Heuristic: TRUE if we see clear LLM-serving tech or description mentions it."""
     text = " ".join(tech_list).lower() + " " + (description or "").lower()
     llm_signals = list(_LLM_KW) + [
-        "inference", "model serving", "ai api", "generative ai", "gen ai",
-        "large language", "foundation model",
+        "inference",
+        "model serving",
+        "ai api",
+        "generative ai",
+        "gen ai",
+        "large language",
+        "foundation model",
     ]
     return "TRUE" if any(sig in text for sig in llm_signals) else "FALSE"
 
@@ -110,12 +124,14 @@ def _llm_in_prod(tech_list: list[str], description: str) -> str:
 #  API call                                                                     #
 # --------------------------------------------------------------------------- #
 
+
 def _call_apollo(domain: str) -> dict | None:
     """
     POST to Apollo org enrich endpoint.
-    Returns the parsed JSON dict (full response), or None on failure.
+    API key is passed as a header (x-api-key), not in the request body.
+    Returns the parsed JSON dict, or None on failure.
     """
-    if APOLLO_API_KEY == "dummy":
+    if not APOLLO_API_KEY or APOLLO_API_KEY == "dummy":
         return None
     try:
         resp = requests.post(
@@ -123,20 +139,23 @@ def _call_apollo(domain: str) -> dict | None:
             headers={
                 "Content-Type": "application/json",
                 "Cache-Control": "no-cache",
+                "x-api-key": APOLLO_API_KEY,  # ← FIXED: key in header
             },
-            json={"api_key": APOLLO_API_KEY, "domain": domain},
+            json={"domain": domain},  # ← FIXED: no api_key in body
             timeout=15,
         )
         if resp.status_code == 200:
             return resp.json()
         if resp.status_code == 422:
-            # Unprocessable — domain not found in Apollo
             return None
         if resp.status_code == 429:
             print(f"      [RATE LIMIT 429] sleeping 60s …")
             time.sleep(60)
-            return _call_apollo(domain)   # single retry
-        print(f"      [APOLLO {resp.status_code}] {domain}")
+            return _call_apollo(domain)
+        if resp.status_code == 401:
+            print(f"      [APOLLO 401] Invalid API key — check APOLLO_API_KEY in .env")
+            return None
+        print(f"      [APOLLO {resp.status_code}] {domain} — {resp.text[:100]}")
         return None
     except requests.exceptions.RequestException as exc:
         print(f"      [APOLLO NETWORK ERROR] {exc}")
@@ -147,13 +166,11 @@ def _call_apollo(domain: str) -> dict | None:
 #  Signal extraction                                                            #
 # --------------------------------------------------------------------------- #
 
+
 def _extract(data: dict) -> dict:
-    """Pull the fields we care about from Apollo's response envelope."""
     org = data.get("organization") or {}
 
-    # --- tech stack ---
     raw_techs: list = org.get("technologies", []) or []
-    # Apollo may return list of strings or list of dicts with "name" key
     tech_names: list[str] = []
     for t in raw_techs:
         if isinstance(t, str):
@@ -165,33 +182,27 @@ def _extract(data: dict) -> dict:
 
     tech_str = ", ".join(tech_names)
 
-    # --- funding ---
     stage_raw = org.get("latest_funding_stage", "")
     funding_date = org.get("latest_funding_round_date", "") or ""
     if funding_date:
-        # Apollo sometimes returns full datetime — trim to date
         funding_date = funding_date[:10]
 
     total_funding = _parse_funding_amount(org.get("total_funding"))
-
-    # --- description ---
     description = (org.get("short_description") or "")[:300]
-
-    # --- employee count ---
     emp = org.get("estimated_num_employees")
     emp_int = int(emp) if emp else 0
 
     return {
-        "tech_stack_raw":    tech_str,
-        "has_kubernetes":    _flag(tech_names, _KUBE_KW),
-        "has_ray_or_wandb":  _flag(tech_names, _RAY_KW),
-        "has_snowflake":     _flag(tech_names, _SNOW_KW),
-        "uses_llm_in_prod":  _llm_in_prod(tech_names, description),
-        "funding_stage":     _normalise_stage(stage_raw),
+        "tech_stack_raw": tech_str,
+        "has_kubernetes": _flag(tech_names, _KUBE_KW),
+        "has_ray_or_wandb": _flag(tech_names, _RAY_KW),
+        "has_snowflake": _flag(tech_names, _SNOW_KW),
+        "uses_llm_in_prod": _llm_in_prod(tech_names, description),
+        "funding_stage": _normalise_stage(stage_raw),
         "last_funding_date": funding_date,
         "total_funding_usd": total_funding,
         "company_description": description,
-        "employee_count":    emp_int,
+        "employee_count": emp_int,
     }
 
 
@@ -199,17 +210,17 @@ def _extract(data: dict) -> dict:
 #  Public entry point                                                           #
 # --------------------------------------------------------------------------- #
 
+
 def enrich_lead(domain: str, existing_row: dict) -> dict:
+    if True:  # Apollo disabled — rate limited
+        return {}
     """
     Main entry point called by enrich_pipeline.py per unique domain.
-
-    `existing_row` is the current row dict so we don't clobber already-populated
-    fields with empty Apollo values.
-
     Returns a dict of fields to merge back into the dataframe.
-    Only non-empty values are returned (caller decides merge strategy).
+    Only non-empty values are returned.
     """
-    if APOLLO_API_KEY == "dummy": return {}
+    if not APOLLO_API_KEY or APOLLO_API_KEY == "dummy":
+        return {}
     time.sleep(_DELAY)
 
     raw = _call_apollo(domain)
@@ -217,24 +228,33 @@ def enrich_lead(domain: str, existing_row: dict) -> dict:
         return {}
 
     extracted = _extract(raw)
-
-    # --- selective merge: don't clobber existing good data with blanks ---
     updates: dict = {}
     for field, value in extracted.items():
         existing = str(existing_row.get(field, "")).strip()
         new_val  = str(value).strip() if value else ""
 
-        # Always update tech_stack_raw (append / replace blank)
+        # Skip tech_stack_raw if empty (Apollo free plan doesn't return technologies)
         if field == "tech_stack_raw":
             if new_val:
                 updates[field] = new_val
             continue
 
-        # For integer fields: only set if currently 0/blank
+        # Always write employee_count and total_funding_usd if Apollo has them
         if field in ("employee_count", "total_funding_usd"):
-            if not existing or existing == "0":
-                if value and int(float(str(value))) > 0:
-                    updates[field] = int(float(str(value)))
+            if value and int(float(str(value))) > 0:
+                updates[field] = int(float(str(value)))
+            continue
+
+        # Always write funding_stage if Apollo has a real value
+        if field == "funding_stage":
+            if new_val and new_val not in ("Unknown", "unknown", ""):
+                updates[field] = new_val
+            continue
+
+        # Always write last_funding_date if Apollo has it
+        if field == "last_funding_date":
+            if new_val:
+                updates[field] = new_val
             continue
 
         # For all other fields: set if currently blank

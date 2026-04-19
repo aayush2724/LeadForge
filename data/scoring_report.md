@@ -1,6 +1,6 @@
 # P95.AI Lead Engine — Scoring Report
 
-**Generated:** 2026-04-19 06:58 UTC  
+**Generated:** 2026-04-19 08:12 UTC  
 **Source:** `enriched_leads.csv`  
 **Active leads scored:** 291  
 

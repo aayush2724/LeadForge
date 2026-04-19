@@ -1,0 +1,148 @@
+P95.AI Pipeline Run — 2026-04-19T07:18:48.746405+00:00
+
+
+=================================================================
+  P95.AI Lead Engine — Phase 3A Enrichment Pipeline
+=================================================================
+
+  Loaded 297 rows from raw_leads.csv
+  Active: 291 | Disqualified (skipped): 6
+  Unique domains to enrich: 280
+
+  Starting enrichment — estimated time: 18–28 min
+
+  [--------------------]   0%  (1/280)  ramp.com                             GH:✅ ok  APO:✅ ok  +4 fields
+  [--------------------]   0%  (2/280)  brex.com                             GH:✅ ok  APO:✅ ok  +4 fields
+  [--------------------]   1%  (3/280)  rippling.com                         GH:✅ ok  APO:✅ ok  +4 fields
+  [--------------------]   1%  (4/280)  notion.so                            GH:✅ ok  APO:✅ ok  +5 fields
+  [--------------------]   1%  (5/280)  linear.app                           GH:✅ ok  APO:✅ ok  +5 fields
+  [--------------------]   2%  (6/280)  retool.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   2%  (7/280)  loom.com                             GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   2%  (8/280)  scale.ai                             GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   3%  (9/280)  weights-biases.com                   GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   3%  (10/280)  glean.com                            GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   3%  (11/280)  harvey.ai                            GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   4%  (12/280)  cohere.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [--------------------]   4%  (13/280)  speechify.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   5%  (14/280)  descript.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   5%  (15/280)  playground.ai                        GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   5%  (16/280)  runway.ml                            GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   6%  (17/280)  mid.com                              GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   6%  (18/280)  gong.io                              GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   6%  (19/280)  observe.ai                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   7%  (20/280)  anomalo.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   7%  (21/280)  vanta.com                            GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   7%  (22/280)  hex.tech                             GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   8%  (23/280)  stytch.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   8%  (24/280)  merge.dev                            GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   8%  (25/280)  secureframe.com                      GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   9%  (26/280)  monzo.com                            GH:✅ ok  APO:❌ not found  +4 fields
+  [#-------------------]   9%  (27/280)  revolut.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  10%  (28/280)  deliveroo.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  10%  (29/280)  factorial.co                         GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  10%  (30/280)  personio.de                          GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  11%  (31/280)  sumup.com                            GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  11%  (32/280)  klarna.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  11%  (33/280)  contentful.com                       GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  12%  (34/280)  pleo.io                              GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  12%  (35/280)  tessian.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  12%  (36/280)  laka.co.uk                           GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  13%  (37/280)  pigment.app                          GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  13%  (38/280)  conductor.one                        GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  13%  (39/280)  leapsome.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  14%  (40/280)  sennder.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [##------------------]  14%  (41/280)  tempus.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  15%  (42/280)  privia.health                        GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  15%  (43/280)  pathai.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  15%  (44/280)  veracyte.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  16%  (45/280)  phreesia.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  16%  (46/280)  darktrace.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  16%  (47/280)  abnormal.ai                          GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  17%  (48/280)  exabeam.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  17%  (49/280)  orca.security                        GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  17%  (50/280)  netskope.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  18%  (51/280)  project44.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  18%  (52/280)  flexport.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  18%  (53/280)  loop.com                             GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  19%  (54/280)  algolia.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [###-----------------]  19%  (55/280)  pagerduty.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  20%  (56/280)  mistral.ai                           GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  20%  (57/280)  perplexity.ai                        GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  20%  (58/280)  coreweave.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  21%  (59/280)  comet.ml                             GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  21%  (60/280)  adept.ai                             GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  21%  (61/280)  neon.tech                            GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  22%  (62/280)  qdrant.tech                          GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  22%  (63/280)  dust.tt                              GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  22%  (64/280)  vectara.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  23%  (65/280)  replit.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  23%  (66/280)  sourcegraph.com                      GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  23%  (67/280)  labelbox.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  24%  (68/280)  cohere.for.ai                        GH:✅ ok  APO:❌ not found  +4 fields
+  [####----------------]  24%  (69/280)  dspy.ai                              GH:✅ ok  APO:❌ not found  +4 fields
+  [#####---------------]  25%  (70/280)  cursor.sh                            GH:✅ ok  APO:❌ not found  +4 fields
+  [#####---------------]  25%  (71/280)  codeium.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [#####---------------]  25%  (72/280)  airtable.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [#####---------------]  26%  (73/280)  miro.com                             GH:✅ ok  APO:❌ not found  +4 fields
+  [#####---------------]  26%  (74/280)  intercom.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [#####---------------]  26%  (75/280)  samsara.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [#####---------------]  27%  (76/280)  nansen.ai                            GH:✅ ok  APO:❌ not found  +4 fields
+  [#####---------------]  27%  (77/280)  cartesia.ai                          GH:✅ ok  APO:❌ not found  +4 fields
+  [#####---------------]  27%  (78/280)  stripe.com                           GH:✅ ok  APO:❌ not found  +5 fields
+  [#####---------------]  28%  (79/280)  razorpay.com                         GH:✅ ok  APO:❌ not found  +5 fields
+  [#####---------------]  28%  (80/280)  phonepe.com                          GH:✅ ok  APO:❌ not found  +5 fields
+  [#####---------------]  28%  (81/280)  canva.com                            GH:✅ ok  APO:❌ not found  +5 fields
+  [#####---------------]  29%  (82/280)  figma.com                            GH:✅ ok  APO:❌ not found  +5 fields
+  [#####---------------]  29%  (83/280)  hubspot.com                          GH:✅ ok  APO:❌ not found  +5 fields
+  [######--------------]  30%  (84/280)  datadoghq.com                        GH:✅ ok  APO:❌ not found  +5 fields
+  [######--------------]  30%  (85/280)  cloudflare.com                       GH:✅ ok  APO:❌ not found  +5 fields
+  [######--------------]  30%  (86/280)  swiggy.com                           GH:✅ ok  APO:❌ not found  +5 fields
+  [######--------------]  31%  (87/280)  zomato.com                           GH:✅ ok  APO:❌ not found  +5 fields
+  [######--------------]  31%  (88/280)  meesho.com                           GH:✅ ok  APO:❌ not found  +5 fields
+  [######--------------]  31%  (89/280)  zeptonow.com                         GH:✅ ok  APO:❌ not found  +5 fields
+  [######--------------]  32%  (90/280)  verkada.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [######--------------]  32%  (91/280)  brainware.io                         GH:✅ ok  APO:❌ not found  +4 fields
+  [######--------------]  32%  (92/280)  typeface.ai                          GH:✅ ok  APO:❌ not found  +4 fields
+  [######--------------]  33%  (93/280)  jasper.ai                            GH:✅ ok  APO:❌ not found  +4 fields
+  [######--------------]  33%  (94/280)  copy.ai                              GH:✅ ok  APO:❌ not found  +4 fields
+  [######--------------]  33%  (95/280)  moveworks.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [######--------------]  34%  (96/280)  forethought.ai                       GH:✅ ok  APO:❌ not found  +4 fields
+  [######--------------]  34%  (97/280)  cresta.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  35%  (98/280)  kore.ai                              GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  35%  (99/280)  unstructured.io                      GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  35%  (100/280)  gretel.ai                            GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  36%  (101/280)  snorkel.ai                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  36%  (102/280)  arize.ai                             GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  36%  (103/280)  whylabs.ai                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  37%  (104/280)  evidently.ai                         GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  37%  (105/280)  superwise.ai                         GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  37%  (106/280)  fiddler.ai                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  38%  (107/280)  aporia.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  38%  (108/280)  lightly.ai                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  38%  (109/280)  deciio.ai                            GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  39%  (110/280)  octoml.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#######-------------]  39%  (111/280)  modular.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  40%  (112/280)  voltaml.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  40%  (113/280)  chalk.ai                             GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  40%  (114/280)  tecton.ai                            GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  41%  (115/280)  featureform.com                      GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  41%  (116/280)  metaphor.io                          GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  41%  (117/280)  humanloop.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  42%  (118/280)  guardrailsai.com                     GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  42%  (119/280)  trulens.org                          GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  42%  (120/280)  helicone.ai                          GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  43%  (121/280)  langfuse.com                         GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  43%  (122/280)  getdbt.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  43%  (123/280)  hightouch.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  44%  (124/280)  census.dev                           GH:✅ ok  APO:❌ not found  +4 fields
+  [########------------]  44%  (125/280)  tray.io                              GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  45%  (126/280)  workato.com                          GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  45%  (127/280)  zapier.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  45%  (128/280)  make.com                             GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  46%  (129/280)  n8n.io                               GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  46%  (130/280)  prefect.io                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  46%  (131/280)  aisera.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  47%  (132/280)  assembled.com                        GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  47%  (133/280)  atlan.com                            GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  47%  (134/280)  bigeye.com                           GH:✅ ok  APO:❌ not found  +4 fields
+  [#########-----------]  48%  (135/280)  castai.com                           GH:✅ ok  APO:❌ not found  +4 fields
