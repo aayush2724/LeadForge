@@ -1,0 +1,295 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "253800b5-a71d-4543-afa5-b2878eecaa92",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "jsCode": "const { execSync } = require('child_process');\ntry {\n  const output = execSync('python scripts/normalize_apollo.py',\n    { cwd: process.cwd(), encoding: 'utf8' });\n  return [{ json: { success: true, output } }];\n} catch (e) {\n  return [{ json: { success: false, error: e.message } }];\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        416,
+        0
+      ],
+      "id": "c6bd4aac-8ed5-4668-b045-fc809bb639b6",
+      "name": "Normalize Apollo"
+    },
+    {
+      "parameters": {
+        "jsCode": "const { execSync } = require('child_process');\n\ntry {\n  const output = execSync(\n    'python scripts/compile_leads.py',\n    { \n      cwd: 'C:\\\\Users\\\\K Harshita\\\\Desktop\\\\hackathon',\n      encoding: 'utf8'\n    }\n  );\n  return [{ json: { success: true, output } }];\n} catch (e) {\n  return [{ json: { success: false, error: e.message } }];\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        208,
+        0
+      ],
+      "id": "fb0408d6-479b-4032-b055-4a901c24b5c9",
+      "name": "Compile Leads"
+    },
+    {
+      "parameters": {
+        "jsCode": "const { execSync } = require('child_process');\ntry {\n  const output = execSync('python scripts/normalize_linkedin.py',\n    { cwd: process.cwd(), encoding: 'utf8' });\n  return [{ json: { success: true, output } }];\n} catch (e) {\n  return [{ json: { success: false, error: e.message } }];\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        624,
+        0
+      ],
+      "id": "3840fabf-3dff-4ca2-916c-c7dc0718745b",
+      "name": "Normalize LinkedIn"
+    },
+    {
+      "parameters": {
+        "jsCode": "const { execSync } = require('child_process');\ntry {\n  const output = execSync('python scripts/normalize_seeds.py',\n    { cwd: process.cwd(), encoding: 'utf8' });\n  return [{ json: { success: true, output } }];\n} catch (e) {\n  return [{ json: { success: false, error: e.message } }];\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        832,
+        0
+      ],
+      "id": "674c9c8a-8ff1-4860-b912-5ee1220c317f",
+      "name": "Normalize Seeds"
+    },
+    {
+      "parameters": {
+        "jsCode": "const { execSync } = require('child_process');\ntry {\n  const output = execSync('python scripts/normalize_gaps.py',\n    { cwd: process.cwd(), encoding: 'utf8' });\n  return [{ json: { success: true, output } }];\n} catch (e) {\n  return [{ json: { success: false, error: e.message } }];\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1040,
+        0
+      ],
+      "id": "800d70b6-8037-46af-bdaf-0ac4b604f47f",
+      "name": "Normalize Gaps"
+    },
+    {
+      "parameters": {
+        "jsCode": "const { execSync } = require('child_process');\ntry {\n  const output = execSync('python scripts/enrich_pipeline.py',\n    { cwd: process.cwd(), encoding: 'utf8' });\n  return [{ json: { success: true, output } }];\n} catch (e) {\n  return [{ json: { success: false, error: e.message } }];\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1248,
+        0
+      ],
+      "id": "2a49b238-6498-4d45-ba0c-7d4ac2cce350",
+      "name": "Enrich Pipeline"
+    },
+    {
+      "parameters": {
+        "jsCode": "const { execSync } = require('child_process');\ntry {\n  const output = execSync('python scripts/prefilter.py',\n    { cwd: process.cwd(), encoding: 'utf8' });\n  return [{ json: { success: true, output } }];\n} catch (e) {\n  return [{ json: { success: false, error: e.message } }];\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1456,
+        0
+      ],
+      "id": "17e8d33a-9609-421b-b9a9-9c3676d2059b",
+      "name": "Prefilter Competitors"
+    },
+    {
+      "parameters": {
+        "jsCode": "const { execSync } = require('child_process');\ntry {\n  const output = execSync('python scripts/scoring_engine.py',\n    { cwd: process.cwd(), encoding: 'utf8' });\n  return [{ json: { success: true, output } }];\n} catch (e) {\n  return [{ json: { success: false, error: e.message } }];\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1664,
+        0
+      ],
+      "id": "94ab3d45-b66e-44fa-87f9-bddac79cf60a",
+      "name": "Score Leads"
+    },
+    {
+      "parameters": {
+        "jsCode": "const { execSync } = require('child_process');\ntry {\n  const output = execSync('python scripts/validate_emails.py',\n    { cwd: process.cwd(), encoding: 'utf8' });\n  return [{ json: { success: true, output } }];\n} catch (e) {\n  return [{ json: { success: false, error: e.message } }];\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1824,
+        0
+      ],
+      "id": "e6ad3fc8-7705-48e6-a976-cdc1ac180c41",
+      "name": "Validate Emails"
+    },
+    {
+      "parameters": {
+        "jsCode": "const { execSync } = require('child_process');\ntry {\n  const output = execSync('python scripts/generate_linkedin_dms.py',\n    { cwd: process.cwd(), encoding: 'utf8' });\n  return [{ json: { success: true, output } }];\n} catch (e) {\n  return [{ json: { success: false, error: e.message } }];\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1984,
+        0
+      ],
+      "id": "f5c5c913-58d8-47b2-804c-df33c33835df",
+      "name": "Generate LinkedIn DMs"
+    },
+    {
+      "parameters": {
+        "jsCode": "const { execSync } = require('child_process');\ntry {\n  const output = execSync('python scripts/validate_row.py',\n    { cwd: process.cwd(), encoding: 'utf8' });\n  return [{ json: { success: true, output } }];\n} catch (e) {\n  return [{ json: { success: false, error: e.message } }];\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2192,
+        0
+      ],
+      "id": "da8b4d24-7fe4-4056-8c4d-e7a77454e7cf",
+      "name": "Sanity Check"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Compile Leads",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Compile Leads": {
+      "main": [
+        [
+          {
+            "node": "Normalize Apollo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize Apollo": {
+      "main": [
+        [
+          {
+            "node": "Normalize LinkedIn",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize LinkedIn": {
+      "main": [
+        [
+          {
+            "node": "Normalize Seeds",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize Seeds": {
+      "main": [
+        [
+          {
+            "node": "Normalize Gaps",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize Gaps": {
+      "main": [
+        [
+          {
+            "node": "Enrich Pipeline",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Enrich Pipeline": {
+      "main": [
+        [
+          {
+            "node": "Prefilter Competitors",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prefilter Competitors": {
+      "main": [
+        [
+          {
+            "node": "Score Leads",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Score Leads": {
+      "main": [
+        [
+          {
+            "node": "Validate Emails",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate Emails": {
+      "main": [
+        [
+          {
+            "node": "Generate LinkedIn DMs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate LinkedIn DMs": {
+      "main": [
+        [
+          {
+            "node": "Sanity Check",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "4f629ac1-c8a3-43e7-b8d5-3139b3b72a28",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "b5789ab211c813895bb814f5074d0ec57b5c2445f615e18f297d5ba4f82af6ed"
+  },
+  "id": "PFoFVDrys8OG0PQU",
+  "tags": []
+}
