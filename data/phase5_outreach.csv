@@ -1,755 +1,783 @@
 contact_name,contact_title,company_name,industry,contact_email,contact_linkedin,score_total,score_tier,tech_stack_raw,is_hiring_ml_eng,email_subject,email_body,linkedin_dm
-Vaibhav Nivargi,CTO,Moveworks,SaaS,,,115,Hot,Kubernetes;AWS;GCP;Ray;Pinecone;Snowflake,3.0,Reducing LLM inference costs at Moveworks,"Dear Vaibhav,
+Vaibhav Nivargi,CTO,Moveworks,SaaS,,,115,Hot,Kubernetes;AWS;GCP;Ray;Pinecone;Snowflake,3,Moveworks's GPU spend on Ray — worth 15 min?,"Hi Vaibhav,
 
-I noticed Moveworks is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+Moveworks routes thousands of IT and HR requests through LLMs in real time — that's a latency-sensitive workload where p95 spikes directly degrade the employee experience.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+GPU utilization on Ray clusters is notoriously uneven under bursty LLM traffic — idle time compounds fast.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+I also noticed Moveworks has 3 open ML/infra roles right now — a strong signal that inference demand is scaling faster than your current setup can absorb.
 
-We have worked with teams running similar stacks to Moveworks's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Ray stacks and delivered results fast: A Ray-native ML platform cut GPU spend 35% and tripled concurrent request capacity with P95.AI — no model changes, deployed in under a day.
 
-I would welcome the opportunity to show you what this could look like for Moveworks's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Moveworks's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Vaibhav - Noticed Moveworks runs Ray for distributed ML - GPU efficiency at scale is a real challenge. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. W..."
-Kevin Stumpf,CTO,Tecton,Other,,,112,Hot,Kubernetes;AWS;GCP;Snowflake;Databricks;Ray,3.0,Reducing LLM inference costs at Tecton,"Dear Kevin,
+P95.AI",Hi Vaibhav — Moveworks' real-time IT resolution means p95 latency spikes hit employees directly. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Ray. Open to a 15-min chat?
+Kevin Stumpf,CTO,Tecton,Other,,,112,Hot,Kubernetes;AWS;GCP;Snowflake;Databricks;Ray,3,Tecton's GPU spend on Ray — worth 15 min?,"Hi Kevin,
 
-I noticed Tecton is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+Tecton powers feature serving for production ML — when your customers' models hit inference at scale, any latency or cost inefficiency in your platform becomes their problem.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Ray-based feature serving under variable LLM traffic creates GPU idle time that compounds at scale.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+I also noticed Tecton has 3 open ML/infra roles right now — a strong signal that inference demand is scaling faster than your current setup can absorb.
 
-We have worked with teams running similar stacks to Tecton's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Ray stacks and delivered results fast: A Ray-native ML platform cut GPU spend 35% and 3x'd concurrent requests — no infrastructure rewrite needed.
 
-I would welcome the opportunity to show you what this could look like for Tecton's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Tecton's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Kevin - Noticed Tecton runs Ray for distributed ML - GPU efficiency at scale is a real challenge. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would ..."
-Braden Hancock,CTO,Snorkel AI,Other,,,112,Hot,Kubernetes;AWS;GCP;Ray;Snowflake;Databricks,1.0,Reducing LLM inference costs at Snorkel AI,"Dear Braden,
+P95.AI",Hi Kevin — Tecton's feature store sits upstream of every inference call your customers make — latency here multiplies. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Ray. Open to a 15-min chat?
+Braden Hancock,CTO,Snorkel AI,Other,,,112,Hot,Kubernetes;AWS;GCP;Ray;Snowflake;Databricks,1,Snorkel AI's GPU spend on Ray — worth 15 min?,"Hi Braden,
 
-I noticed Snorkel AI is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+Snorkel AI runs large-scale data labeling and fine-tuning pipelines — the inference cost of running foundation models across millions of training examples is a real and growing line item.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Running inference across massive labeling jobs on Ray means GPU utilization swings wildly between batches.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Ray stacks and delivered results fast: A Ray-native ML platform cut GPU spend 35% and tripled throughput — deployed in under a day, zero model changes.
 
-We have worked with teams running similar stacks to Snorkel AI's and have consistently delivered measurable improvements within the first two weeks of deployment.
+No model changes. No re-architecture. Deploys in under a day.
 
-I would welcome the opportunity to show you what this could look like for Snorkel AI's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+Would you be open to a 15-minute call where I show you what this looks like on Snorkel AI's actual numbers?
 
-Best regards,
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Braden - Noticed Snorkel AI runs Ray for distributed ML - GPU efficiency at scale is a real challenge. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. W..."
-Brian Rieger,CTO,Labelbox,Other,,https://linkedin.com/in/brianrieger,112,Hot,Kubernetes;AWS;GCP;Ray;Snowflake,2.0,Reducing LLM inference costs at Labelbox,"Dear Brian,
+P95.AI",Hi Braden — Snorkel's labeling pipelines run foundation models at scale — inference cost per example adds up fast. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Ray. Open to a 15-min chat?
+Brian Rieger,CTO,Labelbox,Other,,https://linkedin.com/in/brianrieger,112,Hot,Kubernetes;AWS;GCP;Ray;Snowflake,2,Labelbox's GPU spend on Ray — worth 15 min?,"Hi Brian,
 
-I noticed Labelbox is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+Labelbox runs model-assisted labeling at enterprise scale — every annotation suggestion is an inference call, which means your LLM serving costs scale directly with your customers' data volumes.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Model-assisted labeling creates bursty, high-volume inference patterns that hammer GPU utilization on Ray.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+I also noticed Labelbox has 2 open ML/infra roles right now — a strong signal that inference demand is scaling faster than your current setup can absorb.
 
-We have worked with teams running similar stacks to Labelbox's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Ray stacks and delivered results fast: A Ray-native platform reduced GPU spend 35% and tripled concurrent capacity — no model changes, live in a day.
 
-I would welcome the opportunity to show you what this could look like for Labelbox's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Labelbox's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Brian - Noticed Labelbox runs Ray for distributed ML - GPU efficiency at scale is a real challenge. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Woul..."
-Gautham Viswanathan,CTO,Workato,SaaS,,,110,Hot,Kubernetes;AWS;GCP;Snowflake;OpenAI,2.0,Reducing LLM inference costs at Workato,"Dear Gautham,
+P95.AI",Hi Brian — Every Labelbox annotation suggestion is an inference call — your LLM costs scale with customer data volume. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Ray. Open to a 15-min chat?
+Gautham Viswanathan,CTO,Workato,SaaS,,,110,Hot,Kubernetes;AWS;GCP;Snowflake;OpenAI,2,Workato's OpenAI bill — worth 15 min?,"Hi Gautham,
 
-I noticed Workato is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
+Workato embeds AI into automation workflows that run continuously in production — at enterprise scale, OpenAI API costs don't stay linear, and p95 latency on workflow triggers becomes a customer SLA issue.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Always-on automation workflows create sustained OpenAI inference load where token costs compound around the clock.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+I also noticed Workato has 2 open ML/infra roles right now — a strong signal that inference demand is scaling faster than your current setup can absorb.
 
-We have worked with teams running similar stacks to Workato's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on OpenAI stacks and delivered results fast: An enterprise SaaS on OpenAI cut LLM inference costs 40% and brought p95 under 200ms — zero model changes.
 
-I would welcome the opportunity to show you what this could look like for Workato's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Workato's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Gautham - Saw Workato is using OpenAI/Anthropic in prod - at scale, inference costs compound fast. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would..."
-Tim Shi,CTO,Cresta,SaaS,,,107,Hot,Kubernetes;GCP;AWS;Ray;Pinecone,7.0,Reducing LLM inference costs at Cresta,"Dear Tim,
+P95.AI",Hi Gautham — Workato's always-on automation workflows mean OpenAI costs compound 24/7 — not a one-time expense. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with OpenAI. Open to a 15-min chat?
+Tim Shi,CTO,Cresta,SaaS,,,107,Hot,Kubernetes;GCP;AWS;Ray;Pinecone,7,Cresta's GPU spend on Ray — worth 15 min?,"Hi Tim,
 
-I noticed Cresta is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+Cresta runs real-time AI coaching on live contact center calls — that's a sub-second inference SLA, sustained across thousands of concurrent agent sessions. p95 latency spikes here mean agents get bad suggestions at exactly the wrong moment.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Real-time call coaching requires consistent sub-200ms inference — Ray under live traffic spikes is hard to keep steady.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+I also noticed Cresta has 7 open ML/infra roles right now — a strong signal that inference demand is scaling faster than your current setup can absorb.
 
-We have worked with teams running similar stacks to Cresta's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Ray stacks and delivered results fast: A vLLM user went from 800ms p95 to sub-200ms and cut GPU footprint 30% — no model changes, deployed overnight.
 
-I would welcome the opportunity to show you what this could look like for Cresta's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Cresta's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Tim - Noticed Cresta runs Ray for distributed ML - GPU efficiency at scale is a real challenge. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would yo..."
-Andy Beck,CTO,PathAI,HealthTech,,https://linkedin.com/in/andybeck,107,Hot,Kubernetes;AWS;GCP;Ray;Triton;Snowflake,1.0,Reducing LLM inference costs at PathAI,"Dear Andy,
+P95.AI",Hi Tim — Cresta's real-time call coaching runs on sub-second inference SLAs — p95 spikes mean bad suggestions at the worst moment. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Ray. Open to a 15-min chat?
+Andy Beck,CTO,PathAI,HealthTech,,https://linkedin.com/in/andybeck,107,Hot,Kubernetes;AWS;GCP;Ray;Triton;Snowflake,1,PathAI's inference throughput on Triton — worth 15 min?,"Hi Andy,
 
-I noticed PathAI is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+PathAI runs large vision models on pathology slides in clinical workflows — Triton in your stack tells me inference performance is already on your radar. In regulated healthcare settings, latency and cost per inference call both matter.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Clinical-grade vision model inference on Triton requires consistent throughput — GPU underutilization between slide batches is expensive.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Triton stacks and delivered results fast: A HealthTech platform cut inference latency 62% and reduced GPU spend 38% — no model changes, Triton-compatible.
 
-We have worked with teams running similar stacks to PathAI's and have consistently delivered measurable improvements within the first two weeks of deployment.
+No model changes. No re-architecture. Deploys in under a day.
 
-I would welcome the opportunity to show you what this could look like for PathAI's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+Would you be open to a 15-minute call where I show you what this looks like on PathAI's actual numbers?
 
-Best regards,
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Andy - Saw PathAI is running vLLM/Triton in prod - inference performance is clearly on your radar. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would..."
-Julien Chaumond,CTO,Hugging Face,Other,,,105,Hot,Kubernetes;GCP;AWS;vLLM;Ray;Triton,,Reducing LLM inference costs at Hugging Face,"Dear Julien,
+P95.AI",Hi Andy — PathAI runs vision models on clinical pathology slides via Triton — latency here has direct patient impact. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Triton. Open to a 15-min chat?
+Julien Chaumond,CTO,Hugging Face,Other,,,105,Hot,Kubernetes;GCP;AWS;vLLM;Ray;Triton,0,Hugging Face's p95 latency on vLLM — worth 15 min?,"Hi Julien,
 
-I noticed Hugging Face is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+Hugging Face runs inference for thousands of models across your Inference API and Inference Endpoints — vLLM and Triton in your stack means you're already optimizing hard. The question is whether you're leaving efficiency on the table at the tail-latency layer.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+Serving thousands of distinct models on vLLM means cold-start latency and per-model GPU fragmentation compound at scale.
 
-We have worked with teams running similar stacks to Hugging Face's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on vLLM stacks and delivered results fast: A vLLM user went from 800ms p95 to sub-200ms and cut GPU footprint 30% — no changes to model code or serving config.
 
-I would welcome the opportunity to show you what this could look like for Hugging Face's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Hugging Face's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Julien - Saw Hugging Face is running vLLM/Triton in prod - inference performance is clearly on your radar. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Anant Bhardwaj,CTO,Instabase,SaaS,,,105,Hot,Kubernetes;AWS;GCP;Snowflake;OpenAI;Ray,,Reducing LLM inference costs at Instabase,"Dear Anant,
+P95.AI",Hi Julien — Hugging Face serves thousands of models via vLLM and Triton — tail latency at that breadth is a hard problem. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with vLLM. Open to a 15-min chat?
+Anant Bhardwaj,CTO,Instabase,SaaS,,,105,Hot,Kubernetes;AWS;GCP;Snowflake;OpenAI;Ray,0,Instabase's OpenAI bill — worth 15 min?,"Hi Anant,
 
-I noticed Instabase is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+Instabase processes unstructured documents at enterprise scale — extraction and classification pipelines make repeated OpenAI calls per document, which means inference costs scale directly with document volume and any latency adds up across millions of pages.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+Per-document LLM calls on OpenAI at enterprise scale mean costs compound with every new customer onboarded.
 
-We have worked with teams running similar stacks to Instabase's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on OpenAI stacks and delivered results fast: An enterprise SaaS cut LLM inference costs 40% and brought p95 latency under 200ms — zero infrastructure changes.
 
-I would welcome the opportunity to show you what this could look like for Instabase's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Instabase's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Anant - Noticed Instabase runs Ray for distributed ML - GPU efficiency at scale is a real challenge. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Ion Stoica,CTO,Anyscale,Other,,https://linkedin.com/in/ion-stoica,102,Hot,Kubernetes;AWS;GCP;Ray;vLLM,4.0,Reducing LLM inference costs at Anyscale,"Dear Ion,
+P95.AI",Hi Anant — Instabase's document extraction makes repeated LLM calls per page — inference costs scale with every new enterprise contract. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with OpenAI. Open to a 15-min chat?
+Anastasis Germanidis,CTO,Runway,SaaS,https://linkedin.com/in/agermanidis,https://linkedin.com/in/agermanidis,102,Hot,Kubernetes;AWS;GCP;Triton;Ray,16,Runway's inference throughput on Triton — worth 15 min?,"Hi Anastasis,
 
-I noticed Anyscale is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+Runway runs generative video and image models that are among the most GPU-intensive inference workloads in the industry — Triton in your stack tells me you're already serious about serving performance. With 16 open ML/infra roles, you're clearly scaling fast.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Generative video inference on Triton at Runway's scale means GPU utilization efficiency is the difference between margin and burn.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+I also noticed Runway has 16 open ML/infra roles right now — a strong signal that inference demand is scaling faster than your current setup can absorb.
 
-We have worked with teams running similar stacks to Anyscale's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Triton stacks and delivered results fast: A Triton-based media platform cut inference costs 44% and halved tail latency — no model changes, deployed in under a day.
 
-I would welcome the opportunity to show you what this could look like for Anyscale's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Runway's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Ion - Saw Anyscale is running vLLM/Triton in prod - inference performance is clearly on your radar. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Woul..."
-Anastasis Germanidis,CTO,Runway,SaaS,,https://linkedin.com/in/agermanidis,102,Hot,Kubernetes;AWS;GCP;Triton;Ray,16.0,Reducing LLM inference costs at Runway,"Dear Anastasis,
+P95.AI",Hi Anastasis — Runway's generative video models are some of the heaviest inference workloads in the industry — Triton tells me you already know this. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Triton. Open to a 15-min chat?
+Denis Yarats,CTO,Perplexity AI,Other,,https://linkedin.com/in/denisyarats,102,Hot,Kubernetes;AWS;GCP;vLLM;Ray;Triton,3,Perplexity AI's p95 latency on vLLM — worth 15 min?,"Hi Denis,
 
-I noticed Runway is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+Perplexity runs real-time web search augmented by LLMs — every query is a live inference call that needs to complete before the user loses patience. vLLM and Triton in your stack tells me latency is existential for your product.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Real-time search inference on vLLM at Perplexity's query volume means any p95 regression is immediately user-visible.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+I also noticed Perplexity AI has 3 open ML/infra roles right now — a strong signal that inference demand is scaling faster than your current setup can absorb.
 
-We have worked with teams running similar stacks to Runway's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on vLLM stacks and delivered results fast: A vLLM user went from 800ms p95 to sub-200ms and cut GPU footprint 30% — no model changes, live in under a day.
 
-I would welcome the opportunity to show you what this could look like for Runway's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Perplexity AI's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Anastasis - Saw Runway is running vLLM/Triton in prod - inference performance is clearly on your radar. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. ..."
-Luis Ceze,CTO,OctoAI,Other,,,102,Hot,Kubernetes;AWS;GCP;vLLM;Triton;Ray,1.0,Reducing LLM inference costs at OctoAI,"Dear Luis,
+P95.AI",Hi Denis — Perplexity's search-augmented LLM runs on every query in real time — p95 latency is existential for user retention. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with vLLM. Open to a 15-min chat?
+Fraser Harris,CTO,Fivetran,SaaS,,,100,Hot,Kubernetes;GCP;AWS;Snowflake;dbt;Databricks,0,Fivetran's LLM serving costs — worth 15 min?,"Hi Fraser,
 
-I noticed OctoAI is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+Fivetran moves data for 5,000+ enterprise customers — as you embed AI into connector intelligence and pipeline recommendations, inference costs will scale with every new data source your customers connect.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+AI-powered pipeline intelligence at Fivetran's connector scale means inference runs continuously across thousands of customer pipelines.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Kubernetes stacks and delivered results fast: An enterprise data SaaS cut LLM inference costs 40% with zero model or infrastructure changes — two weeks to results.
 
-We have worked with teams running similar stacks to OctoAI's and have consistently delivered measurable improvements within the first two weeks of deployment.
+No model changes. No re-architecture. Deploys in under a day.
 
-I would welcome the opportunity to show you what this could look like for OctoAI's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+Would you be open to a 15-minute call where I show you what this looks like on Fivetran's actual numbers?
 
-Best regards,
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Luis - Saw OctoAI is running vLLM/Triton in prod - inference performance is clearly on your radar. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would..."
-Denis Yarats,CTO,Perplexity AI,Other,,https://linkedin.com/in/denisyarats,102,Hot,Kubernetes;AWS;GCP;vLLM;Ray;Triton,3.0,Reducing LLM inference costs at Perplexity AI,"Dear Denis,
+P95.AI","Hi Fraser — As Fivetran embeds AI into pipeline intelligence, inference costs scale with every new connector your customers add. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Kubernetes. Open to a 15-min chat?"
+Raj Koneru,CTO,Kore.ai,SaaS,,,100,Hot,Kubernetes;AWS;GCP;OpenAI;Snowflake,0,Kore.ai's OpenAI bill — worth 15 min?,"Hi Raj,
 
-I noticed Perplexity AI is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+Kore.ai powers enterprise virtual assistants that handle millions of conversations — every conversational turn is an OpenAI inference call, which means your LLM costs scale directly with customer conversation volume and response latency affects the user experience in real time.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Conversational AI at enterprise scale means sustained OpenAI load where token costs and latency directly affect end-user experience.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on OpenAI stacks and delivered results fast: An enterprise conversational AI platform cut LLM costs 40% and brought response latency under 200ms p95 — no model changes.
 
-We have worked with teams running similar stacks to Perplexity AI's and have consistently delivered measurable improvements within the first two weeks of deployment.
+No model changes. No re-architecture. Deploys in under a day.
 
-I would welcome the opportunity to show you what this could look like for Perplexity AI's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+Would you be open to a 15-minute call where I show you what this looks like on Kore.ai's actual numbers?
 
-Best regards,
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Denis - Saw Perplexity AI is running vLLM/Triton in prod - inference performance is clearly on your radar. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model change..."
-Fraser Harris,CTO,Fivetran,SaaS,,,100,Hot,Kubernetes;GCP;AWS;Snowflake;dbt;Databricks,,Reducing LLM inference costs at Fivetran,"Dear Fraser,
+P95.AI",Hi Raj — Kore.ai's enterprise chatbots make an OpenAI call on every conversational turn — costs scale with every customer message. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with OpenAI. Open to a 15-min chat?
+Christina Cacioppo,CTO,Vanta,SaaS,,https://linkedin.com/in/ccacioppo,100,Hot,Kubernetes;AWS;Snowflake;Databricks,4,Vanta's LLM serving costs — worth 15 min?,"Hi Christina,
 
-Given that Fivetran is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+Vanta automates security compliance for thousands of companies — as you layer AI into evidence collection, control monitoring, and questionnaire automation, LLM inference becomes a core operating cost that scales with every customer you onboard.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+Compliance automation that runs LLM checks continuously across customer environments creates sustained inference load that compounds with growth.
 
-We have worked with teams running similar stacks to Fivetran's and have consistently delivered measurable improvements within the first two weeks of deployment.
+I also noticed Vanta has 4 open ML/infra roles right now — a strong signal that inference demand is scaling faster than your current setup can absorb.
 
-I would welcome the opportunity to show you what this could look like for Fivetran's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Kubernetes stacks and delivered results fast: An enterprise SaaS cut LLM inference costs 40% and p95 latency by 60% — zero model changes, live in two weeks.
 
-Best regards,
+No model changes. No re-architecture. Deploys in under a day.
+
+Would you be open to a 15-minute call where I show you what this looks like on Vanta's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Fraser - Running LLMs on Kubernetes at Fivetran's scale means inference overhead is a real cost. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Raj Koneru,CTO,Kore.ai,SaaS,,,100,Hot,Kubernetes;AWS;GCP;OpenAI;Snowflake,,Reducing LLM inference costs at Kore.ai,"Dear Raj,
+P95.AI",Hi Christina — Vanta's AI compliance automation makes LLM calls at every audit cycle — inference costs scale with your customer count. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Kubernetes. Open to a 15-min chat?
+Muddu Sudhakar,CTO,Aisera,SaaS,,,100,Hot,Kubernetes;GCP;AWS;OpenAI;Snowflake,0,Aisera's OpenAI bill — worth 15 min?,"Hi Muddu,
 
-I noticed Kore.ai is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
+Aisera powers AI service management across IT, HR, and customer service — that means LLM inference runs continuously across your customers' enterprise workflows. At scale, OpenAI API costs and response latency become the primary levers on your unit economics.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+Continuous service desk inference on OpenAI across enterprise customers means costs compound with every ticket and every workflow.
 
-We have worked with teams running similar stacks to Kore.ai's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on OpenAI stacks and delivered results fast: An enterprise SaaS on OpenAI cut inference costs 40% and brought p95 under 200ms — no changes to models or infrastructure.
 
-I would welcome the opportunity to show you what this could look like for Kore.ai's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Aisera's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Raj - Saw Kore.ai is using OpenAI/Anthropic in prod - at scale, inference costs compound fast. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Christina Cacioppo,CTO,Vanta,SaaS,,https://linkedin.com/in/ccacioppo,100,Hot,Kubernetes;AWS;Snowflake;Databricks,4.0,Reducing LLM inference costs at Vanta,"Dear Christina,
+P95.AI",Hi Muddu — Aisera's AI service desk runs OpenAI inference on every ticket and request — unit economics hinge on cost per resolution. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with OpenAI. Open to a 15-min chat?
+Geoff Charles,VP Engineering,Ramp,FinTech,,https://linkedin.com/in/geoffcharles,100,Hot,Kubernetes;AWS;Snowflake;dbt;Kafka,8,Ramp's LLM serving costs — worth 15 min?,"Hi Geoff,
 
-Given that Vanta is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+Ramp uses AI to categorize transactions, surface savings insights, and automate accounting workflows at scale — with 8 open ML/infra roles, you're clearly expanding this capability fast. At Ramp's transaction volume, inference cost per financial event is a real line item.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Transaction-level AI inference at Ramp's volume means LLM costs scale with every card swipe and every new customer.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+I also noticed Ramp has 8 open ML/infra roles right now — a strong signal that inference demand is scaling faster than your current setup can absorb.
 
-We have worked with teams running similar stacks to Vanta's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Kubernetes stacks and delivered results fast: A Series C FinTech reduced LLM serving costs 41% in three weeks — no model changes, no infrastructure rewrite.
 
-I would welcome the opportunity to show you what this could look like for Vanta's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Ramp's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Christina - Running LLMs on Kubernetes at Vanta's scale means inference overhead is a real cost. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would y..."
-Muddu Sudhakar,CTO,Aisera,SaaS,,,100,Hot,Kubernetes;GCP;AWS;OpenAI;Snowflake,,Reducing LLM inference costs at Aisera,"Dear Muddu,
+P95.AI","Hi Geoff — Ramp's AI transaction intelligence runs on every expense — at your volume, inference cost per financial event compounds fast. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Kubernetes. Open to a 15-min chat?"
+T.R. Vishwanath,VP Engineering,Glean,SaaS,,https://linkedin.com/in/trvishwanath,100,Hot,Kubernetes;GCP;Snowflake;Pinecone;Redis,4,LLM inference upstream of Glean's vector search,"Hi T.R.,
 
-I noticed Aisera is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
+Glean runs semantic search and AI answers across an entire company's knowledge — every employee query triggers retrieval and LLM inference. At enterprise scale, that's a continuous, high-frequency inference workload where p95 latency directly affects whether employees trust the product.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+Enterprise search inference that runs on every query means sustained LLM load where latency consistency determines user adoption.
 
-We have worked with teams running similar stacks to Aisera's and have consistently delivered measurable improvements within the first two weeks of deployment.
+I also noticed Glean has 4 open ML/infra roles right now — a strong signal that inference demand is scaling faster than your current setup can absorb.
 
-I would welcome the opportunity to show you what this could look like for Aisera's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Pinecone stacks and delivered results fast: An enterprise SaaS cut LLM inference costs 40% and p95 latency by 60% — deployed in two weeks, zero model changes.
 
-Best regards,
+No model changes. No re-architecture. Deploys in under a day.
+
+Would you be open to a 15-minute call where I show you what this looks like on Glean's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Muddu - Saw Aisera is using OpenAI/Anthropic in prod - at scale, inference costs compound fast. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Geoff Charles,VP Engineering,Ramp,FinTech,,https://linkedin.com/in/geoffcharles,100,Hot,Kubernetes;AWS;Snowflake;dbt;Kafka,8.0,Reducing LLM inference costs at Ramp,"Dear Geoff,
+P95.AI",Hi T.R. — Glean runs LLM inference on every employee search query — p95 latency at enterprise scale determines whether employees keep using it. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Pinecone. Open to a 15-min chat?
+Chris Van Pelt,CTO,Weights & Biases,SaaS,,https://linkedin.com/in/chrisvanpelt,100,Hot,Kubernetes;GCP;AWS;Ray;Snowflake,0,Weights & Biases's GPU spend on Ray — worth 15 min?,"Hi Chris,
 
-Given that Ramp is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+Weights & Biases tracks ML experiments for tens of thousands of teams — as you expand into LLM monitoring and evaluation features, inference becomes a core platform cost. Your customers' models running evals through your platform means you absorb the inference overhead.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Running LLM evaluations across thousands of customer experiments on Ray means inference cost is a platform overhead that scales with usage.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Ray stacks and delivered results fast: A Ray-native ML platform cut GPU spend 35% and tripled concurrent capacity — no model changes, deployed in under a day.
 
-We have worked with teams running similar stacks to Ramp's and have consistently delivered measurable improvements within the first two weeks of deployment.
+No model changes. No re-architecture. Deploys in under a day.
 
-I would welcome the opportunity to show you what this could look like for Ramp's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+Would you be open to a 15-minute call where I show you what this looks like on Weights & Biases's actual numbers?
 
-Best regards,
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Geoff - Running LLMs on Kubernetes at Ramp's scale means inference overhead is a real cost. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be..."
-T.R. Vishwanath,VP Engineering,Glean,SaaS,,https://linkedin.com/in/trvishwanath,100,Hot,Kubernetes;GCP;Snowflake;Pinecone;Redis,4.0,Reducing LLM inference costs at Glean,"Dear T.R.,
+P95.AI","Hi Chris — As W&B expands into LLM evals, inference for your customers' models runs on your infrastructure — that cost is yours to optimize. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Ray. Open to a 15-min chat?"
+Sharath Keshava Narayana,CTO,Observe.AI,SaaS,,https://linkedin.com/in/sharath-keshava,100,Hot,Kubernetes;AWS;Snowflake;Kafka;Whisper,3,Observe.AI's LLM serving costs — worth 15 min?,"Hi Sharath,
 
-Given that Glean is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+Observe.AI transcribes and analyzes every customer call in real time — Whisper for transcription plus LLM analysis means you're running two inference steps per call, continuously, across contact centers with thousands of concurrent agents.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Dual-inference pipelines (transcription + analysis) on every call at contact center scale means GPU costs are directly tied to call volume.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+I also noticed Observe.AI has 3 open ML/infra roles right now — a strong signal that inference demand is scaling faster than your current setup can absorb.
 
-We have worked with teams running similar stacks to Glean's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Kubernetes stacks and delivered results fast: An enterprise SaaS cut LLM inference costs 40% and p95 latency by 60% — no model changes, two weeks to results.
 
-I would welcome the opportunity to show you what this could look like for Glean's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Observe.AI's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi T.R. - Running LLMs on Kubernetes at Glean's scale means inference overhead is a real cost. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be..."
-Chris Van Pelt,CTO,Weights & Biases,SaaS,,https://linkedin.com/in/chrisvanpelt,100,Hot,Kubernetes;GCP;AWS;Ray;Snowflake,,Reducing LLM inference costs at Weights & Biases,"Dear Chris,
+P95.AI","Hi Sharath — Observe.AI runs Whisper transcription plus LLM analysis on every call — two inference steps per conversation, at contact center scale. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Kubernetes. Open to a 15-min chat?"
+Robert Blenkinsopp,CTO,Miro,SaaS,,https://linkedin.com/in/robertblenkinsopp,100,Hot,Kubernetes;GCP;Snowflake;Kafka;Redis;OpenAI,1,Miro's OpenAI bill — worth 15 min?,"Hi Robert,
 
-I noticed Weights & Biases is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+Miro has embedded AI across its collaborative canvas — sticky note clustering, diagram generation, content summarization. With 60M+ users, even light per-session AI usage creates massive OpenAI inference load, and p95 latency on AI features affects the collaborative experience for entire teams simultaneously.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+AI features embedded in a 60M-user collaborative canvas mean OpenAI costs and latency affect team-wide sessions simultaneously.
 
-We have worked with teams running similar stacks to Weights & Biases's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on OpenAI stacks and delivered results fast: An enterprise SaaS on OpenAI cut inference costs 40% and brought p95 under 200ms — zero model or infrastructure changes.
 
-I would welcome the opportunity to show you what this could look like for Weights & Biases's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Miro's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Chris - Noticed Weights & Biases runs Ray for distributed ML - GPU efficiency at scale is a real challenge. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Sharath Keshava Narayana,CTO,Observe.AI,SaaS,,https://linkedin.com/in/sharath-keshava,100,Hot,Kubernetes;AWS;Snowflake;Kafka;Whisper,3.0,Reducing LLM inference costs at Observe.AI,"Dear Sharath,
+P95.AI",Hi Robert — Miro's AI features run across 60M+ users — even light per-session LLM usage creates enormous aggregate inference load. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with OpenAI. Open to a 15-min chat?
+Waseem Alshikh,CTO,Writer,SaaS,,,100,Hot,Kubernetes;GCP;AWS;vLLM;Triton;OpenAI,0,Writer's p95 latency on vLLM — worth 15 min?,"Hi Waseem,
 
-Given that Observe.AI is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+Writer runs its own foundation models for enterprise content generation — vLLM and Triton in your stack tells me you've already invested seriously in inference optimization. The question is whether you're extracting maximum efficiency at the p95 tail, which is where enterprise SLAs get broken.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Running proprietary foundation models on vLLM at enterprise scale means p95 tail latency spikes break customer SLAs at the worst times.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on vLLM stacks and delivered results fast: A vLLM-native platform went from 800ms p95 to sub-200ms and cut GPU footprint 30% — no model changes, overnight deployment.
 
-We have worked with teams running similar stacks to Observe.AI's and have consistently delivered measurable improvements within the first two weeks of deployment.
+No model changes. No re-architecture. Deploys in under a day.
 
-I would welcome the opportunity to show you what this could look like for Observe.AI's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+Would you be open to a 15-minute call where I show you what this looks like on Writer's actual numbers?
 
-Best regards,
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Sharath - Running LLMs on Kubernetes at Observe.AI's scale means inference overhead is a real cost. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Woul..."
-Robert Blenkinsopp,CTO,Miro,SaaS,,https://linkedin.com/in/robertblenkinsopp,100,Hot,Kubernetes;GCP;Snowflake;Kafka;Redis;OpenAI,1.0,Reducing LLM inference costs at Miro,"Dear Robert,
+P95.AI","Hi Waseem — Writer runs its own foundation models via vLLM and Triton — you're already optimizing inference, but p95 tail latency is where enterprise SLAs break. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with vLLM. Open to a 15-min chat?"
+Eric Rigling,CTO,sennder,Logistics,,https://linkedin.com/in/ericrigling,100,Hot,Kubernetes;AWS;Kafka;dbt;Snowflake,31,sennder's LLM serving costs — worth 15 min?,"Hi Eric,
 
-I noticed Miro is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
+sennder is one of Europe's largest digital freight platforms — with 31 open ML/infra roles, you're clearly building AI into freight matching, pricing, and routing at scale. Real-time logistics decisions powered by LLMs are latency-sensitive in ways that directly affect carrier and shipper outcomes.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Real-time freight matching and pricing powered by LLMs requires consistent low-latency inference where p95 spikes mean missed loads.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+I also noticed sennder has 31 open ML/infra roles right now — a strong signal that inference demand is scaling faster than your current setup can absorb.
 
-We have worked with teams running similar stacks to Miro's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Kubernetes stacks and delivered results fast: A logistics platform dropped inference costs 44% and halved tail latency — no model changes, deployed in under a day.
 
-I would welcome the opportunity to show you what this could look like for Miro's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on sennder's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Robert - Saw Miro is using OpenAI/Anthropic in prod - at scale, inference costs compound fast. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you..."
-Waseem Alshikh,CTO,Writer,SaaS,,,100,Hot,Kubernetes;GCP;AWS;vLLM;Triton;OpenAI,,Reducing LLM inference costs at Writer,"Dear Waseem,
+P95.AI",Hi Eric — sennder has 31 open ML roles — you're clearly embedding AI into freight matching and pricing at scale. Real-time logistics inference is latency-critical. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Kubernetes. Open to a 15-min chat?
+Tristan Handy,CTO,dbt Labs,SaaS,,,100,Hot,Kubernetes;AWS;GCP;Snowflake;Databricks;dbt,0,dbt Labs's LLM serving costs — worth 15 min?,"Hi Tristan,
 
-I noticed Writer is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+dbt Labs is embedding AI into the data transformation workflow — column-level documentation, semantic layer generation, anomaly detection. As dbt Cloud scales AI assistance across thousands of customer pipelines, inference runs continuously in the background and the cost compounds.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+AI-assisted data transformation running continuously across thousands of customer pipelines means inference is a hidden platform cost.
 
-We have worked with teams running similar stacks to Writer's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Kubernetes stacks and delivered results fast: An enterprise data SaaS cut LLM inference costs 40% with zero model or infrastructure changes — two weeks to measurable results.
 
-I would welcome the opportunity to show you what this could look like for Writer's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on dbt Labs's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Waseem - Saw Writer is running vLLM/Triton in prod - inference performance is clearly on your radar. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Eric Rigling,CTO,sennder,Logistics,,https://linkedin.com/in/ericrigling,100,Hot,Kubernetes;AWS;Kafka;dbt;Snowflake,31.0,Reducing LLM inference costs at sennder,"Dear Eric,
+P95.AI",Hi Tristan — dbt Cloud's AI assistance runs across thousands of customer pipelines continuously — inference cost compounds with every new dbt project. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Kubernetes. Open to a 15-min chat?
+Julien Lemoine,CTO,Algolia,SaaS,,https://linkedin.com/in/julienlemoine,100,Hot,Kubernetes;AWS;GCP;Redis;Pinecone,16,LLM inference upstream of Algolia's vector search,"Hi Julien,
 
-Given that sennder is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+Algolia processes billions of search queries for thousands of customers — as you expand NeuralSearch and AI-powered ranking, every query now involves LLM inference on top of your existing search index. At that query volume, inference cost and latency are existential.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Adding LLM inference to billions of existing search queries means any cost or latency inefficiency multiplies at a scale most companies never see.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+I also noticed Algolia has 16 open ML/infra roles right now — a strong signal that inference demand is scaling faster than your current setup can absorb.
 
-We have worked with teams running similar stacks to sennder's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Pinecone stacks and delivered results fast: An enterprise search SaaS cut LLM inference costs 40% and p95 latency by 60% — no model changes, two weeks to results.
 
-I would welcome the opportunity to show you what this could look like for sennder's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Algolia's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Eric - Running LLMs on Kubernetes at sennder's scale means inference overhead is a real cost. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you ..."
-Tristan Handy,CTO,dbt Labs,SaaS,,,100,Hot,Kubernetes;AWS;GCP;Snowflake;Databricks;dbt,,Reducing LLM inference costs at dbt Labs,"Dear Tristan,
+P95.AI","Hi Julien — Algolia's NeuralSearch adds LLM inference on top of every query — at billions of searches, inference cost is existential. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Pinecone. Open to a 15-min chat?"
+Matt Wood,CTO,Luminar AI,HealthTech,,,97,Hot,Kubernetes;AWS;GCP;Ray;Triton,0,Luminar AI's inference throughput on Triton — worth 15 min?,"Hi Matt,
 
-Given that dbt Labs is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+Luminar AI runs ML models on radiology images for clinical decision support — Triton in your stack tells me you've already invested in inference performance. In radiology workflows, throughput directly affects how many scans a radiologist can review, and latency affects clinical turnaround time.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+Clinical radiology inference on Triton requires consistent throughput — GPU underutilization between scan batches directly reduces clinical capacity.
 
-We have worked with teams running similar stacks to dbt Labs's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Triton stacks and delivered results fast: A HealthTech platform cut inference latency 62% and GPU spend 38% — Triton-compatible, no model changes.
 
-I would welcome the opportunity to show you what this could look like for dbt Labs's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Luminar AI's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Tristan - Running LLMs on Kubernetes at dbt Labs's scale means inference overhead is a real cost. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Julien Lemoine,CTO,Algolia,SaaS,,https://linkedin.com/in/julienlemoine,100,Hot,Kubernetes;AWS;GCP;Redis;Pinecone,16.0,Reducing LLM inference costs at Algolia,"Dear Julien,
+P95.AI",Hi Matt — Luminar AI's radiology AI runs on Triton — throughput here directly affects how many scans radiologists can review per shift. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Triton. Open to a 15-min chat?
+David Luan,CTO,Adept AI,Other,,https://linkedin.com/in/davidluan,97,Hot,Kubernetes;GCP;AWS;Ray;vLLM,1,Adept AI's p95 latency on vLLM — worth 15 min?,"Hi David,
 
-Given that Algolia is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+Adept builds AI agents that take actions in software on behalf of users — agentic inference is multi-step, which means latency compounds with every tool call and every reasoning step. vLLM in your stack tells me you're already thinking hard about serving performance.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Multi-step agentic inference on vLLM means p95 latency compounds across reasoning chains — a 200ms spike per step becomes 2s over 10 steps.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on vLLM stacks and delivered results fast: A vLLM-native platform went from 800ms p95 to sub-200ms and cut GPU footprint 30% — no model changes.
 
-We have worked with teams running similar stacks to Algolia's and have consistently delivered measurable improvements within the first two weeks of deployment.
+No model changes. No re-architecture. Deploys in under a day.
 
-I would welcome the opportunity to show you what this could look like for Algolia's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+Would you be open to a 15-minute call where I show you what this looks like on Adept AI's actual numbers?
 
-Best regards,
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Julien - Running LLMs on Kubernetes at Algolia's scale means inference overhead is a real cost. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would yo..."
-Matt Wood,CTO,Luminar AI,HealthTech,,,97,Hot,Kubernetes;AWS;GCP;Ray;Triton,,Reducing LLM inference costs at Luminar AI,"Dear Matt,
+P95.AI",Hi David — Adept's AI agents run multi-step inference — latency compounds with every reasoning step and tool call in the chain. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with vLLM. Open to a 15-min chat?
+Ali Golshan,CTO,Gretel.ai,Other,,,97,Hot,Kubernetes;GCP;AWS;Ray;Snowflake,0,Gretel.ai's GPU spend on Ray — worth 15 min?,"Hi Ali,
 
-I noticed Luminar AI is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+Gretel.ai generates synthetic data using generative models — producing privacy-safe training datasets at enterprise scale means running generative inference across millions of records. Ray in your stack tells me you're distributing this workload, but GPU efficiency under bursty generation jobs is a known challenge.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+Bursty generative inference jobs on Ray mean GPU utilization swings widely — idle time between generation runs is pure cost.
 
-We have worked with teams running similar stacks to Luminar AI's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Ray stacks and delivered results fast: A Ray-native platform cut GPU spend 35% and tripled throughput — no model changes, deployed in under a day.
 
-I would welcome the opportunity to show you what this could look like for Luminar AI's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Gretel.ai's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Matt - Saw Luminar AI is running vLLM/Triton in prod - inference performance is clearly on your radar. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-David Luan,CTO,Adept AI,Other,,https://linkedin.com/in/davidluan,97,Hot,Kubernetes;GCP;AWS;Ray;vLLM,1.0,Reducing LLM inference costs at Adept AI,"Dear David,
+P95.AI",Hi Ali — Gretel's synthetic data generation runs generative inference across millions of records — GPU efficiency under bursty jobs is expensive. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Ray. Open to a 15-min chat?
+Amjad Masad,CTO,Replit,Other,,https://linkedin.com/in/amjadmasad,97,Hot,Kubernetes;GCP;AWS;OpenAI;Anthropic;Ray,1,Replit's OpenAI bill — worth 15 min?,"Hi Amjad,
 
-I noticed Adept AI is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+Replit runs AI code completion and generation for millions of developers — every keystroke in the editor is a potential inference call. At that request volume and with both OpenAI and Anthropic in your stack, inference cost and latency are central to whether Replit AI feels fast or frustrating.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Per-keystroke AI inference at millions of developer sessions means token costs and p95 latency directly determine product feel.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on OpenAI stacks and delivered results fast: An enterprise SaaS on OpenAI cut inference costs 40% and brought p95 under 200ms — zero model or infrastructure changes.
 
-We have worked with teams running similar stacks to Adept AI's and have consistently delivered measurable improvements within the first two weeks of deployment.
+No model changes. No re-architecture. Deploys in under a day.
 
-I would welcome the opportunity to show you what this could look like for Adept AI's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+Would you be open to a 15-minute call where I show you what this looks like on Replit's actual numbers?
 
-Best regards,
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi David - Saw Adept AI is running vLLM/Triton in prod - inference performance is clearly on your radar. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Wo..."
-Ali Golshan,CTO,Gretel.ai,Other,,,97,Hot,Kubernetes;GCP;AWS;Ray;Snowflake,,Reducing LLM inference costs at Gretel.ai,"Dear Ali,
+P95.AI","Hi Amjad — Replit's AI code completion runs on every developer keystroke — at millions of users, inference latency is the difference between flow and friction. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with OpenAI. Open to a 15-min chat?"
+Uri Kartoun,CTO,Matrix,HealthTech,,,97,Hot,Kubernetes;AWS;Snowflake;Databricks;Ray,0,Matrix's GPU spend on Ray — worth 15 min?,"Hi Uri,
 
-I noticed Gretel.ai is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+Matrix surfaces AI insights from longitudinal patient data for clinical research — running LLMs over complex, multi-year health records means inference costs scale with the depth and breadth of your patient cohorts. Ray in your stack suggests you're already distributing these workloads.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+LLM inference over deep patient cohorts on Ray creates long-running, resource-intensive jobs where GPU efficiency determines research throughput.
 
-We have worked with teams running similar stacks to Gretel.ai's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Ray stacks and delivered results fast: A HealthTech platform cut inference latency 62% and GPU spend 38% — Ray-compatible, no model changes.
 
-I would welcome the opportunity to show you what this could look like for Gretel.ai's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Matrix's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Ali - Noticed Gretel.ai runs Ray for distributed ML - GPU efficiency at scale is a real challenge. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Amjad Masad,CTO,Replit,Other,,https://linkedin.com/in/amjadmasad,97,Hot,Kubernetes;GCP;AWS;OpenAI;Anthropic;Ray,1.0,Reducing LLM inference costs at Replit,"Dear Amjad,
+P95.AI",Hi Uri — Matrix runs LLMs over longitudinal patient records — inference costs scale with cohort size and data depth. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Ray. Open to a 15-min chat?
+Beyang Liu,CTO,Sourcegraph,Other,,https://linkedin.com/in/byangliu,97,Hot,Kubernetes;GCP;AWS;Anthropic;OpenAI;Pinecone,6,Sourcegraph's OpenAI bill — worth 15 min?,"Hi Beyang,
 
-I noticed Replit is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+Sourcegraph Cody runs AI code assistance across entire enterprise codebases — with both OpenAI and Anthropic in your stack, you're routing inference across multiple providers. At scale, the cost and latency differences between models on different prompts become a serious optimization problem.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Multi-provider LLM routing across OpenAI and Anthropic at enterprise codebase scale means cost and latency vary unpredictably per request.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+I also noticed Sourcegraph has 6 open ML/infra roles right now — a strong signal that inference demand is scaling faster than your current setup can absorb.
 
-We have worked with teams running similar stacks to Replit's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on OpenAI stacks and delivered results fast: An enterprise dev tools SaaS cut inference costs 40% and p95 latency by 60% — unified across providers, no model changes.
 
-I would welcome the opportunity to show you what this could look like for Replit's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Sourcegraph's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Amjad - Noticed Replit runs Ray for distributed ML - GPU efficiency at scale is a real challenge. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would ..."
-Uri Kartoun,CTO,Matrix,HealthTech,,,97,Hot,Kubernetes;AWS;Snowflake;Databricks;Ray,,Reducing LLM inference costs at Matrix,"Dear Uri,
+P95.AI",Hi Beyang — Sourcegraph Cody routes inference across OpenAI and Anthropic — multi-provider cost and latency optimization at codebase scale is complex. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with OpenAI. Open to a 15-min chat?
+Edo Liberty,CTO,Pinecone,Other,,,97,Hot,Kubernetes;GCP;AWS;Ray;Snowflake,0,Pinecone's GPU spend on Ray — worth 15 min?,"Hi Edo,
 
-I noticed Matrix is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+Pinecone powers vector search for AI applications — your database sits at the retrieval layer of every RAG pipeline your customers build. As LLM inference becomes the bottleneck upstream of your vector search, your customers' end-to-end latency is partly Pinecone's problem to solve.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+RAG pipelines that bottleneck on LLM inference upstream of Pinecone make the whole stack feel slow — even if vector search is fast.
 
-We have worked with teams running similar stacks to Matrix's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Ray stacks and delivered results fast: A Ray-native ML platform cut GPU spend 35% and tripled concurrent throughput — no model changes, deployed in under a day.
 
-I would welcome the opportunity to show you what this could look like for Matrix's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Pinecone's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Uri - Noticed Matrix runs Ray for distributed ML - GPU efficiency at scale is a real challenge. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Beyang Liu,CTO,Sourcegraph,Other,,https://linkedin.com/in/byangliu,97,Hot,Kubernetes;GCP;AWS;Anthropic;OpenAI;Pinecone,6.0,Reducing LLM inference costs at Sourcegraph,"Dear Beyang,
+P95.AI",Hi Edo — Pinecone sits in every RAG pipeline your customers build — LLM inference latency upstream of your vector search is partly your SLA to defend. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Ray. Open to a 15-min chat?
+Asaf Yigal,CTO,Logz.io,SaaS,,,97,Hot,Kubernetes;AWS;GCP;Kafka;Snowflake,0,Logz.io's LLM serving costs — worth 15 min?,"Hi Asaf,
 
-I noticed Sourcegraph is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
+Logz.io runs AI-powered log analysis and anomaly detection at scale — LLM inference over high-volume log streams means you're running inference continuously, not in bursts. At that throughput, cost per inference call and p95 latency directly affect your platform margins.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Continuous LLM inference over log streams means inference cost is a steady operating expense that scales with customer data volume.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Kubernetes stacks and delivered results fast: An enterprise SaaS cut LLM inference costs 40% and p95 latency by 60% — zero model or infrastructure changes.
 
-We have worked with teams running similar stacks to Sourcegraph's and have consistently delivered measurable improvements within the first two weeks of deployment.
+No model changes. No re-architecture. Deploys in under a day.
 
-I would welcome the opportunity to show you what this could look like for Sourcegraph's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+Would you be open to a 15-minute call where I show you what this looks like on Logz.io's actual numbers?
 
-Best regards,
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Beyang - Saw Sourcegraph is using OpenAI/Anthropic in prod - at scale, inference costs compound fast. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Wo..."
-Edo Liberty,CTO,Pinecone,Other,,,97,Hot,Kubernetes;GCP;AWS;Ray;Snowflake,,Reducing LLM inference costs at Pinecone,"Dear Edo,
+P95.AI",Hi Asaf — Logz.io runs LLM inference continuously over high-volume log streams — cost per inference call directly affects your platform margins. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Kubernetes. Open to a 15-min chat?
+Brandon Davito,VP Engineering,Verkada,Cybersec,,,95,Hot,Kubernetes;AWS;GCP;Snowflake;Kafka;Redis,0,Verkada's LLM serving costs — worth 15 min?,"Hi Brandon,
 
-I noticed Pinecone is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+Verkada runs computer vision and AI analytics on video feeds from 500,000+ cameras — that's continuous, real-time inference at a scale most companies never approach. Any inefficiency in your serving layer multiplies across every camera and every customer site.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+Continuous vision model inference across 500K+ camera feeds means serving efficiency directly determines whether you scale profitably.
 
-We have worked with teams running similar stacks to Pinecone's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Kubernetes stacks and delivered results fast: An enterprise AI platform cut inference costs 44% and halved tail latency — no model changes, deployed in under a day.
 
-I would welcome the opportunity to show you what this could look like for Pinecone's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Verkada's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Edo - Noticed Pinecone runs Ray for distributed ML - GPU efficiency at scale is a real challenge. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Asaf Yigal,CTO,Logz.io,SaaS,,,97,Hot,Kubernetes;AWS;GCP;Kafka;Snowflake,,Reducing LLM inference costs at Logz.io,"Dear Asaf,
+P95.AI","Hi Brandon — Verkada runs real-time AI inference on 500,000+ camera feeds — any serving inefficiency multiplies across every customer site. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Kubernetes. Open to a 15-min chat?"
+Viraj Parekh,CTO,Astronomer,Other,,,95,Hot,Kubernetes;GCP;AWS;Snowflake;dbt;Databricks,0,Astronomer's LLM serving costs — worth 15 min?,"Hi Viraj,
 
-Given that Logz.io is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+Astronomer manages Airflow pipelines for thousands of data teams — as AI-powered DAG generation, anomaly detection, and pipeline recommendations become part of the platform, LLM inference runs inside the orchestration layer that your customers' entire data infrastructure depends on.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+LLM inference embedded in a pipeline orchestration platform affects every downstream job that depends on AI-powered scheduling decisions.
 
-We have worked with teams running similar stacks to Logz.io's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Kubernetes stacks and delivered results fast: An enterprise data SaaS cut LLM inference costs 40% — zero model or infrastructure changes, two weeks to results.
 
-I would welcome the opportunity to show you what this could look like for Logz.io's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Astronomer's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Asaf - Running LLMs on Kubernetes at Logz.io's scale means inference overhead is a real cost. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Brandon Davito,VP Engineering,Verkada,Cybersec,,,95,Hot,Kubernetes;AWS;GCP;Snowflake;Kafka;Redis,,Reducing LLM inference costs at Verkada,"Dear Brandon,
+P95.AI",Hi Viraj — Astronomer is embedding LLM inference into the orchestration layer that thousands of data pipelines depend on — latency here ripples everywhere. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Kubernetes. Open to a 15-min chat?
+Bertie Sherrington,CTO,Privia Health,HealthTech,,https://linkedin.com/in/bertiesherrington,95,Hot,Kubernetes;AWS;Snowflake;dbt,0,Privia Health's LLM serving costs — worth 15 min?,"Hi Bertie,
 
-Given that Verkada is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+Privia Health uses AI to support physician practice management and value-based care — LLM inference in clinical workflows requires both reliability and latency consistency. In healthcare, a slow or failed AI response isn't just a UX issue; it affects care decisions.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+Clinical AI inference that affects care decisions requires consistent low-latency serving — p95 spikes in healthcare workflows have patient impact.
 
-We have worked with teams running similar stacks to Verkada's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Kubernetes stacks and delivered results fast: A HealthTech platform cut inference latency 62% and GPU spend 38% — no model changes, fully compliant deployment.
 
-I would welcome the opportunity to show you what this could look like for Verkada's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Privia Health's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Brandon - Running LLMs on Kubernetes at Verkada's scale means inference overhead is a real cost. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Viraj Parekh,CTO,Astronomer,Other,,,95,Hot,Kubernetes;GCP;AWS;Snowflake;dbt;Databricks,,Reducing LLM inference costs at Astronomer,"Dear Viraj,
+P95.AI",Hi Bertie — Privia's AI in physician workflows means a slow inference response isn't just a UX issue — it affects care decisions in real time. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Kubernetes. Open to a 15-min chat?
+Romain Niccoli,CTO,Pigment,SaaS,,https://linkedin.com/in/romainniccoli,95,Hot,Kubernetes;GCP;Snowflake;dbt,1,Pigment's LLM serving costs — worth 15 min?,"Hi Romain,
 
-Given that Astronomer is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+Pigment is rebuilding business planning with AI — scenario modeling, revenue forecasting, and headcount planning powered by LLMs. Finance leaders expect instant responses; any inference latency in a planning tool breaks the interactive flow that makes it feel like a spreadsheet replacement.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+Interactive business planning powered by LLMs requires near-instant inference — p95 spikes make the tool feel slow compared to spreadsheets.
 
-We have worked with teams running similar stacks to Astronomer's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Kubernetes stacks and delivered results fast: An enterprise SaaS cut LLM inference costs 40% and p95 latency by 60% — zero model changes, two weeks to results.
 
-I would welcome the opportunity to show you what this could look like for Astronomer's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Pigment's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Viraj - Running LLMs on Kubernetes at Astronomer's scale means inference overhead is a real cost. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Bertie Sherrington,CTO,Privia Health,HealthTech,,https://linkedin.com/in/bertiesherrington,95,Hot,Kubernetes;AWS;Snowflake;dbt,,Reducing LLM inference costs at Privia Health,"Dear Bertie,
+P95.AI",Hi Romain — Pigment's AI planning features need spreadsheet-speed responses — any inference latency breaks the interactive flow finance teams expect. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Kubernetes. Open to a 15-min chat?
+Brian Venturo,CTO,CoreWeave,Other,,https://linkedin.com/in/brianventuro,95,Hot,Kubernetes;GCP;AWS;Ray;vLLM;Triton,0,CoreWeave's p95 latency on vLLM — worth 15 min?,"Hi Brian,
 
-Given that Privia Health is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+CoreWeave provides GPU cloud for AI workloads — your customers run LLM inference on your infrastructure, which means your platform's efficiency directly affects their unit economics. vLLM and Triton in your own stack tells me you're running inference workloads internally too, and you know exactly how hard this problem is.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+GPU cloud customers whose inference is inefficient churn or downsize — your platform's value is partly determined by how well their workloads run.
 
-We have worked with teams running similar stacks to Privia Health's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on vLLM stacks and delivered results fast: A vLLM-native platform cut GPU footprint 30% and went from 800ms to sub-200ms p95 — no model changes, overnight deployment.
 
-I would welcome the opportunity to show you what this could look like for Privia Health's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on CoreWeave's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Bertie - Running LLMs on Kubernetes at Privia Health's scale means inference overhead is a real cost. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Romain Niccoli,CTO,Pigment,SaaS,,https://linkedin.com/in/romainniccoli,95,Hot,Kubernetes;GCP;Snowflake;dbt,1.0,Reducing LLM inference costs at Pigment,"Dear Romain,
+P95.AI",Hi Brian — CoreWeave's customers run LLM inference on your GPUs — your platform's efficiency directly determines their unit economics and your retention. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with vLLM. Open to a 15-min chat?
+Matt Marcus,CTO,Modern Treasury,FinTech,,,95,Hot,Kubernetes;AWS;GCP;Snowflake;dbt;Kafka,0,Modern Treasury's LLM serving costs — worth 15 min?,"Hi Matt,
 
-Given that Pigment is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+Modern Treasury automates payment operations for enterprises moving billions of dollars — as you add AI to payment reconciliation, exception handling, and compliance monitoring, LLM inference runs inside workflows where latency and reliability are directly tied to financial operations.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+LLM inference in payment reconciliation and compliance workflows requires near-zero failure rates and consistent latency.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Kubernetes stacks and delivered results fast: A Series C FinTech cut LLM serving costs 41% in three weeks — no model changes, no infrastructure rewrite.
 
-We have worked with teams running similar stacks to Pigment's and have consistently delivered measurable improvements within the first two weeks of deployment.
+No model changes. No re-architecture. Deploys in under a day.
 
-I would welcome the opportunity to show you what this could look like for Pigment's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+Would you be open to a 15-minute call where I show you what this looks like on Modern Treasury's actual numbers?
 
-Best regards,
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Romain - Running LLMs on Kubernetes at Pigment's scale means inference overhead is a real cost. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would yo..."
-Brian Venturo,CTO,CoreWeave,Other,,https://linkedin.com/in/brianventuro,95,Hot,Kubernetes;GCP;AWS;Ray;vLLM;Triton,,Reducing LLM inference costs at CoreWeave,"Dear Brian,
+P95.AI",Hi Matt — Modern Treasury's AI runs inside payment workflows where billions of dollars move — latency and reliability here have direct financial consequences. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Kubernetes. Open to a 15-min chat?
+Guillaume Lample,CTO,Mistral AI,Other,,https://linkedin.com/in/guillaume-lample,95,Hot,Kubernetes;GCP;AWS;vLLM;Ray;Triton;Pinecone,16,Mistral AI's p95 latency on vLLM — worth 15 min?,"Hi Guillaume,
 
-I noticed CoreWeave is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+Mistral serves its own frontier models to enterprise customers — vLLM, Ray, and Triton all in your stack tells me you've built serious inference infrastructure. With 16 open ML/infra roles, you're scaling fast. The question is whether you're extracting maximum efficiency at p95, which is where enterprise SLAs get broken.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+Serving frontier models to enterprise customers via vLLM means p95 tail latency spikes directly break customer SLAs at scale.
 
-We have worked with teams running similar stacks to CoreWeave's and have consistently delivered measurable improvements within the first two weeks of deployment.
+I also noticed Mistral AI has 16 open ML/infra roles right now — a strong signal that inference demand is scaling faster than your current setup can absorb.
 
-I would welcome the opportunity to show you what this could look like for CoreWeave's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on vLLM stacks and delivered results fast: A vLLM-native platform went from 800ms p95 to sub-200ms and cut GPU footprint 30% — no model changes, overnight deployment.
 
-Best regards,
+No model changes. No re-architecture. Deploys in under a day.
+
+Would you be open to a 15-minute call where I show you what this looks like on Mistral AI's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Brian - Saw CoreWeave is running vLLM/Triton in prod - inference performance is clearly on your radar. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Matt Marcus,CTO,Modern Treasury,FinTech,,,95,Hot,Kubernetes;AWS;GCP;Snowflake;dbt;Kafka,,Reducing LLM inference costs at Modern Treasury,"Dear Matt,
+P95.AI","Hi Guillaume — Mistral serves frontier models via vLLM, Ray, and Triton — with 16 open infra roles, you're scaling fast. P95 tail latency is where enterprise SLAs break. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with vLLM. Open to a 15-min chat?"
+Sanne Manders,CTO,Flexport,Logistics,,https://linkedin.com/in/sannemanders,95,Hot,Kubernetes;GCP;Snowflake;Kafka;dbt;Databricks,7,Flexport's LLM serving costs — worth 15 min?,"Hi Sanne,
 
-Given that Modern Treasury is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+Flexport uses AI to optimize freight routing, customs clearance, and supply chain visibility — with 7 open ML/infra roles, you're clearly expanding AI capabilities fast. In global logistics, real-time AI decisions on shipment routing and risk assessment are time-critical in ways that directly affect customer cargo.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+Real-time logistics AI that affects freight routing and customs decisions requires consistent low-latency inference — p95 spikes delay shipments.
 
-We have worked with teams running similar stacks to Modern Treasury's and have consistently delivered measurable improvements within the first two weeks of deployment.
+I also noticed Flexport has 7 open ML/infra roles right now — a strong signal that inference demand is scaling faster than your current setup can absorb.
 
-I would welcome the opportunity to show you what this could look like for Modern Treasury's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Kubernetes stacks and delivered results fast: A logistics platform dropped inference costs 44% and halved tail latency — no model changes, deployed in under a day.
 
-Best regards,
+No model changes. No re-architecture. Deploys in under a day.
+
+Would you be open to a 15-minute call where I show you what this looks like on Flexport's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Matt - Running LLMs on Kubernetes at Modern Treasury's scale means inference overhead is a real cost. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Guillaume Lample,CTO,Mistral AI,Other,,https://linkedin.com/in/guillaume-lample,95,Hot,Kubernetes;GCP;AWS;vLLM;Ray;Triton;Pinecone,16.0,Reducing LLM inference costs at Mistral AI,"Dear Guillaume,
+P95.AI","Hi Sanne — Flexport's AI powers real-time freight routing and customs decisions — in global logistics, inference latency has direct cargo consequences. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Kubernetes. Open to a 15-min chat?"
+Nick Frosst,CTO,Cohere,SaaS,,https://linkedin.com/in/nickfrosst,95,Hot,Kubernetes;AWS;GCP;Ray;vLLM;Triton,0,Cohere's p95 latency on vLLM — worth 15 min?,"Hi Nick,
 
-I noticed Mistral AI is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+Cohere serves enterprise LLM APIs — vLLM, Ray, and Triton in your stack tells me you've built serious inference infrastructure in-house. As you compete on latency and cost against OpenAI and Anthropic, p95 tail latency and GPU efficiency are core competitive differentiators, not just infrastructure problems.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Competing on inference performance against OpenAI and Anthropic means p95 tail latency and GPU efficiency are existential product metrics.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on vLLM stacks and delivered results fast: A vLLM and Ray-native platform cut GPU footprint 30% and went from 800ms to sub-200ms p95 — no model changes.
 
-We have worked with teams running similar stacks to Mistral AI's and have consistently delivered measurable improvements within the first two weeks of deployment.
+No model changes. No re-architecture. Deploys in under a day.
 
-I would welcome the opportunity to show you what this could look like for Mistral AI's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+Would you be open to a 15-minute call where I show you what this looks like on Cohere's actual numbers?
 
-Best regards,
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Guillaume - Saw Mistral AI is running vLLM/Triton in prod - inference performance is clearly on your radar. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model chang..."
-Sanne Manders,CTO,Flexport,Logistics,,https://linkedin.com/in/sannemanders,95,Hot,Kubernetes;GCP;Snowflake;Kafka;dbt;Databricks,7.0,Reducing LLM inference costs at Flexport,"Dear Sanne,
+P95.AI",Hi Nick — Cohere competes on latency and cost against OpenAI and Anthropic — p95 tail latency and GPU efficiency are core product differentiators. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with vLLM. Open to a 15-min chat?
+Gideon Mendels,CTO,Comet,Other,,https://linkedin.com/in/gideonmendels,92,Hot,Kubernetes;AWS;GCP;Ray;Snowflake;Databricks,0,Comet's GPU spend on Ray — worth 15 min?,"Hi Gideon,
 
-Given that Flexport is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+Comet tracks ML experiments and LLM evaluations for AI teams — as you expand into LLM observability and evaluation features, running inference over customer model outputs at scale becomes a core platform cost. Ray in your stack tells me you're already distributing these workloads.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Running LLM evaluations over customer model outputs at scale on Ray means inference cost is a growing platform overhead.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Ray stacks and delivered results fast: A Ray-native ML platform cut GPU spend 35% and tripled throughput — no model changes, deployed in under a day.
 
-We have worked with teams running similar stacks to Flexport's and have consistently delivered measurable improvements within the first two weeks of deployment.
+No model changes. No re-architecture. Deploys in under a day.
 
-I would welcome the opportunity to show you what this could look like for Flexport's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+Would you be open to a 15-minute call where I show you what this looks like on Comet's actual numbers?
 
-Best regards,
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Sanne - Running LLMs on Kubernetes at Flexport's scale means inference overhead is a real cost. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would yo..."
-Nick Frosst,CTO,Cohere,SaaS,,https://linkedin.com/in/nickfrosst,95,Hot,Kubernetes;AWS;GCP;Ray;vLLM;Triton,,Reducing LLM inference costs at Cohere,"Dear Nick,
+P95.AI",Hi Gideon — Comet's LLM evaluation features run inference over customer model outputs at scale — that inference cost is yours to absorb. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Ray. Open to a 15-min chat?
+Varun Mohan,CTO,Codeium,Other,,https://linkedin.com/in/varunmohan,92,Hot,Kubernetes;GCP;AWS;vLLM;Ray;Triton,0,Codeium's p95 latency on vLLM — worth 15 min?,"Hi Varun,
 
-I noticed Cohere is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+Codeium runs AI code completion for hundreds of thousands of developers — every keystroke triggers an inference call that needs to complete before the developer notices a delay. vLLM and Triton in your stack tells me serving performance is core to your product, not an afterthought.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+Per-keystroke code completion on vLLM at hundreds of thousands of developers means p95 latency directly determines whether the product feels intelligent or laggy.
 
-We have worked with teams running similar stacks to Cohere's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on vLLM stacks and delivered results fast: A vLLM-native platform went from 800ms p95 to sub-200ms and cut GPU footprint 30% — no model changes, overnight deployment.
 
-I would welcome the opportunity to show you what this could look like for Cohere's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Codeium's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Nick - Saw Cohere is running vLLM/Triton in prod - inference performance is clearly on your radar. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Gideon Mendels,CTO,Comet,Other,,https://linkedin.com/in/gideonmendels,92,Hot,Kubernetes;AWS;GCP;Ray;Snowflake;Databricks,,Reducing LLM inference costs at Comet,"Dear Gideon,
+P95.AI",Hi Varun — Codeium's code completion runs on every developer keystroke via vLLM — the inference needs to complete before anyone notices. P95 latency is the product. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with vLLM. Open to a 15-min chat?
+Charles Xie,CTO,Zilliz,Other,,,92,Hot,Kubernetes;GCP;AWS;Ray;Triton,0,Zilliz's inference throughput on Triton — worth 15 min?,"Hi Charles,
 
-I noticed Comet is using Ray for distributed ML workloads — which tells me inference scalability is likely a priority for your team.
+Zilliz built Milvus, the leading open-source vector database — your platform sits at the retrieval layer of AI applications worldwide. As you expand Zilliz Cloud and embed LLM-powered features, inference runs inside the database layer that AI applications depend on for every query.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+LLM inference embedded in the database layer of AI applications means any latency or cost inefficiency is in the critical path of every user query.
 
-We have worked with teams running similar stacks to Comet's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Triton stacks and delivered results fast: A Triton-native platform cut inference costs 44% and halved tail latency — no model changes, deployed in under a day.
 
-I would welcome the opportunity to show you what this could look like for Comet's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Zilliz's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Gideon - Noticed Comet runs Ray for distributed ML - GPU efficiency at scale is a real challenge. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Varun Mohan,CTO,Codeium,Other,,https://linkedin.com/in/varunmohan,92,Hot,Kubernetes;GCP;AWS;vLLM;Ray;Triton,,Reducing LLM inference costs at Codeium,"Dear Varun,
+P95.AI","Hi Charles — Zilliz's vector DB sits inside every AI app that uses Milvus — as you embed LLM features, inference runs in the critical path of every query. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Triton. Open to a 15-min chat?"
+Prukalpa Sankar,CTO,Atlan,SaaS,,,92,Hot,Kubernetes;GCP;AWS;Snowflake;dbt;OpenAI,0,Atlan's OpenAI bill — worth 15 min?,"Hi Prukalpa,
 
-I noticed Codeium is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+Atlan is building the active metadata layer for data teams — AI-powered data discovery, lineage, and documentation means LLM inference runs across your customers' entire data catalog continuously. OpenAI in your stack means you're already paying per token for every metadata enrichment.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+Continuous AI metadata enrichment via OpenAI means token costs scale with the size of every customer's data catalog.
 
-We have worked with teams running similar stacks to Codeium's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on OpenAI stacks and delivered results fast: An enterprise SaaS on OpenAI cut inference costs 40% and p95 latency by 60% — zero model or infrastructure changes.
 
-I would welcome the opportunity to show you what this could look like for Codeium's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Atlan's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Varun - Saw Codeium is running vLLM/Triton in prod - inference performance is clearly on your radar. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Charles Xie,CTO,Zilliz,Other,,,92,Hot,Kubernetes;GCP;AWS;Ray;Triton,,Reducing LLM inference costs at Zilliz,"Dear Charles,
+P95.AI",Hi Prukalpa — Atlan's AI metadata enrichment runs continuously across every asset in your customers' data catalogs — OpenAI costs compound with catalog size. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with OpenAI. Open to a 15-min chat?
+Andrew Mason,CTO,Descript,SaaS,,https://linkedin.com/in/andrewmason,92,Hot,Kubernetes;AWS;Whisper;Redis,1,Descript's LLM serving costs — worth 15 min?,"Hi Andrew,
 
-I noticed Zilliz is running vLLM/Triton in production — a strong signal that inference performance is on your radar.
+Descript transcribes and edits audio and video through AI — Whisper in your stack means every second of media uploaded triggers transcription inference, and LLM models power editing features on top of that. Two inference steps per media file, at consumer scale, adds up fast.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+Dual-model inference pipelines (Whisper + LLM) on every media upload means serving costs scale directly with content creation volume.
 
-We have worked with teams running similar stacks to Zilliz's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on Kubernetes stacks and delivered results fast: An enterprise media AI platform cut inference costs 40% and p95 latency by 60% — no model changes, two weeks to results.
 
-I would welcome the opportunity to show you what this could look like for Zilliz's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Descript's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Charles - Saw Zilliz is running vLLM/Triton in prod - inference performance is clearly on your radar. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Prukalpa Sankar,CTO,Atlan,SaaS,,,92,Hot,Kubernetes;GCP;AWS;Snowflake;dbt;OpenAI,,Reducing LLM inference costs at Atlan,"Dear Prukalpa,
+P95.AI",Hi Andrew — Descript runs Whisper transcription plus LLM editing on every media file — two inference steps per upload at consumer scale adds up fast. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with Kubernetes. Open to a 15-min chat?
+Winston Weinberg,CTO,Harvey,SaaS,,https://linkedin.com/in/winston-weinberg,92,Hot,Kubernetes;AWS;Anthropic;OpenAI;Pinecone,1,Harvey's OpenAI bill — worth 15 min?,"Hi Winston,
 
-I noticed Atlan is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
+Harvey runs AI across legal workflows — contract analysis, due diligence, research — where the documents are long, the context windows are large, and latency on legal queries directly affects billable attorney time. Both OpenAI and Anthropic in your stack suggests you're routing across models based on task.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+Long-context legal document inference on OpenAI and Anthropic means token costs and p95 latency scale with document complexity and attorney query volume.
 
-We have worked with teams running similar stacks to Atlan's and have consistently delivered measurable improvements within the first two weeks of deployment.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on OpenAI stacks and delivered results fast: An enterprise SaaS on OpenAI and Anthropic cut inference costs 40% and p95 latency by 60% — zero model or routing changes.
 
-I would welcome the opportunity to show you what this could look like for Atlan's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+No model changes. No re-architecture. Deploys in under a day.
 
-Best regards,
+Would you be open to a 15-minute call where I show you what this looks like on Harvey's actual numbers?
+
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Prukalpa - Saw Atlan is using OpenAI/Anthropic in prod - at scale, inference costs compound fast. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would you be open to a quick chat?"
-Andrew Mason,CTO,Descript,SaaS,,https://linkedin.com/in/andrewmason,92,Hot,Kubernetes;AWS;Whisper;Redis,1.0,Reducing LLM inference costs at Descript,"Dear Andrew,
+P95.AI",Hi Winston — Harvey's legal AI runs long-context inference on Anthropic and OpenAI — latency on legal queries affects billable attorney time. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with OpenAI. Open to a 15-min chat?
+Paul Yacoubian,CTO,Copy.ai,SaaS,,,92,Hot,Kubernetes;AWS;OpenAI;Pinecone,1,Copy.ai's OpenAI bill — worth 15 min?,"Hi Paul,
 
-Given that Descript is running LLMs in production, inference costs and latency are likely areas your engineering team actively manages.
+Copy.ai runs AI content generation across marketing workflows for thousands of companies — every campaign brief, product description, and email sequence is an OpenAI inference call. As you expand GTM AI with agentic workflows, multi-step inference chains mean costs multiply with every autonomous action.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+Agentic marketing workflows that chain multiple OpenAI calls per task mean inference costs multiply with every autonomous step the agent takes.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on OpenAI stacks and delivered results fast: An enterprise SaaS on OpenAI cut inference costs 40% and brought p95 under 200ms — zero model or infrastructure changes.
 
-We have worked with teams running similar stacks to Descript's and have consistently delivered measurable improvements within the first two weeks of deployment.
+No model changes. No re-architecture. Deploys in under a day.
 
-I would welcome the opportunity to show you what this could look like for Descript's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+Would you be open to a 15-minute call where I show you what this looks like on Copy.ai's actual numbers?
 
-Best regards,
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Andrew - Running LLMs on Kubernetes at Descript's scale means inference overhead is a real cost. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would y..."
-Winston Weinberg,CTO,Harvey,SaaS,,https://linkedin.com/in/winston-weinberg,92,Hot,Kubernetes;AWS;Anthropic;OpenAI;Pinecone,1.0,Reducing LLM inference costs at Harvey,"Dear Winston,
+P95.AI",Hi Paul — Copy.ai's agentic GTM workflows chain multiple OpenAI calls per task — inference costs multiply with every autonomous action the agent takes. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with OpenAI. Open to a 15-min chat?
+Shishir Mehrotra,CTO,Loom,SaaS,,https://linkedin.com/in/shishirmehrotra,91,Hot,Kubernetes;AWS;GCP;OpenAI;Snowflake,0,Loom's OpenAI bill — worth 15 min?,"Hi Shishir,
 
-I noticed Harvey is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
+Loom's async video messaging is powered by AI — automatic transcription, summaries, and chapter generation run on every video uploaded. As Loom scales inside enterprise orgs post-Atlassian acquisition, inference runs on every message every employee records.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+AI features running on every video upload at enterprise scale means inference costs compound with every new workspace and every new recording.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on OpenAI stacks and delivered results fast: An enterprise SaaS on OpenAI cut inference costs 40% and p95 latency by 60% — zero model or infrastructure changes.
 
-We have worked with teams running similar stacks to Harvey's and have consistently delivered measurable improvements within the first two weeks of deployment.
+No model changes. No re-architecture. Deploys in under a day.
 
-I would welcome the opportunity to show you what this could look like for Harvey's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+Would you be open to a 15-minute call where I show you what this looks like on Loom's actual numbers?
 
-Best regards,
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Winston - Saw Harvey is using OpenAI/Anthropic in prod - at scale, inference costs compound fast. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would ..."
-Paul Yacoubian,CTO,Copy.ai,SaaS,,,92,Hot,Kubernetes;AWS;OpenAI;Pinecone,1.0,Reducing LLM inference costs at Copy.ai,"Dear Paul,
+P95.AI","Hi Shishir — Loom's AI runs transcription and summaries on every video recorded — across Atlassian's enterprise customers, that's a lot of inference. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with OpenAI. Open to a 15-min chat?"
+Brad Lightcap,VP Engineering,Scale AI,SaaS,,https://linkedin.com/in/bradlightcap,91,Hot,Kubernetes;AWS;GCP;Ray;vLLM;Snowflake,0,Scale AI's p95 latency on vLLM — worth 15 min?,"Hi Brad,
 
-I noticed Copy.ai is leveraging OpenAI in production — at scale, inference latency and cost tend to become significant engineering challenges.
+Scale AI runs LLM evaluation and RLHF pipelines for the world's leading AI labs — inference over human-labeled data at Scale's throughput is one of the most demanding serving workloads in the industry. vLLM and Ray in your stack tells me you've already invested seriously in this.
 
-I also noticed you're actively hiring ML engineers — a strong indicator that your inference workloads are growing rapidly.
+RLHF and evaluation inference on vLLM and Ray at Scale's throughput means GPU efficiency determines whether you can take on more lab contracts.
 
-I am reaching out because P95.AI helps engineering teams at AI-native companies reduce LLM inference latency and costs by up to 70% — without changing their models or rewriting infrastructure.
+P95.AI is an inference optimization layer that sits between your models and your serving infrastructure. We've worked with teams on vLLM stacks and delivered results fast: A Ray and vLLM-native platform cut GPU spend 35% and tripled concurrent capacity — no model changes, deployed overnight.
 
-We have worked with teams running similar stacks to Copy.ai's and have consistently delivered measurable improvements within the first two weeks of deployment.
+No model changes. No re-architecture. Deploys in under a day.
 
-I would welcome the opportunity to show you what this could look like for Copy.ai's infrastructure specifically. Would you be open to a 15-minute demo this week or next?
+Would you be open to a 15-minute call where I show you what this looks like on Scale AI's actual numbers?
 
-Best regards,
+Best,
 [Your Name]
-P95.AI
-[Your Email] | [Your LinkedIn]","Hi Paul - Saw Copy.ai is using OpenAI/Anthropic in prod - at scale, inference costs compound fast. You're also hiring ML engineers, which tells me inference demand is growing. I'm building P95.AI, an inference optimization layer that cuts LLM serving costs 30-45% with zero model changes. Would yo..."
+P95.AI",Hi Brad — Scale AI runs LLM inference for RLHF pipelines at AI-lab scale — vLLM and Ray tells me you know how hard this is to run efficiently. P95.AI cuts LLM serving costs 30-45% with zero model changes — works with vLLM. Open to a 15-min chat?
