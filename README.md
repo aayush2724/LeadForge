@@ -19,7 +19,7 @@ An end-to-end, reproducible pipeline that sources, normalises, enriches, scores,
 | Personalised emails generated | **50** |
 | LinkedIn DMs generated | **50** |
 | A/B variants designed | **40** (top 20 leads × 2 variants) |
-| Pipeline stages | **9** (11/11 passing) |
+| Pipeline stages | **11** (11/11 passing) |
 | Sources | Apollo · LinkedIn Sales Nav · Crunchbase · GitHub · BuiltWith · Seed lists |
 
 ---
@@ -125,12 +125,13 @@ phase5_outreach.csv  phase6_ab_variants.csv
 | 2. Normalize LinkedIn | `normalize_linkedin.py` | `data/raw/linkedin_normalized.csv` |
 | 3. Normalize Seeds | `normalize_seeds.py` | `data/raw/seeds_normalized.csv` |
 | 4. Normalize Engineer Sources | `normalize_engineer_sources.py` | `data/raw/engineer_normalized.csv` |
-| 5. Merge + Dedupe | `compile_leads.py` | `data/raw_leads.csv` (297 rows) |
+| 5. Merge + Dedupe | `compile_leads.py` | `data/raw_leads.csv` |
 | 6. Pre-filter | `prefilter.py` | `data/raw_leads_rejected.csv` |
 | 7. Quota Check | `quota_check.py` | `data/sourcing_qa_report.md` |
-| 8. Enrichment Patch | `enrich_3b.py` | `data/enriched_leads.csv` |
-| 9. Lead Scoring | `scoring_engine.py` | `data/scored_leads.csv` |
-| 10. Outreach Generation | `generate_linkedin_dms.py` | `data/phase5_outreach.csv` |
+| 8. Phase 3A API Enrichment | `enrich_pipeline.py` | `data/enriched_leads.csv` |
+| 9. Phase 3B Intent Enrichment | `enrich_3b.py` | `data/enriched_leads.csv` |
+| 10. Lead Scoring | `scoring_engine.py` | `data/scored_leads.csv` |
+| 11. Outreach Generation | `generate_linkedin_dms.py` | `data/phase5_outreach.csv` |
 
 ---
 
