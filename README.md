@@ -377,24 +377,7 @@ The workflow executes all 12 stages in sequence. Below is a sample execution fro
 
 ![n8n workflow editor execution](docs/n8n_workflow_execution.png)
 
-**Execution Log — Sample Run:**
-
-| Node                             | Status     | Duration | Started              |
-| -------------------------------- | ---------- | -------- | -------------------- |
-| When clicking 'Execute workflow' | ✅ Success | 5ms      | 19:57:38.739, 19 Apr |
-| Compile Leads                    | ✅ Success | 652ms    | 19:57:38.746, 19 Apr |
-| Normalize Apollo                 | ✅ Success | 520ms    | 19:57:39.399, 19 Apr |
-| Normalize LinkedIn               | ✅ Success | 543ms    | 19:57:39.921, 19 Apr |
-| Normalize Seeds                  | ✅ Success | 529ms    | 19:57:40.465, 19 Apr |
-| Normalize Gaps                   | ✅ Success | 662ms    | 19:57:40.995, 19 Apr |
-| Enrich Pipeline                  | ⏳ Running | 3m 31s   | 19:57:41.659, 19 Apr |
-| Prefilter Competitors            | —          | —        | —                    |
-| Score Leads                      | —          | —        | —                    |
-| Validate Emails                  | —          | —        | —                    |
-| Generate LinkedIn DMs            | —          | —        | —                    |
-| Sanity Check                     | —          | —        | —                    |
-
-**Total execution time for full pipeline:** ~6–8 minutes (varies based on API rate limits and enrichment latency).
+**Total execution time for full pipeline:** ~8–10 minutes (varies based on API rate limits and enrichment latency).
 
 > **Tip:** To monitor live execution, open the "Executions" tab in the n8n web UI. All logs are visible in real-time as nodes complete.
 
