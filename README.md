@@ -5,22 +5,23 @@ An end-to-end, reproducible pipeline that sources, normalises, enriches, scores,
 **Built for:** P95.AI — an AI inference optimization platform  
 **Target buyer:** CTOs, VPs Engineering, Heads of AI at companies running LLMs in production  
 **GitHub:** https://github.com/aayush2724/LeadForge
+**Website:** https://leadforge-876cf6-11q5x.thinkroot.app/
 
 ---
 
 ## Results at a Glance
 
-| Metric | Value |
-|---|---|
-| Total active leads | **291** |
-| Hot tier (score 65+) | **135** |
-| Warm tier (score 40–64) | **57** |
-| Cold tier (score <40) | **99** |
-| Personalised emails generated | **50** |
-| LinkedIn DMs generated | **50** |
-| A/B variants designed | **40** (top 20 leads × 2 variants) |
-| Pipeline stages | **11** (11/11 passing) |
-| Sources | Apollo · LinkedIn Sales Nav · Crunchbase · GitHub · BuiltWith · Seed lists |
+| Metric                        | Value                                                                      |
+| ----------------------------- | -------------------------------------------------------------------------- |
+| Total active leads            | **291**                                                                    |
+| Hot tier (score 65+)          | **135**                                                                    |
+| Warm tier (score 40–64)       | **57**                                                                     |
+| Cold tier (score <40)         | **99**                                                                     |
+| Personalised emails generated | **50**                                                                     |
+| LinkedIn DMs generated        | **50**                                                                     |
+| A/B variants designed         | **40** (top 20 leads × 2 variants)                                         |
+| Pipeline stages               | **11** (11/11 passing)                                                     |
+| Sources                       | Apollo · LinkedIn Sales Nav · Crunchbase · GitHub · BuiltWith · Seed lists |
 
 ---
 
@@ -119,19 +120,19 @@ phase5_outreach.csv  phase6_ab_variants.csv
 
 ### Stage Summary
 
-| Stage | Script | Output |
-|---|---|---|
-| 1. Normalize Apollo | `normalize_apollo.py` | `data/raw/apollo_normalized.csv` |
-| 2. Normalize LinkedIn | `normalize_linkedin.py` | `data/raw/linkedin_normalized.csv` |
-| 3. Normalize Seeds | `normalize_seeds.py` | `data/raw/seeds_normalized.csv` |
+| Stage                         | Script                          | Output                             |
+| ----------------------------- | ------------------------------- | ---------------------------------- |
+| 1. Normalize Apollo           | `normalize_apollo.py`           | `data/raw/apollo_normalized.csv`   |
+| 2. Normalize LinkedIn         | `normalize_linkedin.py`         | `data/raw/linkedin_normalized.csv` |
+| 3. Normalize Seeds            | `normalize_seeds.py`            | `data/raw/seeds_normalized.csv`    |
 | 4. Normalize Engineer Sources | `normalize_engineer_sources.py` | `data/raw/engineer_normalized.csv` |
-| 5. Merge + Dedupe | `compile_leads.py` | `data/raw_leads.csv` |
-| 6. Pre-filter | `prefilter.py` | `data/raw_leads_rejected.csv` |
-| 7. Quota Check | `quota_check.py` | `data/sourcing_qa_report.md` |
-| 8. Phase 3A API Enrichment | `enrich_pipeline.py` | `data/enriched_leads.csv` |
-| 9. Phase 3B Intent Enrichment | `enrich_3b.py` | `data/enriched_leads.csv` |
-| 10. Lead Scoring | `scoring_engine.py` | `data/scored_leads.csv` |
-| 11. Outreach Generation | `generate_linkedin_dms.py` | `data/phase5_outreach.csv` |
+| 5. Merge + Dedupe             | `compile_leads.py`              | `data/raw_leads.csv`               |
+| 6. Pre-filter                 | `prefilter.py`                  | `data/raw_leads_rejected.csv`      |
+| 7. Quota Check                | `quota_check.py`                | `data/sourcing_qa_report.md`       |
+| 8. Phase 3A API Enrichment    | `enrich_pipeline.py`            | `data/enriched_leads.csv`          |
+| 9. Phase 3B Intent Enrichment | `enrich_3b.py`                  | `data/enriched_leads.csv`          |
+| 10. Lead Scoring              | `scoring_engine.py`             | `data/scored_leads.csv`            |
+| 11. Outreach Generation       | `generate_linkedin_dms.py`      | `data/phase5_outreach.csv`         |
 
 ---
 
@@ -140,6 +141,7 @@ phase5_outreach.csv  phase6_ab_variants.csv
 Full definition in [`icp_framework.md`](icp_framework.md).
 
 **Target Persona:**
+
 - Title: CTO, VP Engineering, Head of AI/ML, Director of Engineering
 - Company size: 200–5,000 employees
 - Funding: Series B through D, or bootstrapped with >$20M ARR
@@ -148,12 +150,14 @@ Full definition in [`icp_framework.md`](icp_framework.md).
 - Geo: US (primary), EU/UK (secondary), India seed-only
 
 **Hard Disqualifiers:**
+
 - Competitor platforms: Baseten, Modal, Anyscale, Fireworks, Together, Replicate, RunPod, HuggingFace
 - Under 50 employees
 - Government or defense
 - No discernible LLM workload
 
 **Tier Thresholds:**
+
 - Hot: 65+ points
 - Warm: 40–64 points
 - Cold: under 40 points
@@ -164,17 +168,17 @@ Full definition in [`icp_framework.md`](icp_framework.md).
 
 Each lead is scored 0–115 across 9 signals:
 
-| Signal | Max Points | Logic |
-|---|---|---|
-| Contact title | 25 | CTO=25, VP Eng=20, Head/Dir=18 |
-| Uses LLM in production | 20 | TRUE=20 |
-| Funding stage | 20 | Series C=20, Series B=15, Series D=12 |
-| Employee count | 15 | 501–2000=15, 201–500=12, 2001–5000=10 |
-| Active ML hiring | 10 | Hiring ML engineers detected |
-| Kubernetes in stack | 8 | TRUE=8 |
-| Geo tier | 8 | US=8, EU/UK=6, India=4 |
-| Ray / WandB in stack | 6 | TRUE=6 |
-| GitHub AI repos | 3 | Active public AI/infra repos |
+| Signal                 | Max Points | Logic                                 |
+| ---------------------- | ---------- | ------------------------------------- |
+| Contact title          | 25         | CTO=25, VP Eng=20, Head/Dir=18        |
+| Uses LLM in production | 20         | TRUE=20                               |
+| Funding stage          | 20         | Series C=20, Series B=15, Series D=12 |
+| Employee count         | 15         | 501–2000=15, 201–500=12, 2001–5000=10 |
+| Active ML hiring       | 10         | Hiring ML engineers detected          |
+| Kubernetes in stack    | 8          | TRUE=8                                |
+| Geo tier               | 8          | US=8, EU/UK=6, India=4                |
+| Ray / WandB in stack   | 6          | TRUE=6                                |
+| GitHub AI repos        | 3          | Active public AI/infra repos          |
 
 **Top scoring lead:** Vaibhav Nivargi — Moveworks CTO — **115/115**
 
@@ -185,15 +189,18 @@ Each lead is scored 0–115 across 9 signals:
 Personalised outreach for the top 50 Hot leads using per-lead signal context.
 
 **Cold email structure:**
+
 - Hook based on detected tech stack signal (Ray → GPU efficiency, Kubernetes → infra scale)
 - Hiring signal adds urgency line
 - 150–200 word target, soft CTA for 15-minute demo
 
 **LinkedIn DM structure:**
+
 - Capped at 300 characters
 - Same stack-personalised hook, condensed to one punch line + ask
 
 **Sample email — Vaibhav Nivargi, Moveworks:**
+
 ```
 Subject: GPU efficiency at Moveworks scale
 
@@ -215,13 +222,13 @@ Worth a 15-minute call to see if it fits your stack?
 
 Top 20 leads (score 88+) receive two message variants each.
 
-| | Variant A — Pain-Led | Variant B — Social Proof |
-|---|---|---|
-| Hook | Specific GPU/cost pain tied to their stack | Peer company quantified result |
-| Subject example | "Your Ray cluster is probably leaving 30% GPU capacity on the table" | "How a Series C AI company cut inference costs 40% in 3 weeks" |
-| Target reply rate | 12% | 10% |
-| Target open rate | 45% | 50% |
-| Hypothesis | High-urgency, problem-aware buyers respond better | Curious/research-mode buyers engage with social proof |
+|                   | Variant A — Pain-Led                                                 | Variant B — Social Proof                                       |
+| ----------------- | -------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Hook              | Specific GPU/cost pain tied to their stack                           | Peer company quantified result                                 |
+| Subject example   | "Your Ray cluster is probably leaving 30% GPU capacity on the table" | "How a Series C AI company cut inference costs 40% in 3 weeks" |
+| Target reply rate | 12%                                                                  | 10%                                                            |
+| Target open rate  | 45%                                                                  | 50%                                                            |
+| Hypothesis        | High-urgency, problem-aware buyers respond better                    | Curious/research-mode buyers engage with social proof          |
 
 Full hypothesis documentation: [`ab_test_hypotheses.md`](ab_test_hypotheses.md)
 
@@ -231,20 +238,20 @@ Full hypothesis documentation: [`ab_test_hypotheses.md`](ab_test_hypotheses.md)
 
 ## Tech Stack
 
-| Tool | Purpose |
-|---|---|
-| Python 3.13 | Pipeline scripting, data processing |
-| pandas | Data normalization, dedup, scoring |
-| Clay.com | Lead enrichment backbone — tech stack, hiring, funding, LinkedIn signals |
-| Apollo.io | Primary lead sourcing (80 leads) |
-| LinkedIn Sales Navigator | High-recency contact sourcing (60 leads) |
-| Crunchbase | Funding and firmographic data |
-| GitHub API | Engineering signal detection — AI/infra repos |
-| BuiltWith | Tech stack detection — Kubernetes, Snowflake, Ray, WandB |
-| GPT-4o (OpenAI) | Personalised outreach generation |
-| n8n | Full pipeline automation and orchestration |
-| python-dotenv | API key management |
-| tqdm + rich | Progress tracking and CLI output |
+| Tool                     | Purpose                                                                  |
+| ------------------------ | ------------------------------------------------------------------------ |
+| Python 3.13              | Pipeline scripting, data processing                                      |
+| pandas                   | Data normalization, dedup, scoring                                       |
+| Clay.com                 | Lead enrichment backbone — tech stack, hiring, funding, LinkedIn signals |
+| Apollo.io                | Primary lead sourcing (80 leads)                                         |
+| LinkedIn Sales Navigator | High-recency contact sourcing (60 leads)                                 |
+| Crunchbase               | Funding and firmographic data                                            |
+| GitHub API               | Engineering signal detection — AI/infra repos                            |
+| BuiltWith                | Tech stack detection — Kubernetes, Snowflake, Ray, WandB                 |
+| GPT-4o (OpenAI)          | Personalised outreach generation                                         |
+| n8n                      | Full pipeline automation and orchestration                               |
+| python-dotenv            | API key management                                                       |
+| tqdm + rich              | Progress tracking and CLI output                                         |
 
 ---
 
@@ -275,12 +282,12 @@ python pipeline.py
 
 ### Required API Keys
 
-| Key | Required for | Where to get |
-|---|---|---|
-| `APOLLO_API_KEY` | Apollo sourcing | app.apollo.io → Settings → API |
-| `OPENAI_API_KEY` | GPT-4o outreach generation | platform.openai.com |
-| `GITHUB_TOKEN` | GitHub AI repo enrichment | github.com → Settings → Tokens |
-| `CLAY_API_KEY` | Clay enrichment | clay.com → Account → API |
+| Key              | Required for               | Where to get                   |
+| ---------------- | -------------------------- | ------------------------------ |
+| `APOLLO_API_KEY` | Apollo sourcing            | app.apollo.io → Settings → API |
+| `OPENAI_API_KEY` | GPT-4o outreach generation | platform.openai.com            |
+| `GITHUB_TOKEN`   | GitHub AI repo enrichment  | github.com → Settings → Tokens |
+| `CLAY_API_KEY`   | Clay enrichment            | clay.com → Account → API       |
 
 ---
 
@@ -291,6 +298,7 @@ The full pipeline is automated via n8n, allowing one-click end-to-end execution 
 ### Setup
 
 **Step 1 — Install n8n**
+
 ```bash
 npm install -g n8n
 ```
@@ -298,29 +306,34 @@ npm install -g n8n
 **Step 2 — Set environment variable**
 
 On Windows (run PowerShell as Administrator):
+
 ```powershell
 [System.Environment]::SetEnvironmentVariable("NODE_FUNCTION_ALLOW_BUILTIN", "child_process", "User")
 [System.Environment]::SetEnvironmentVariable("NODE_FUNCTION_ALLOW_EXTERNAL", "child_process", "User")
 ```
 
 On Mac/Linux:
+
 ```bash
 export NODE_FUNCTION_ALLOW_BUILTIN=child_process
 export NODE_FUNCTION_ALLOW_EXTERNAL=child_process
 ```
 
 **Step 3 — Start n8n from the project root**
+
 ```bash
 cd LeadForge
 n8n start
 ```
 
 **Step 4 — Import the workflow**
+
 - Open `http://localhost:5678`
 - Go to Workflows → Import
 - Select `workflows/leadforge_pipeline.json`
 
 **Step 5 — Execute**
+
 - Click **Execute Workflow**
 - All 12 pipeline nodes run in sequence automatically
 
@@ -363,6 +376,7 @@ Lead sourcing from Apollo.io and LinkedIn Sales Navigator requires manual CSV ex
 ### To re-source fresh leads:
 
 **Apollo.io (target: 80 leads)**
+
 - Go to apollo.io → Search → People
 - Job titles: CTO, VP Engineering, Head of AI, Director of Engineering
 - Headcount: 200–5,000
@@ -372,6 +386,7 @@ Lead sourcing from Apollo.io and LinkedIn Sales Navigator requires manual CSV ex
 - Export CSV → save to `data/raw/apollo_pass1_*.csv`
 
 **LinkedIn Sales Navigator (target: 60 leads)**
+
 - Go to Sales Navigator → Lead Filters
 - Same job titles as above
 - Seniority: VP, CXO, Director
@@ -381,6 +396,7 @@ Lead sourcing from Apollo.io and LinkedIn Sales Navigator requires manual CSV ex
 - Save list → export → save to `data/raw/linkedin_pass*.csv`
 
 **After re-sourcing:**
+
 ```bash
 python pipeline.py
 ```
@@ -389,18 +405,18 @@ python pipeline.py
 
 ## Key Output Files
 
-| File | Rows | Description |
-|---|---|---|
-| `data/raw_leads.csv` | 297 | All normalised leads pre-filter |
-| `data/raw_leads_rejected.csv` | 6 | Disqualified leads with reasons |
-| `data/enriched_leads.csv` | 297 | Post-Clay enrichment master list |
-| `data/scored_leads.csv` | 291 | Scored + tiered, all signals |
-| `data/scoring_report.md` | — | Score distribution + top leads |
-| `data/sourcing_qa_report.md` | — | Vertical/geo quota validation |
-| `data/phase5_outreach.csv` | 50 | Email subject, body, LinkedIn DM |
-| `data/phase6_ab_variants.csv` | 40 | A/B variant messages for top 20 |
-| `ab_test_hypotheses.md` | — | A/B test design + success metrics |
-| `icp_framework.md` | — | Full ICP definition + scoring rubric |
+| File                          | Rows | Description                          |
+| ----------------------------- | ---- | ------------------------------------ |
+| `data/raw_leads.csv`          | 297  | All normalised leads pre-filter      |
+| `data/raw_leads_rejected.csv` | 6    | Disqualified leads with reasons      |
+| `data/enriched_leads.csv`     | 297  | Post-Clay enrichment master list     |
+| `data/scored_leads.csv`       | 291  | Scored + tiered, all signals         |
+| `data/scoring_report.md`      | —    | Score distribution + top leads       |
+| `data/sourcing_qa_report.md`  | —    | Vertical/geo quota validation        |
+| `data/phase5_outreach.csv`    | 50   | Email subject, body, LinkedIn DM     |
+| `data/phase6_ab_variants.csv` | 40   | A/B variant messages for top 20      |
+| `ab_test_hypotheses.md`       | —    | A/B test design + success metrics    |
+| `icp_framework.md`            | —    | Full ICP definition + scoring rubric |
 
 ---
 
