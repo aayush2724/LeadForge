@@ -1,6 +1,6 @@
 # P95.AI Lead Engine — Scoring Report
 
-**Generated:** 2026-04-19 08:12 UTC  
+**Generated:** 2026-04-19 10:04 UTC  
 **Source:** `enriched_leads.csv`  
 **Active leads scored:** 291  
 
@@ -10,64 +10,64 @@
 
 | Tier | Count | % of Active |
 |---|---|---|
-| 🔥 Hot  (80–100) | 143  | 49.1% |
-| 🌡️ Warm (50–79)  | 80 | 27.5% |
-| ❄️ Cold (0–49)   | 68 | 23.4% |
+| 🔥 Hot  (80–100) | 91  | 31.3% |
+| 🌡️ Warm (50–79)  | 101 | 34.7% |
+| ❄️ Cold (0–49)   | 99 | 34.0% |
 
 ## Score Distribution
 
 | Metric | Value |
 |---|---|
-| Mean score  | 70.6 |
-| Median score | 79 |
-| Min score   | 27 |
-| Max score   | 96 |
+| Mean score  | 65.2 |
+| Median score | 74 |
+| Min score   | 23 |
+| Max score   | 91 |
 
 ## Dimension Averages (out of max)
 
 | Dimension | Avg Score | Max |
 |---|---|---|
 | A — Firmographic    | 28.0 | 35 |
-| B — AI/Infra signals | 20.4 | 35 |
+| B — AI/Infra signals | 18.1 | 35 |
 | C — Persona          | 18.5 | 20 |
-| D — Growth/intent    | 3.6 | 10 |
+| D — Growth/intent    | 0.5 | 10 |
 
 ## Tier Breakdown by Vertical
 
 | Vertical | Hot | Warm | Cold | Total |
 |---|---|---|---|---|
-| SaaS | 63 | 24 | 10 | 97 |
-| FinTech | 4 | 16 | 36 | 56 |
-| HealthTech | 7 | 11 | 4 | 22 |
-| Ecommerce | 1 | 4 | 10 | 15 |
-| Cybersec | 6 | 8 | 1 | 15 |
-| Logistics | 4 | 4 | 7 | 15 |
-| Other | 58 | 13 | 0 | 71 |
+| SaaS | 40 | 38 | 19 | 97 |
+| FinTech | 1 | 8 | 47 | 56 |
+| HealthTech | 5 | 9 | 8 | 22 |
+| Ecommerce | 1 | 2 | 12 | 15 |
+| Cybersec | 5 | 6 | 4 | 15 |
+| Logistics | 2 | 4 | 9 | 15 |
+| Other | 37 | 34 | 0 | 71 |
 
 ## 🔥 Top 20 Hot Leads
 
 ```
-    company_name             contact_name    contact_title industry score_total             domain
-            Ramp            Geoff Charles   VP Engineering  FinTech          83           ramp.com
-            Brex            Raghav Shroff Head of Platform  FinTech          91           brex.com
-        Rippling            Matt MacInnis   VP Engineering     SaaS          88       rippling.com
-          Notion                Linus Lee       Head of AI     SaaS          84          notion.so
-          Linear            Tuomas Artman              CTO     SaaS          89         linear.app
-          Retool         Juan Camilo Ossa   VP Engineering     SaaS          86         retool.com
-            Loom         Shishir Mehrotra              CTO     SaaS          91           loom.com
-        Scale AI            Brad Lightcap   VP Engineering     SaaS          83           scale.ai
-Weights & Biases           Chris Van Pelt              CTO     SaaS          95 weights-biases.com
-           Glean          T.R. Vishwanath   VP Engineering     SaaS          90          glean.com
-          Harvey         Winston Weinberg              CTO     SaaS          87          harvey.ai
-          Cohere              Nick Frosst              CTO     SaaS          95         cohere.com
-        Descript             Andrew Mason              CTO     SaaS          95       descript.com
-   Playground AI             Suhail Doshi              CTO     SaaS          86      playground.ai
-          Runway     Anastasis Germanidis              CTO     SaaS          95          runway.ml
-      Midjourney               David Holz              CTO     SaaS          89            mid.com
-      Observe.AI Sharath Keshava Narayana              CTO     SaaS          85         observe.ai
-           Vanta       Christina Cacioppo              CTO     SaaS          85          vanta.com
-             Hex            Scott Prevost              CTO     SaaS          86           hex.tech
-            Pleo          Christian Ewald              CTO  FinTech          86            pleo.io
+    company_name             contact_name  contact_title   industry score_total             domain
+        Rippling            Matt MacInnis VP Engineering       SaaS          80       rippling.com
+Weights & Biases           Chris Van Pelt            CTO       SaaS          86 weights-biases.com
+           Glean          T.R. Vishwanath VP Engineering       SaaS          80          glean.com
+          Cohere              Nick Frosst            CTO       SaaS          83         cohere.com
+   Playground AI             Suhail Doshi            CTO       SaaS          81      playground.ai
+          Runway     Anastasis Germanidis            CTO       SaaS          83          runway.ml
+      Observe.AI Sharath Keshava Narayana            CTO       SaaS          80         observe.ai
+           Vanta       Christina Cacioppo            CTO       SaaS          80          vanta.com
+   Privia Health       Bertie Sherrington            CTO HealthTech          80      privia.health
+          PathAI                Andy Beck            CTO HealthTech          86         pathai.com
+       Darktrace           Jack Stockdale            CTO   Cybersec          80      darktrace.com
+   Orca Security                 Avi Shua            CTO   Cybersec          80      orca.security
+        Flexport            Sanne Manders            CTO  Logistics          80       flexport.com
+      Mistral AI         Guillaume Lample            CTO      Other          82         mistral.ai
+   Perplexity AI             Denis Yarats            CTO      Other          84      perplexity.ai
+       CoreWeave            Brian Venturo            CTO      Other          83      coreweave.com
+           Comet           Gideon Mendels            CTO      Other          84           comet.ml
+        Adept AI               David Luan            CTO      Other          81           adept.ai
+          Replit              Amjad Masad            CTO      Other          81         replit.com
+        Labelbox             Brian Rieger            CTO      Other          86       labelbox.com
 ```
 
 ---
