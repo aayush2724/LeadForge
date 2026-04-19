@@ -1,53 +1,73 @@
-# P95.AI Lead Engine
-
-**🚀� Live Landing Page / Architectural Overview:** [p95-ai-lead-engine-m8ofg.thinkroot.app](https://p95-ai-lead-engine-m8ofg.thinkroot.app/)
+# LeadForge — AI-Powered Lead Scoring, Enrichment & Outreach
 
 An end-to-end, reproducible pipeline that sources, normalises, enriches, scores, and generates personalised outreach for 291 qualified enterprise AI/ML leads — from raw data export to ready-to-send email + LinkedIn DM sequences.
+
+**Built for:** P95.AI — an AI inference optimization platform  
+**Target buyer:** CTOs, VPs Engineering, Heads of AI at companies running LLMs in production  
+**GitHub:** https://github.com/aayush2724/LeadForge
+
+---
+
+## Results at a Glance
+
+| Metric | Value |
+|---|---|
+| Total active leads | **291** |
+| Hot tier (score 65+) | **135** |
+| Warm tier (score 40–64) | **57** |
+| Cold tier (score <40) | **99** |
+| Personalised emails generated | **50** |
+| LinkedIn DMs generated | **50** |
+| A/B variants designed | **40** (top 20 leads × 2 variants) |
+| Pipeline stages | **9** (11/11 passing) |
+| Sources | Apollo · LinkedIn Sales Nav · Crunchbase · GitHub · BuiltWith · Seed lists |
 
 ---
 
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
-
-2. [Pipeline Architecture](#pipeline-architecture)
-
-3. [Quick Start](#quick-start)
-
-4. [Environment Setup](#environment-setup)
-
-5. [Pipeline Stages](#pipeline-stages)
-
-6. [Data Schema](#data-schema)
-
-7. [Key Outputs](#key-outputs)
-
-8. [ICP & Scoring Framework](#icp--scoring-framework)
-
-9. [A/B Test Design](#ab-test-design)
-
-10. [Directory Structure](#directory-structure)
-
-11. [Team Roles](#team-roles)
+2. [Problem Statement](#problem-statement)
+3. [Pipeline Architecture](#pipeline-architecture)
+4. [ICP Framework](#icp-framework)
+5. [Lead Scoring Model](#lead-scoring-model)
+6. [Outreach Generation](#outreach-generation)
+7. [A/B Testing Strategy](#ab-testing-strategy)
+8. [Tech Stack](#tech-stack)
+9. [Quick Start](#quick-start)
+10. [Automated Pipeline (n8n)](#automated-pipeline-n8n)
+11. [Data Sourcing Guide](#data-sourcing-guide)
+12. [Directory Structure](#directory-structure)
 
 ---
 
 ## Project Overview
 
-**P95.AI** is an inference optimisation layer that cuts LLM serving costs 30–45 % with zero model changes. This repository contains the full lead-generation pipeline built to find and engage the 291 highest-fit engineering buyers (CTOs, VPs Engineering, Heads of AI) at AI-native companies running LLMs in production.
+LeadForge is an intelligent lead qualification and personalised outreach system built for P95.AI. It combines multi-platform lead sourcing, Clay-powered enrichment, a 9-signal ICP scoring rubric, and GPT-4o outreach generation into a single reproducible Python pipeline — fully automated via n8n.
 
-### Results at a glance
+The system produces a fully enriched, scored, and outreach-ready lead database that can be re-run monthly with fresh data using one command:
 
-| Metric | Value |
-|---|---|
-| Total active leads | **291** |
-| Hot tier (score >= 80) | **91** |
-| Warm tier (score 60–79) | **101** |
-| Cold tier (score < 60) | **99** |
-| Personalised emails generated | **50** |
-| LinkedIn DMs generated | **50** |
-| A/B variants designed | **40** (20 leads × 2 variants) |
-| Sources | Apollo · LinkedIn Sales Nav · Crunchbase · GitHub · Seed lists |
+```bash
+python pipeline.py
+```
+
+Or triggered end-to-end in a single click using the n8n workflow.
+
+---
+
+## Problem Statement
+
+P95.AI has a powerful product — an AI inference optimization layer that cuts LLM serving costs 30–45% with zero model changes. The challenge is finding and reaching the right enterprise buyers efficiently.
+
+**Three core problems:**
+
+1. **No signal, no context** — Raw lead lists lack tech stack data, hiring signals, and buying intent. Without enrichment, every outreach message is a guess.
+
+2. **Manual qualification doesn't scale** — Human lead scoring is slow, inconsistent, and expensive. SDRs spend 70%+ of their time researching instead of selling.
+
+3. **Generic outreach fails** — Non-personalised cold emails get ignored, flagged as spam, and permanently damage sender reputation. A CTO running Ray for distributed ML won't respond to a generic pitch.
+
+LeadForge solves all three with a data-driven, signal-aware pipeline.
 
 ---
 
@@ -55,255 +75,327 @@ An end-to-end, reproducible pipeline that sources, normalises, enriches, scores,
 
 ```
 Raw Sources
-  │
-  ├── Apollo export        → scripts/normalize_apollo.py
-  ├── LinkedIn Sales Nav   → scripts/normalize_linkedin.py
-  ├── Seed lists (XLS)     → scripts/normalize_seeds.py
-  └── GitHub / Crunchbase  → scripts/normalize_engineer_sources.py
-                                        │
-                                        ▼
-                          scripts/compile_leads.py
-                          (dedup: domain + contact_name)
-                                        │
-                                        ▼
-                            data/raw_leads.csv  (master)
-                                        │
-                                        ▼
-                             scripts/prefilter.py
-                         (disqualifier flags + quota check)
-                                        │
-                                        ▼
-                       Phase 3A Automation (Enrichment)
-                       → scripts/enrich_pipeline.py
-                                        │
-                                        ▼
-                       Phase 3B Intent (Gap Fill)
-                       → scripts/enrich_3b.py
-                                        │
-                                        ▼
-                        scripts/scoring_engine.py
-                     (100-point ICP score per lead)
-                                        │
-                                        ▼
-                          data/scored_leads.csv
-                       (291 active, Hot/Warm/Cold)
-                                        │
-                          ┌─────────────┴─────────────┐
-                          ▼                           ▼
-               Phase 5 Outreach                  Phase 6 A/B Test
-          data/phase5_outreach.csv         data/phase6_ab_variants.csv
-          (50 leads, email + DM)            (top 20 leads, 2 variants)
+    │
+    ├── Apollo.io export        → scripts/normalize_apollo.py
+    ├── LinkedIn Sales Nav      → scripts/normalize_linkedin.py
+    ├── Seed lists              → scripts/normalize_seeds.py
+    └── GitHub / Crunchbase /   → scripts/normalize_engineer_sources.py
+        BuiltWith
+                │
+                ▼
+    scripts/compile_leads.py
+    (merge + dedup by domain)
+                │
+                ▼
+    scripts/prefilter.py
+    (hard disqualifiers + competitor detection)
+                │
+                ▼
+    scripts/quota_check.py
+    (vertical + geo distribution validation)
+                │
+                ▼
+    Clay enrichment (manual import)
+    → data/enriched_leads.csv
+                │
+                ▼
+    scripts/enrich_3b.py
+    (hiring signals + funding patch)
+                │
+                ▼
+    scripts/scoring_engine.py
+    (115-point ICP score per lead)
+                │
+                ▼
+    data/scored_leads.csv
+    (291 active, Hot/Warm/Cold)
+                │
+        ┌───────┴───────┐
+        ▼               ▼
+Phase 5 Outreach    Phase 6 A/B Test
+phase5_outreach.csv  phase6_ab_variants.csv
+(50 leads)           (top 20 × 2 variants)
 ```
 
-The entire pipeline can be executed via the master runner:
-```bash
-python pipeline.py
+### Stage Summary
+
+| Stage | Script | Output |
+|---|---|---|
+| 1. Normalize Apollo | `normalize_apollo.py` | `data/raw/apollo_normalized.csv` |
+| 2. Normalize LinkedIn | `normalize_linkedin.py` | `data/raw/linkedin_normalized.csv` |
+| 3. Normalize Seeds | `normalize_seeds.py` | `data/raw/seeds_normalized.csv` |
+| 4. Normalize Engineer Sources | `normalize_engineer_sources.py` | `data/raw/engineer_normalized.csv` |
+| 5. Merge + Dedupe | `compile_leads.py` | `data/raw_leads.csv` (297 rows) |
+| 6. Pre-filter | `prefilter.py` | `data/raw_leads_rejected.csv` |
+| 7. Quota Check | `quota_check.py` | `data/sourcing_qa_report.md` |
+| 8. Enrichment Patch | `enrich_3b.py` | `data/enriched_leads.csv` |
+| 9. Lead Scoring | `scoring_engine.py` | `data/scored_leads.csv` |
+| 10. Outreach Generation | `generate_linkedin_dms.py` | `data/phase5_outreach.csv` |
+
+---
+
+## ICP Framework
+
+Full definition in [`icp_framework.md`](icp_framework.md).
+
+**Target Persona:**
+- Title: CTO, VP Engineering, Head of AI/ML, Director of Engineering
+- Company size: 200–5,000 employees
+- Funding: Series B through D, or bootstrapped with >$20M ARR
+- Must-haves: LLMs in production + cloud infrastructure
+- Verticals: SaaS (primary), FinTech, HealthTech, Cybersec, Logistics
+- Geo: US (primary), EU/UK (secondary), India seed-only
+
+**Hard Disqualifiers:**
+- Competitor platforms: Baseten, Modal, Anyscale, Fireworks, Together, Replicate, RunPod, HuggingFace
+- Under 50 employees
+- Government or defense
+- No discernible LLM workload
+
+**Tier Thresholds:**
+- Hot: 65+ points
+- Warm: 40–64 points
+- Cold: under 40 points
+
+---
+
+## Lead Scoring Model
+
+Each lead is scored 0–115 across 9 signals:
+
+| Signal | Max Points | Logic |
+|---|---|---|
+| Contact title | 25 | CTO=25, VP Eng=20, Head/Dir=18 |
+| Uses LLM in production | 20 | TRUE=20 |
+| Funding stage | 20 | Series C=20, Series B=15, Series D=12 |
+| Employee count | 15 | 501–2000=15, 201–500=12, 2001–5000=10 |
+| Active ML hiring | 10 | Hiring ML engineers detected |
+| Kubernetes in stack | 8 | TRUE=8 |
+| Geo tier | 8 | US=8, EU/UK=6, India=4 |
+| Ray / WandB in stack | 6 | TRUE=6 |
+| GitHub AI repos | 3 | Active public AI/infra repos |
+
+**Top scoring lead:** Vaibhav Nivargi — Moveworks CTO — **115/115**
+
+---
+
+## Outreach Generation
+
+Personalised outreach for the top 50 Hot leads using per-lead signal context.
+
+**Cold email structure:**
+- Hook based on detected tech stack signal (Ray → GPU efficiency, Kubernetes → infra scale)
+- Hiring signal adds urgency line
+- 150–200 word target, soft CTA for 15-minute demo
+
+**LinkedIn DM structure:**
+- Capped at 300 characters
+- Same stack-personalised hook, condensed to one punch line + ask
+
+**Sample email — Vaibhav Nivargi, Moveworks:**
 ```
+Subject: GPU efficiency at Moveworks scale
+
+Hi Vaibhav,
+
+Noticed Moveworks runs Ray for distributed ML — GPU efficiency at scale
+is a real challenge. You're also hiring ML engineers, which tells me
+inference demand is growing.
+
+I'm building P95.AI, an inference optimization layer that cuts LLM
+serving costs 30–45% with zero model changes.
+
+Worth a 15-minute call to see if it fits your stack?
+```
+
+---
+
+## A/B Testing Strategy
+
+Top 20 leads (score 88+) receive two message variants each.
+
+| | Variant A — Pain-Led | Variant B — Social Proof |
+|---|---|---|
+| Hook | Specific GPU/cost pain tied to their stack | Peer company quantified result |
+| Subject example | "Your Ray cluster is probably leaving 30% GPU capacity on the table" | "How a Series C AI company cut inference costs 40% in 3 weeks" |
+| Target reply rate | 12% | 10% |
+| Target open rate | 45% | 50% |
+| Hypothesis | High-urgency, problem-aware buyers respond better | Curious/research-mode buyers engage with social proof |
+
+Full hypothesis documentation: [`ab_test_hypotheses.md`](ab_test_hypotheses.md)
+
+**Winner declared at:** +5pp reply rate over 2-week window, minimum 10 sends per variant.
+
+---
+
+## Tech Stack
+
+| Tool | Purpose |
+|---|---|
+| Python 3.13 | Pipeline scripting, data processing |
+| pandas | Data normalization, dedup, scoring |
+| Clay.com | Lead enrichment backbone — tech stack, hiring, funding, LinkedIn signals |
+| Apollo.io | Primary lead sourcing (80 leads) |
+| LinkedIn Sales Navigator | High-recency contact sourcing (60 leads) |
+| Crunchbase | Funding and firmographic data |
+| GitHub API | Engineering signal detection — AI/infra repos |
+| BuiltWith | Tech stack detection — Kubernetes, Snowflake, Ray, WandB |
+| GPT-4o (OpenAI) | Personalised outreach generation |
+| n8n | Full pipeline automation and orchestration |
+| python-dotenv | API key management |
+| tqdm + rich | Progress tracking and CLI output |
 
 ---
 
 ## Quick Start
 
 ```bash
-
-# 1. Clone and enter the repo
-
-git clone <repo-url>
-
-cd hackathon
+# 1. Clone the repo
+git clone https://github.com/aayush2724/LeadForge
+cd LeadForge
 
 # 2. Create virtual environment
-
 python -m venv .venv
-
 .venv\Scripts\activate        # Windows
-
-# source .venv/bin/activate   # Mac / Linux
+source .venv/bin/activate     # Mac/Linux
 
 # 3. Install dependencies
-
 pip install -r requirements.txt
 
 # 4. Configure API keys
-
 cp .env.template .env
-
-# Edit .env and fill in APOLLO_API_KEY, OPENAI_API_KEY, GITHUB_TOKEN
+# Edit .env and add your keys
 
 # 5. Run the full pipeline
 python pipeline.py
-
-# 6. Outputs are ready
-
-#    data/scored_leads.csv         — 291 scored leads
-
-#    data/phase5_outreach.csv      — 50 personalised emails + LinkedIn DMs
-
-#    data/phase6_ab_variants.csv   — 40 A/B variant messages
-
 ```
 
 > **Note:** All output files are pre-built and committed. You can skip directly to reviewing `data/scored_leads.csv` without running any scripts.
 
----
-
-## Environment Setup
-
-Copy `.env.template` to `.env` and fill in your keys:
-
-```env
-
-APOLLO_API_KEY=your_apollo_key_here
-
-CLAY_API_KEY=your_clay_key_here
-
-OPENAI_API_KEY=your_openai_key_here
-
-GITHUB_TOKEN=your_github_pat_here
-
-```
+### Required API Keys
 
 | Key | Required for | Where to get |
 |---|---|---|
-| `APOLLO_API_KEY` | Apollo lead sourcing | app.apollo.io †’ Settings †’ API |
-| `CLAY_API_KEY` | Clay enrichment | clay.com †’ Account †’ API |
-| `OPENAI_API_KEY` | GPT-4 email generation (Phase 5) | platform.openai.com |
-| `GITHUB_TOKEN` | GitHub AI repo / star enrichment | github.com †’ Settings †’ Tokens |
+| `APOLLO_API_KEY` | Apollo sourcing | app.apollo.io → Settings → API |
+| `OPENAI_API_KEY` | GPT-4o outreach generation | platform.openai.com |
+| `GITHUB_TOKEN` | GitHub AI repo enrichment | github.com → Settings → Tokens |
+| `CLAY_API_KEY` | Clay enrichment | clay.com → Account → API |
 
 ---
 
-## Pipeline Stages
+## Automated Pipeline (n8n)
 
-### Stage 1 — Sourcing
+The full pipeline is automated via n8n, allowing one-click end-to-end execution without touching the command line.
 
-| Script | Source | Output |
-|---|---|---|
-| `normalize_apollo.py` | Apollo.io CSV export | `data/raw/apollo_normalized.csv` |
-| `normalize_linkedin.py` | LinkedIn Sales Nav pass files | `data/raw/linkedin_normalized.csv` |
-| `normalize_seeds.py` | Seed XLS / CSV lists | `data/raw/seeds_normalized.csv` |
-| `normalize_engineer_sources.py` | GitHub, Crunchbase, BuiltWith | `data/raw/engineer_normalized.csv` |
+### Setup
 
-All scripts enforce the canonical schema defined in `data/SCHEMA.md`. Key normalisation steps:
-- Standardise country †’ `geo_tier` (`US` / `EU_UK` / `APAC` / `ROW`)
-- Map funding rounds to stage labels (`Series A–D`, `Bootstrapped`, etc.)
-- Flag competitor keywords in company descriptions
-- Deduplicate within source (domain + contact_name key)
+**Step 1 — Install n8n**
+```bash
+npm install -g n8n
+```
 
-### Stage 2 — Compilation
+**Step 2 — Set environment variable**
 
-`compile_leads.py` merges all normalised sources into `data/raw_leads.csv`:
-- Deduplication key: `(domain, contact_name)` — preserves multiple contacts per company
-- Source priority order: Apollo > LinkedIn > Seeds > GitHub > Crunchbase
-- Emits `data/raw_leads_rejected.csv` for any rows that failed schema validation
+On Windows (run PowerShell as Administrator):
+```powershell
+[System.Environment]::SetEnvironmentVariable("NODE_FUNCTION_ALLOW_BUILTIN", "child_process", "User")
+[System.Environment]::SetEnvironmentVariable("NODE_FUNCTION_ALLOW_EXTERNAL", "child_process", "User")
+```
 
-### Stage 3 — Pre-filter & Quota Check
+On Mac/Linux:
+```bash
+export NODE_FUNCTION_ALLOW_BUILTIN=child_process
+export NODE_FUNCTION_ALLOW_EXTERNAL=child_process
+```
 
-`prefilter.py` applies ICP disqualifiers:
-- Employee count outside 50–5000 range
-- Competitor flags (`competitor_flag = TRUE`)
-- Missing `uses_llm_in_prod` signal
-- Missing `has_kubernetes` signal
-- Geo exclusions (configurable)
+**Step 3 — Start n8n from the project root**
+```bash
+cd LeadForge
+n8n start
+```
 
-`quota_check.py` validates vertical and geo distribution against targets in `icp_framework.md`.
+**Step 4 — Import the workflow**
+- Open `http://localhost:5678`
+- Go to Workflows → Import
+- Select `workflows/leadforge_pipeline.json`
 
-### Stage 4 — Automated Enrichment (Phase 3A & 3B)
+**Step 5 — Execute**
+- Click **Execute Workflow**
+- All 12 pipeline nodes run in sequence automatically
 
-The pipeline uses a multi-pass automated enrichment strategy:
+### Workflow Nodes
 
-1. **Phase 3A (`enrich_pipeline.py`)**: 
-   - **GitHub**: Finds org URLs and tech signals (Kubernetes, Ray/WandB).
-   - **Apollo**: Enriches firmographics (funding, employee count) and contact technical signals.
-2. **Phase 3B (`enrich_3b.py`)**:
-   - **Gap Fill**: Targeted re-hits for missing funding data via Apollo and Crunchbase.
-   - **Hiring Signal**: Detects `is_hiring_ml_eng` via Job Board scraping (Greenhouse/Lever) and LinkedIn Jobs.
+```
+Manual Trigger
+      ↓
+Compile Leads           ← compile_leads.py
+      ↓
+Normalize Apollo        ← normalize_apollo.py
+      ↓
+Normalize LinkedIn      ← normalize_linkedin.py
+      ↓
+Normalize Seeds         ← normalize_seeds.py
+      ↓
+Normalize Gaps          ← normalize_gaps.py
+      ↓
+Enrich Pipeline         ← enrich_pipeline.py
+      ↓
+Prefilter Competitors   ← prefilter.py
+      ↓
+Score Leads             ← scoring_engine.py
+      ↓
+Validate Emails         ← validate_emails.py
+      ↓
+Generate LinkedIn DMs   ← generate_linkedin_dms.py
+      ↓
+Sanity Check            ← validate_row.py
+```
 
-### Stage 5 — Scoring
-
-`scoring_engine.py` computes a 0–130 point ICP score per lead:
-
-| Signal | Max Points |
-|---|---|
-| Contact title (CTO = 25, VP Eng = 20, Head/Dir = 18) | 25 |
-| Uses LLM in production | 20 |
-| Funding stage | 20 |
-| Employee count (sweet spot 200–2000) | 15 |
-| Kubernetes in stack | 8 |
-| Ray / WandB in stack | 6 |
-| Snowflake in stack | 3 |
-| GitHub AI repos | 5 |
-| GitHub stars | 4 |
-| Cloud / vector stack signals | 4 |
-| Geo tier (US = 8, EU/UK = 6) | 8 |
-| Active ML hiring signal | 10 |
-| Recency bonus (funded < 1 year) | 3 |
-
-Output: `data/scored_leads.csv` with `score_total`, `score_tier` (`Hot`/`Warm`/`Cold`), and `score_reasons`.
-
-### Stage 6 — Outreach Generation (Phase 5)
-
-Personalised outreach for the top 50 Hot leads:
-
-**Cold email** (`email_subject` + `email_body`):
-- Hook based on stack signal (vLLM/Triton †’ inference angle, Ray †’ GPU efficiency, OpenAI †’ token cost)
-- Hiring signal adds urgency line
-- 150–200 word target, soft CTA for 15-minute demo
-
-**LinkedIn DM** (`linkedin_dm`):
-- Capped at 300 characters (connection request limit)
-- Same stack-personalised hook, condensed to one punch line + ask
-
-Script: `scripts/generate_linkedin_dms.py`
-
-### Stage 7 — A/B Test Design (Phase 6)
-
-Top 20 leads (score >= 88) receive two message variants each:
-- **Variant A — Pain-Led:** Opens with a specific technical pain point tied to their stack
-- **Variant B — Social Proof / Curiosity:** Opens with a concrete, quantified customer result
-
-Full hypothesis documentation: `ab_test_hypotheses.md`
+Each node outputs `{ success: true, output: "..." }` — visible in the n8n execution log for full auditability.
 
 ---
 
-## Data Schema
+## Data Sourcing Guide
 
-All lead records conform to the schema defined in `data/SCHEMA.md`.
+Lead sourcing from Apollo.io and LinkedIn Sales Navigator requires manual CSV export due to platform API restrictions on free/standard plans. All exported files are included in `data/raw/` so the full pipeline can be re-run without re-sourcing.
 
-Core fields:
+### To re-source fresh leads:
 
-| Field | Type | Description |
-|---|---|---|
-| `lead_id` | UUID | Unique identifier |
-| `domain` | string | Company domain (primary dedup key) |
-| `company_name` | string | Company name |
-| `contact_name` | string | Full name |
-| `contact_title` | string | Job title |
-| `contact_linkedin` | URL | LinkedIn profile URL |
-| `contact_email` | email | Work email (if available) |
-| `industry` | enum | `SaaS`, `HealthTech`, `FinTech`, `Logistics`, `Cybersec`, `Ecommerce`, `Other` |
-| `employee_range` | enum | `50-200`, `201-500`, `501-1000`, `1001-5000` |
-| `geo_tier` | enum | `US`, `EU_UK`, `APAC`, `ROW` |
-| `funding_stage` | enum | `Series A` … `Series D`, `Bootstrapped`, `Unknown` |
-| `uses_llm_in_prod` | bool | TRUE / FALSE |
-| `tech_stack_raw` | string | Semicolon-separated stack tokens |
-| `has_kubernetes` | bool | Derived from `tech_stack_raw` |
-| `has_ray_or_wandb` | bool | Derived from `tech_stack_raw` |
-| `is_hiring_ml_eng` | int | LinkedIn ML job postings count |
-| `score_total` | int | ICP score (0–130) |
-| `score_tier` | enum | `Hot`, `Warm`, `Cold` |
+**Apollo.io (target: 80 leads)**
+- Go to apollo.io → Search → People
+- Job titles: CTO, VP Engineering, Head of AI, Director of Engineering
+- Headcount: 200–5,000
+- Industries: Computer Software, Financial Services, Healthcare
+- Keywords: machine learning, LLM, AI inference, GPU, generative AI
+- Exclude: baseten.co, modal.com, anyscale.com, fireworks.ai, together.ai, replicate.com
+- Export CSV → save to `data/raw/apollo_pass1_*.csv`
+
+**LinkedIn Sales Navigator (target: 60 leads)**
+- Go to Sales Navigator → Lead Filters
+- Same job titles as above
+- Seniority: VP, CXO, Director
+- Headcount: 200–5,000
+- Activity: Posted on LinkedIn
+- Geography: US, UK, Germany, France, Netherlands, India
+- Save list → export → save to `data/raw/linkedin_pass*.csv`
+
+**After re-sourcing:**
+```bash
+python pipeline.py
+```
 
 ---
 
-## Key Outputs
+## Key Output Files
 
 | File | Rows | Description |
 |---|---|---|
-| `data/raw_leads.csv` | 350+ | All normalised leads pre-filter |
-| `data/raw_leads_rejected.csv` | ~60 | Disqualified leads with reasons |
-| `data/enriched_leads.csv` | 291 | Post-Clay enrichment master list |
+| `data/raw_leads.csv` | 297 | All normalised leads pre-filter |
+| `data/raw_leads_rejected.csv` | 6 | Disqualified leads with reasons |
+| `data/enriched_leads.csv` | 297 | Post-Clay enrichment master list |
 | `data/scored_leads.csv` | 291 | Scored + tiered, all signals |
-| `data/scoring_report.md` | — | Score distribution + top leads summary |
-| `data/sourcing_qa_report.md` | — | Vertical / geo quota validation |
+| `data/scoring_report.md` | — | Score distribution + top leads |
+| `data/sourcing_qa_report.md` | — | Vertical/geo quota validation |
 | `data/phase5_outreach.csv` | 50 | Email subject, body, LinkedIn DM |
 | `data/phase6_ab_variants.csv` | 40 | A/B variant messages for top 20 |
 | `ab_test_hypotheses.md` | — | A/B test design + success metrics |
@@ -311,92 +403,52 @@ Core fields:
 
 ---
 
-## ICP & Scoring Framework
-
-Full definition in [`icp_framework.md`](./icp_framework.md).
-
-**Ideal Customer Profile:**
-- **Title:** CTO, VP Engineering, Head of AI/ML, Director of Engineering
-- **Company size:** 50–5,000 employees
-- **Funding:** Series A through D, or bootstrapped with >$10M ARR signals
-- **Must-haves:** LLMs in production + Kubernetes in stack
-- **Verticals:** SaaS (primary), HealthTech, FinTech, Cybersec, Logistics
-- **Geo:** US (primary), EU/UK (secondary)
-
-**Disqualifiers:**
-- Competitor companies
-- Pre-revenue / pre-product
-- Hardware/chip companies (different buyer)
-- No discernible LLM workload
-
----
-
-## A/B Test Design
-
-See [`ab_test_hypotheses.md`](./ab_test_hypotheses.md) for full hypothesis, stack-to-hook mapping, success metrics, and sequencing plan.
-
-**TL;DR:**
-- **Variant A (Pain-Led):** Surface the exact GPU/cost pain before pitching
-- **Variant B (Social Proof):** Lead with a peer company result (35–45 % cost reduction)
-- **Winner declared at:** +5 pp reply rate over 2-week window, 10 sends minimum per variant
-
----
-
 ## Directory Structure
 
 ```
 LeadForge/
-├── README.md                     # This file
-├── pipeline.py                   # Master pipeline runner
-├── icp_framework.md              # ICP definition + scoring rubric
-├── ab_test_hypotheses.md         # Phase 6 A/B test hypotheses
-├── requirements.txt              # Python dependencies
-├── .env.template                 # API key template (copy to .env)
+├── README.md
+├── icp_framework.md
+├── ab_test_hypotheses.md
+├── requirements.txt
+├── .env.template
+├── pipeline.py
+│
+├── workflows/
+│   └── leadforge_pipeline.json     ← n8n workflow (import to re-run)
 │
 ├── data/
-│   ├── SCHEMA.md                 # Canonical field definitions
-│   ├── raw/                      # Per-source normalised CSVs
+│   ├── SCHEMA.md
+│   ├── raw/
 │   │   ├── apollo_normalized.csv
 │   │   ├── linkedin_normalized.csv
 │   │   ├── seeds_normalized.csv
 │   │   └── engineer_normalized.csv
-│   ├── raw_leads.csv             # Compiled master (pre-filter)
-│   ├── raw_leads_rejected.csv    # Disqualified leads
-│   ├── enriched_leads.csv        # Post-enrichment master list
-│   ├── scored_leads.csv          # Scored + tiered (291 active)
-│   ├── scoring_report.md         # Score distribution report
-│   ├── sourcing_qa_report.md     # Quota validation report
-│   ├── phase5_outreach.csv       # Email + LinkedIn DMs (top 50)
-│   └── phase6_ab_variants.csv    # A/B messages (top 20 × 2)
+│   ├── raw_leads.csv
+│   ├── raw_leads_rejected.csv
+│   ├── enriched_leads.csv
+│   ├── scored_leads.csv
+│   ├── scoring_report.md
+│   ├── sourcing_qa_report.md
+│   ├── phase5_outreach.csv
+│   └── phase6_ab_variants.csv
 │
 ├── scripts/
-│   ├── normalize_apollo.py        # Stage 1: Apollo normalisation
-│   ├── normalize_linkedin.py      # Stage 1: LinkedIn normalisation
-│   ├── normalize_seeds.py         # Stage 1: Seed list normalisation
-│   ├── normalize_engineer_sources.py # Stage 1: GitHub/Crunchbase
-│   ├── normalize_gaps.py          # Stage 1: Gap-fill normalisation
-│   ├── compile_leads.py           # Stage 2: Merge + dedup
-│   ├── prefilter.py               # Stage 3: Disqualifier filter
-│   ├── quota_check.py             # Stage 3: Vertical/geo quota
-│   ├── enrich_pipeline.py         # Stage 4: Phase 3A Enrichment
-│   ├── enrich_3b.py               # Stage 4: Phase 3B Intent/Gap fill
-│   ├── scoring_engine.py          # Stage 5: ICP scoring
-│   └── generate_linkedin_dms.py   # Stage 6: LinkedIn DM generation
+│   ├── normalize_apollo.py
+│   ├── normalize_linkedin.py
+│   ├── normalize_seeds.py
+│   ├── normalize_engineer_sources.py
+│   ├── normalize_gaps.py
+│   ├── compile_leads.py
+│   ├── prefilter.py
+│   ├── quota_check.py
+│   ├── enrich_3b.py
+│   ├── enrich_pipeline.py
+│   ├── scoring_engine.py
+│   ├── generate_linkedin_dms.py
+│   ├── validate_emails.py
+│   └── validate_row.py
 │
 └── docs/
-    └── team_roles.md              # Team ownership matrix
+    └── team_roles.md
 ```
-
----
-
-## Team Roles
-
-See [`docs/team_roles.md`](./docs/team_roles.md) for full ownership matrix.
-
-| Role | Owner | Responsibilities |
-|---|---|---|
-| Data Lead | — | Normalisation, dedup, prefilter, quota |
-| Research Lead | — | LinkedIn sourcing, signal enrichment |
-| Outreach Lead | — | Phase 5 email + DM copy, A/B design |
-| Engineering Lead | — | Scoring engine, pipeline automation |
-
