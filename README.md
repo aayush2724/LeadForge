@@ -441,45 +441,81 @@ LeadForge/
 ├── README.md
 ├── icp_framework.md
 ├── ab_test_hypotheses.md
+├── pipeline.py
+├── fix_violations.py
 ├── requirements.txt
 ├── .env.template
-├── pipeline.py
 │
 ├── workflows/
 │   └── leadforge_pipeline.json     ← n8n workflow (import to re-run)
 │
 ├── data/
 │   ├── SCHEMA.md
-│   ├── raw/
-│   │   ├── apollo_normalized.csv
-│   │   ├── linkedin_normalized.csv
-│   │   ├── seeds_normalized.csv
-│   │   └── engineer_normalized.csv
 │   ├── raw_leads.csv
 │   ├── raw_leads_rejected.csv
 │   ├── enriched_leads.csv
+│   ├── enriched_leads_3a_backup.csv
 │   ├── scored_leads.csv
+│   ├── scored_leads_validated.csv
+│   ├── phase5_outreach.csv
+│   ├── phase6_ab_variants.csv
 │   ├── scoring_report.md
 │   ├── sourcing_qa_report.md
-│   ├── phase5_outreach.csv
-│   └── phase6_ab_variants.csv
+│   ├── enrichment_run_log.md
+│   ├── enrichment_3b_log.md
+│   └── raw/
+│       ├── apollo_normalized.csv
+│       ├── apollo_pass1_us_saas_fintech.csv
+│       ├── apollo_pass2_eu_uk.csv
+│       ├── apollo_pass3_healthtech_cybersec.csv
+│       ├── apollo_pass4_flex.csv
+│       ├── linkedin_normalized.csv
+│       ├── linkedin_pass1_us.csv
+│       ├── linkedin_pass2_eu.csv
+│       ├── linkedin_pass3_india.csv
+│       ├── seeds_normalized.csv
+│       ├── seeds_raw.csv
+│       ├── engineer_normalized.csv
+│       ├── aayush_normalized.csv
+│       ├── builtwith_raw.csv
+│       ├── crunchbase_raw.csv
+│       ├── github_raw.csv
+│       ├── cyber_normalized_gap.csv
+│       ├── cyber_people_gap.csv
+│       ├── ecommerce_normalized_gap.csv
+│       ├── ecommerce_people_gap.csv
+│       ├── healthtech_normalized_gap.csv
+│       ├── healthtech_people_gap.csv
+│       ├── logistics_normalized_gap.csv
+│       └── logistics_people_gap.csv
 │
 ├── scripts/
+│   ├── compile_leads.py
 │   ├── normalize_apollo.py
 │   ├── normalize_linkedin.py
 │   ├── normalize_seeds.py
 │   ├── normalize_engineer_sources.py
 │   ├── normalize_gaps.py
-│   ├── compile_leads.py
 │   ├── prefilter.py
 │   ├── quota_check.py
-│   ├── enrich_3b.py
 │   ├── enrich_pipeline.py
+│   ├── enrich_3b.py
 │   ├── scoring_engine.py
 │   ├── generate_linkedin_dms.py
 │   ├── validate_emails.py
-│   └── validate_row.py
+│   ├── validate_row.py
+│   └── enrichers/
+│       ├── __init__.py
+│       ├── apollo_enricher.py
+│       ├── crunchbase_enricher.py
+│       ├── github_enricher.py
+│       └── jobs_enricher.py
 │
-└── docs/
-    └── team_roles.md
+├── docs/
+│   ├── team_roles.md
+│   ├── clay_setup.md
+│   ├── n8n_workflow_execution.png
+│   └── clay_screenshots/
+│
+└── logs/
 ```
