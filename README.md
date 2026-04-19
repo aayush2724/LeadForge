@@ -367,6 +367,8 @@ Sanity Check            ← validate_row.py
 
 Each node outputs `{ success: true, output: "..." }` — visible in the n8n execution log for full auditability.
 
+> The node chain above reflects the workflow shown in the n8n editor screenshot.
+
 ---
 
 ## Data Sourcing Guide
