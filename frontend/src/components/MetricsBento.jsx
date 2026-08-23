@@ -14,7 +14,7 @@ const MetricCard = ({ title, value, subtitle, icon: Icon, delay }) => (
   >
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
       <span style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', fontWeight: 500 }}>{title}</span>
-      <div style={{ padding: '8px', background: 'rgba(138,43,226,0.1)', borderRadius: '8px', color: 'var(--accent-primary)' }}>
+      <div style={{ padding: '8px', background: 'var(--glass-bg)', borderRadius: '8px', color: 'var(--accent-primary)' }}>
         <Icon size={20} />
       </div>
     </div>

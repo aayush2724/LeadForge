@@ -58,7 +58,7 @@ export default function PipelineArchitecture() {
                 justifyContent: 'center',
                 marginBottom: '1rem',
                 color: 'var(--text-primary)',
-                boxShadow: '0 0 15px rgba(138,43,226,0.2)'
+                boxShadow: '0 0 15px rgba(255,255,255,0.1)'
               }}>
                 <stage.icon size={24} />
               </div>

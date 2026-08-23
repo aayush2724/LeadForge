@@ -24,7 +24,7 @@ export default function ScoringModel() {
       <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
         <div className="glass-panel" style={{ flex: '1 1 300px', padding: '2rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1.5rem' }}>
-            <div style={{ padding: '10px', background: 'rgba(0,210,255,0.1)', borderRadius: '12px', color: 'var(--accent-secondary)' }}>
+            <div style={{ padding: '10px', background: 'var(--glass-bg)', borderRadius: '12px', color: 'var(--accent-primary)' }}>
               <Target size={24} />
             </div>
             <h3 style={{ fontSize: '1.5rem' }}>Signal Weights</h3>
@@ -73,7 +73,7 @@ export default function ScoringModel() {
             </ul>
           </div>
           
-          <div className="glass-panel" style={{ padding: '2rem', flex: 1, background: 'linear-gradient(135deg, rgba(138,43,226,0.1), rgba(0,210,255,0.05))' }}>
+          <div className="glass-panel" style={{ padding: '2rem', flex: 1, background: 'linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0.05))' }}>
             <h3 style={{ marginBottom: '1rem', fontSize: '1.2rem' }}>Why it works</h3>
             <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: 1.6 }}>
               Instead of relying purely on job titles, the engine uses firmographic data (funding, size) blended with hard engineering intent signals (Kubernetes, Ray, Open Source AI repos). This ensures SDRs only spend time on buyers who genuinely have the infrastructure pain point P95.AI solves.
