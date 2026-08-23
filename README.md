@@ -5,7 +5,7 @@ An end-to-end, reproducible pipeline that sources, normalises, enriches, scores,
 **Built for:** P95.AI — an AI inference optimization platform  
 **Target buyer:** CTOs, VPs Engineering, Heads of AI at companies running LLMs in production  
 **GitHub:** [github.com/aayush2724/LeadForge](https://github.com/aayush2724/LeadForge)  
-**Website:** [lead-forge-rust.vercel.app](https://lead-forge-rust.vercel.app/)
+**Website:** [lead-forge-rust.vercel.app](https://leadforge-three-tau.vercel.app/)
 
 ---
 
